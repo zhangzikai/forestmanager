@@ -1,0 +1,1 @@
+DEFAULT|dbo|1|1|0|Instance default version.||||2013-09-16 09:17:17.000

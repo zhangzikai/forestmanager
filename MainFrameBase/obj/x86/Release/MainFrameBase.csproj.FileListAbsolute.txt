@@ -1,0 +1,10 @@
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.FormSplash.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.FormSplash2.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.RibbonFormFrame.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.RibbonFormFrame2.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.RibbonFormFrame3.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.RibbonFormFrame4.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.Properties.Resource.resources
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.csproj.GenerateResource.Cache
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.dll.licenses
+E:\for\MainFrameBase\obj\x86\Release\MainFrameBase.csprojResolveAssemblyReference.cache

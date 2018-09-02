@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A4A60F-14CA-4B4B-BF0E-3BF15F31A9AA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Print</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Print</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.Geodatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintComponent, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\PrintComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Output" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DevImageExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceService.cs" />
+    <Compile Include="ClsPrint.cs" />
+    <Compile Include="ClsPageSteup.cs" />
+    <Compile Include="ClsPrintView.cs" />
+    <Compile Include="MapSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormService.cs" />
+    <Compile Include="PrintSetup.cs" />
+    <Compile Include="PrinterDefaults.cs" />
+    <Compile Include="ImageExport.cs" />
+    <Compile Include="DeviceCapabilities.cs" />
+    <Compile Include="OfnHookProc.cs" />
+    <Compile Include="CallBack.cs" />
+    <Compile Include="NMHDR.cs" />
+    <Compile Include="OfNotify.cs" />
+    <Compile Include="DlgTemplate.cs" />
+    <Compile Include="RECT.cs" />
+    <Compile Include="POINT.cs" />
+    <Compile Include="Win32.cs" />
+    <Compile Include="PtrType.cs" />
+    <Compile Include="PrintController.cs" />
+    <Compile Include="ESRIPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapPageSet.cs" />
+    <Compile Include="PrinterSet.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="UnitService.cs" />
+    <Compile Include="WndType.cs" />
+    <Compile Include="WndMsg.cs" />
+    <Compile Include="WndZOrder.cs" />
+    <Compile Include="ShowWnd.cs" />
+    <Compile Include="WndPos.cs" />
+    <Compile Include="WndStyles.cs" />
+    <Compile Include="ExStyle.cs" />
+    <Compile Include="BtnStyle.cs" />
+    <Compile Include="PrintSetupDialogEx.cs" />
+    <Compile Include="ClsPageIndex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cartography\Cartography.csproj">
+      <Project>{46fe0b58-76db-4290-b138-470d9d5c2f8f}</Project>
+      <Name>Cartography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

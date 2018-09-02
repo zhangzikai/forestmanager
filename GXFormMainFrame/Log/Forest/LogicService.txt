@@ -1,0 +1,20 @@
+2017-08-14 12:46:14,835 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] 系统启动...
+2017-08-14 12:46:14,848 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] 验证ArcGIS许可...
+2017-08-14 12:46:14,849 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] LicenseInitializer
+2017-08-14 12:46:14,853 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] Bind(ProductCode.Engine)
+2017-08-14 12:46:15,541 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] 读取配置...
+2017-08-14 12:46:15,589 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] 读取配置完毕.
+2017-08-14 12:46:15,597 [1] WARN  UI [(null)] - [GXFormMainFrame.Program] 开始登录.
+2017-08-14 12:46:15,600 [1] WARN  UI [(null)] - [GXFormMainFrame.FormLogin4] FormLogin4 begin...
+2017-08-14 12:46:15,843 [1] WARN  UI [(null)] - [GXFormMainFrame.FormLogin4] FormLogin4 over.
+2017-08-14 12:46:26,114 [1] WARN  UI [(null)] - [GXFormMainFrame.MainFrameQuery] start load Map:D:\TDProject\test\ForestManager\Template\编辑任务-年度小班.mxd
+2017-08-14 12:46:26,913 [1] WARN  UI [(null)] - [GXFormMainFrame.MainFrameQuery] end load Map
+2017-08-14 12:46:27,437 [1] ERROR UI [(null)] - [Utilities.ErrorOpt] 2017年08月14日12时46分27秒
+	系统名称 : 森林资源管理信息平台
+	类名称　 : Measure.MeasureTool
+	过程方法 : New
+	错误代码 : 60344938
+	错误来源 : System.Drawing
+	错误描述 : 无法在类“Measure.MeasureTool”中找到资源“MeasureDistance.bmp”。
+
+

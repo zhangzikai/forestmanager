@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A841DAE-8960-405C-A8C2-BCE30C40616A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ShapeEdit</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ShapeEdit</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="FormVertexList.resx">
+      <DependentUpon>FormVertexList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IFeatureTool.cs" />
+    <Compile Include="FormVertexList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explode.cs" />
+    <Compile Include="LinkageInsertVertex.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Redo.cs" />
+    <Compile Include="InsertVertex.cs" />
+    <Compile Include="Delete.cs" />
+    <Compile Include="SnapPro.cs" />
+    <Compile Include="SnapEx.cs" />
+    <Compile Include="Simplify.cs" />
+    <Compile Include="OverlapDelete.cs" />
+    <Compile Include="CombineEx.cs" />
+    <Compile Include="ToolFactory.cs" />
+    <Compile Include="ToolConfig.cs" />
+    <Compile Include="SnapAgent.cs" />
+    <Compile Include="SnapProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureFuncs.cs" />
+    <Compile Include="Erase2.cs" />
+    <Compile Include="HX.cs" />
+    <Compile Include="Editor.cs" />
+    <Compile Include="OverlapSublot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoComplete.cs" />
+    <Compile Include="Split.cs" />
+    <Compile Include="SnapExFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolCursor.cs" />
+    <Compile Include="AttributeManager.cs" />
+    <Compile Include="IAttributeAdd.cs" />
+    <Compile Include="IAttributeCombine.cs" />
+    <Compile Include="IAttributeSplit.cs" />
+    <Compile Include="IAttributeSelected.cs" />
+    <Compile Include="IAttributeDelete.cs" />
+    <Compile Include="IAttributeUndo.cs" />
+    <Compile Include="Edit.cs" />
+    <Compile Include="Undo.cs" />
+    <Compile Include="RPointDeleteEx.cs" />
+    <Compile Include="OverlapConvert.cs" />
+    <Compile Include="Erase.cs" />
+    <Compile Include="Delete1.cs" />
+    <Compile Include="CopySub.cs" />
+    <Compile Include="Combine.cs" />
+    <Compile Include="LinkageEdit.cs" />
+    <Compile Include="LinkageDeleteVertex.cs" />
+    <Compile Include="DeleteVertex.cs" />
+    <Compile Include="DeleteEx.cs" />
+    <Compile Include="Create.cs" />
+    <Compile Include="Create2.cs" />
+    <Compile Include="RPointDelete.cs" />
+    <Compile Include="Paste.cs" />
+    <Compile Include="OverlapCombine.cs" />
+    <Compile Include="LinkArgs.cs" />
+    <Compile Include="EditingSketch.cs" />
+    <Compile Include="Copy.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

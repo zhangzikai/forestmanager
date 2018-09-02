@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E4D2CB2-B00A-4AE5-B6CB-7BB57CA46ADB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>AttributesEdit</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>AttributesEdit</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="FormCalField.resx">
+      <DependentUpon>FormCalField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCopyHarvest.resx">
+      <DependentUpon>FormCopyHarvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHarTable.resx">
+      <DependentUpon>FormHarTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMMJC.resx">
+      <DependentUpon>FormMMJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectAttriSource.resx">
+      <DependentUpon>FormSelectAttriSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyGridControl\UserControlTableWrite.resx">
+      <DependentUpon>UserControlTableWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAffAttr.resx">
+      <DependentUpon>UserControlAffAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAttrEdit.resx">
+      <DependentUpon>UserControlAttrEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAttributesEdit.resx">
+      <DependentUpon>UserControlAttributesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAttriCheck.resx">
+      <DependentUpon>UserControlAttriCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAttriList.resx">
+      <DependentUpon>UserControlAttriList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFireAttr.resx">
+      <DependentUpon>UserControlFireAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFireInfo.resx">
+      <DependentUpon>UserControlFireInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFireManage.resx">
+      <DependentUpon>UserControlFireManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHarAttr1.resx">
+      <DependentUpon>UserControlHarAttr1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHSAttr.resx">
+      <DependentUpon>UserControlHSAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSubAttr.resx">
+      <DependentUpon>UserControlSubAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUpdate.resx">
+      <DependentUpon>UserControlUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlZZAttr.resx">
+      <DependentUpon>UserControlZZAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ZLComboBox.resx">
+      <DependentUpon>ZLComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZLRepositoryItemComboBox.resx">
+      <DependentUpon>ZLRepositoryItemComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZLRepositoryItemSpinEdit.resx">
+      <DependentUpon>ZLRepositoryItemSpinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZLSpinEdit.resx">
+      <DependentUpon>ZLSpinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="AxInterop.DSOFramer, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\AxInterop.DSOFramer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.AxPublisherControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="log4net">
+      <HintPath>..\GXFormMainFrame\bin\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger, Version=1.0.5408.24955, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject1\test\ForestManager\bin\MS\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="DevExpress.Printing.v14.1.Core" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="Interop.DSOFramer">
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.DSOFramer.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessing" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="UserControlUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZLComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZLSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZLRepositoryItemComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZLComboItem.cs" />
+    <Compile Include="UserControlAffAttr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFuncs.cs" />
+    <Compile Include="UserControlAttributesEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolGetAttributes.cs" />
+    <Compile Include="FormSetUniqueValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CmdSetUniqueValue.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="UserControlAttriList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormSetArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHarTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyGridControl\UserControlTableWrite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFireAttr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HorXtraGrid.cs" />
+    <Compile Include="GridEditorCollection.cs" />
+    <Compile Include="FormCalField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VertXtraGrid.cs" />
+    <Compile Include="UserControlFireInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCopyHarvest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlSubAttr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlHarAttr1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateSub.cs" />
+    <Compile Include="AutoUpdateSub.cs" />
+    <Compile Include="FormExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckAttributes.cs" />
+    <Compile Include="LogicErrors.cs" />
+    <Compile Include="LogicErrors2.cs" />
+    <Compile Include="UserControlZZAttr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAttriCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridEditorItem.cs" />
+    <Compile Include="ToolHSEdit.cs" />
+    <Compile Include="FormMMJC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlHSAttr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAttrEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFireManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZLRepositoryItemSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormAttriCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolAttributesEdit.cs" />
+    <Compile Include="ColumnAttribute.cs" />
+    <Compile Include="CmdSetArea.cs" />
+    <Compile Include="FormSelectAttriSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CmdCopyHarvest.cs" />
+    <Compile Include="AttriEdit.cs" />
+    <Compile Include="CombineHandleClass.cs" />
+    <Compile Include="SplitHandleClass.cs" />
+    <Compile Include="AddHandleClass.cs" />
+    <Compile Include="DeleteHandleClass.cs" />
+    <Compile Include="UndoHandleClass.cs" />
+    <EmbeddedResource Include="FormAttriCheck.resx">
+      <DependentUpon>FormAttriCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="TDORM4DB">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TDUtility">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cartography\Cartography.csproj">
+      <Project>{46fe0b58-76db-4290-b138-470d9d5c2f8f}</Project>
+      <Name>Cartography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cf_Calc\Cf_Calc.csproj">
+      <Project>{da7c6754-c370-45d3-8b6c-d263ae382087}</Project>
+      <Name>Cf_Calc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConSQLServerInfo\ConSQLServerInfo.csproj">
+      <Project>{2644c41b-eb7d-4859-bcfa-734c85614ee7}</Project>
+      <Name>ConSQLServerInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBMid\ForestManagerDBMid.csproj">
+      <Project>{6eebcd8b-f540-4302-99a4-f65d83576b70}</Project>
+      <Name>ForestManagerDBMid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBService\ForestManagerDBService.csproj">
+      <Project>{ddabcc30-8753-4e0c-8027-f570e8ca439f}</Project>
+      <Name>ForestManagerDBService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerLogic\ForestManagerLogic.csproj">
+      <Project>{8ec05a55-5936-430f-b856-3f5379157d68}</Project>
+      <Name>ForestManagerLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LDZY_ZTZL\LDZY_ZTZL.csproj">
+      <Project>{784cb83d-5e0a-4637-b76e-3a9f7e391b3b}</Project>
+      <Name>LDZY_ZTZL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LDZY_ZTZZ\LDZY_ZTZZ.csproj">
+      <Project>{89a47cde-5e43-4239-89d2-4a7697df0f6b}</Project>
+      <Name>LDZY_ZTZZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeEdit\ShapeEdit.csproj">
+      <Project>{9a841dae-8960-405c-a8c2-bce30c40616a}</Project>
+      <Name>ShapeEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

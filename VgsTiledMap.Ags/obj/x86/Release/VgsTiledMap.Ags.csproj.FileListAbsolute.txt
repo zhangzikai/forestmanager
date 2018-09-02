@@ -1,0 +1,11 @@
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.csprojResolveAssemblyReference.cache
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.AddProviderForm.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.FormPreCache.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.forms.FormCacheSetting.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.forms.FormGeoCoding.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.VgsTiledMapAboutBox.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.VgsTile.Forms.AddLindiServiceForm.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.VgsTile.Forms.VgsFormTileCacheSetting.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.VgsTile.Forms.VgsPreCacheStatusForm.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.VgsTile.Forms.VgsTileDownloadForm.resources
+E:\for\VgsTiledMap.Ags\obj\x86\Release\VgsTiledMap.Ags.csproj.GenerateResource.Cache

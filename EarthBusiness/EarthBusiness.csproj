@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE178222-147C-4EED-8331-28AB2B0FD042}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EarthBusiness</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>EarthBusiness</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.UI" />
+    <Reference Include="DevExpress.Charts.v14.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard" />
+    <Reference Include="DevExpress.XtraCharts.v14.1" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EarthBusiness\BusiHelp\UCForestQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EarthBusiness\BusiHelp\UCForeLandQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EarthBusiness\ClsDbHandler.cs" />
+    <Compile Include="EarthBusiness\CodeName.cs" />
+    <Compile Include="EarthBusiness\AdminLocateStatisInfo.cs" />
+    <Compile Include="EarthBusiness\XbIdentifyInfo.cs" />
+    <Compile Include="EarthBusiness\PointLabel.cs" />
+    <Compile Include="EarthBusiness\LindQueryResult.cs" />
+    <Compile Include="EarthBusiness\LindResultQuery.cs" />
+    <Compile Include="EarthBusiness\ChartService.cs" />
+    <Compile Include="EarthBusiness\ForestStatisInfo.cs" />
+    <Compile Include="EarthBusiness\ForestQueryInfo.cs" />
+    <Compile Include="EarthBusiness\BusiHelp\FrmForestStatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthBusiness\Properties\Resources.cs" />
+    <Compile Include="EarthBusiness\BusiHelp\UCAdminLocate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="EarthBusiness.BusiHelp.UCForestQuery.resources" />
+    <EmbeddedResource Include="EarthBusiness.dll.licenses" />
+    <EmbeddedResource Include="EarthBusiness.BusiHelp.UCAdminLocate.resources" />
+    <EmbeddedResource Include="EarthBusiness.Properties.Resources.resources" />
+    <EmbeddedResource Include="EarthBusiness.BusiHelp.UCForeLandQuery.resources" />
+    <EmbeddedResource Include="EarthBusiness.BusiHelp.FrmForestStatis.resources" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

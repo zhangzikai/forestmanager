@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46FE0B58-76DB-4290-B138-470D9D5C2F8F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Cartography</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Cartography</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Base\TableField.resx">
+      <DependentUpon>TableField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\OperatorSelect.resx">
+      <DependentUpon>OperatorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\Transparent.resx">
+      <DependentUpon>Transparent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\CalibratedBorder.resx">
+      <DependentUpon>CalibratedBorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevDigtal.resx">
+      <DependentUpon>DevDigtal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevFrame.resx">
+      <DependentUpon>DevFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevGrid.resx">
+      <DependentUpon>DevGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevLegend.resx">
+      <DependentUpon>DevLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevNorthArrowSelector.resx">
+      <DependentUpon>DevNorthArrowSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevScaleBar.resx">
+      <DependentUpon>DevScaleBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\DevText.resx">
+      <DependentUpon>DevText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\FrameSymbolSelector.resx">
+      <DependentUpon>FrameSymbolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\frmTextSymbol.resx">
+      <DependentUpon>frmTextSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Element\ScaleText.resx">
+      <DependentUpon>ScaleText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryDefinetion.resx">
+      <DependentUpon>QueryDefinetion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\AddValueMutliField.resx">
+      <DependentUpon>AddValueMutliField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\AddValue.resx">
+      <DependentUpon>AddValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\DevCompliSymbol.resx">
+      <DependentUpon>DevCompliSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\DevLabelRender.resx">
+      <DependentUpon>DevLabelRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\DevLabelRenderExtent2.resx">
+      <DependentUpon>DevLabelRenderExtent2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\DevLayerRender.resx">
+      <DependentUpon>DevLayerRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\DevSymbolSelector.resx">
+      <DependentUpon>DevSymbolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\NewHeading.resx">
+      <DependentUpon>NewHeading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\UniqueRenderMutliField.resx">
+      <DependentUpon>UniqueRenderMutliField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Render\UniqueRender.resx">
+      <DependentUpon>UniqueRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\frmLoadTemplate.resx">
+      <DependentUpon>frmLoadTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\UserControlTemplate.resx">
+      <DependentUpon>UserControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.AxControls" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="stdole" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Business\QueryDefinitionMenu.cs" />
+    <Compile Include="Business\UniqueValueMutliFieldRenderMenu.cs" />
+    <Compile Include="QueryDefinetion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryDefinetion.Designer.cs">
+      <DependentUpon>QueryDefinetion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Render\AddValueMutliField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\UniqueRenderMutliField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\UserControlTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\SystemType.cs" />
+    <Compile Include="Element\ScaleText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColorSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\DevDigtal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\TocMenu.cs" />
+    <Compile Include="Render\UniqueValueCarto.cs" />
+    <Compile Include="Render\ValueClass.cs" />
+    <Compile Include="Template\cmdLoadTemplate.cs" />
+    <Compile Include="Element\AutoCoordinate.cs" />
+    <Compile Include="Element\DevLegendItemStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\OperatorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\DevLayerRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\LabelRenderMenu.cs" />
+    <Compile Include="FormService.cs" />
+    <Compile Include="ColorService.cs" />
+    <Compile Include="Render\AddValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\CVRecord.cs" />
+    <Compile Include="Template\cmdSaveTemplate.cs" />
+    <Compile Include="Render\DevLabelRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\DevText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\DevLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\Coordinate1.cs" />
+    <Compile Include="LegendService.cs" />
+    <Compile Include="Render\NewHeading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\DevCompliSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\FrameSymbolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumMapSurround.cs" />
+    <Compile Include="Element\CalibratedBorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\ToolNorthArrow.cs" />
+    <Compile Include="Element\DevScaleBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\TableField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\TemplateInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Business\RenderMenu.cs" />
+    <Compile Include="Business\Transparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElementManager.cs" />
+    <Compile Include="Business\UniqueValueRenderMenu.cs" />
+    <Compile Include="Element\ToolScaleText.cs" />
+    <Compile Include="Element\DevFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\DevLabelRenderExtent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenderService.cs" />
+    <Compile Include="Element\ToolText.cs" />
+    <Compile Include="Render\DevSymbolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\Annotate.cs" />
+    <Compile Include="Render\SingleSymbolCarto.cs" />
+    <Compile Include="Render\DevLabelRenderExtent2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\AutoCoordinate1.cs" />
+    <Compile Include="Element\frmTextSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\DomainService.cs" />
+    <Compile Include="UnitService.cs" />
+    <Compile Include="Business\SimpleRenderMenu.cs" />
+    <Compile Include="Render\vForestAnnoControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Element\ToolScaleBar.cs" />
+    <Compile Include="Business\TableDrawer.cs" />
+    <Compile Include="ElementService.cs" />
+    <Compile Include="Render\UniqueRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Render\Record.cs" />
+    <Compile Include="Element\TF.cs" />
+    <Compile Include="Business\ZoomToLayerMenu.cs" />
+    <Compile Include="Business\RemoveLayerMenu.cs" />
+    <Compile Include="Business\LayerRenderMenu.cs" />
+    <Compile Include="Business\TemplateCartoManager.cs" />
+    <Compile Include="Element\Jimi.cs" />
+    <Compile Include="Business\LayerTransparent.cs" />
+    <Compile Include="BitmapManager.cs" />
+    <Compile Include="Template\TemplateCarto.cs" />
+    <Compile Include="Element\DevGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\BusinessType.cs" />
+    <Compile Include="Element\DevNorthArrowSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\CloneService.cs" />
+    <Compile Include="Template\frmLoadTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\Direction.cs" />
+    <Compile Include="Element\Coordinate.cs" />
+    <Compile Include="Base\TableInfo.cs" />
+    <Reference Include="TDORM4DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TDUtility">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperateLog\OperateLog.csproj">
+      <Project>{f1653fe5-dfe3-4a01-9e81-06f9dbb675b6}</Project>
+      <Name>OperateLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,20 @@
+Grid	用户定义的格网
+Datum	用户定义的地图基准
+
+Header	Name	Description	Type	Position	Altitude	Depth	Proximity	Temperature	Display Mode	Color	Symbol	Facility	City	State	Country	Date Modified	Link	Categories
+
+Waypoint	001	2010-05-09 12:49:13PM	User Waypoint	466433 2453583	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	002	2010-05-09 12:49:25PM	User Waypoint	466450 2453703	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	003	2010-05-09 12:49:28PM	User Waypoint	466555 2453806	1892 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	004	2010-05-09 12:49:41PM	User Waypoint	466661 2453822	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	005	2010-05-09 12:49:59PM	User Waypoint	466718 2453766	1892 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	006	2010-05-09 12:49:13PM	User Waypoint	466809 2453674	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	007	2010-05-09 12:49:25PM	User Waypoint	466944 2453591	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	008	2010-05-09 12:49:28PM	User Waypoint	467007 2453457	1892 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	009	2010-05-09 12:49:41PM	User Waypoint	466959 2453309	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	010	2010-05-09 12:49:59PM	User Waypoint	466861 2453220	1892 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	011	2010-05-09 12:49:13PM	User Waypoint	466718 2453220	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	012	2010-05-09 12:49:25PM	User Waypoint	466574 2453292	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	013	2010-05-09 12:49:28PM	User Waypoint	466468 2453345	1892 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	014	2010-05-09 12:49:41PM	User Waypoint	466468 2453462	1893 m				Symbol & Name	Black	Flag, Blue			  	  			
+Waypoint	015	2010-05-09 12:49:59PM	User Waypoint	466430 2453531	1892 m				Symbol & Name	Black	Flag, Blue			  	  			

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{632D74FE-BE23-4F2B-8877-C58EB3568ABC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>GeoDataIE</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GeoDataIE</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="UserControlExportHarvest.resx">
+      <DependentUpon>UserControlExportHarvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlImportHarvest.resx">
+      <DependentUpon>UserControlImportHarvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlImportLC.resx">
+      <DependentUpon>UserControlImportLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.Display.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.SystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="log4net">
+      <HintPath>..\GXFormMainFrame\bin\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger">
+      <HintPath>..\GXFormMainFrame\bin\dlls\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject1\test\ForestManager\bin\MS\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="System.Data.SQLite, Version=1.0.89.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="System.Data" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TDORM4DB">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TDUtility">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="System.Core" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessor" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessing" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\GXFormMainFrame\bin\dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="UserControlExportHarvest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlImportLC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CmdImportZT.cs" />
+    <Compile Include="ExportZYBHTable.cs" />
+    <Compile Include="PrintZYDCTJBClass.cs" />
+    <Compile Include="UserControlImportHarvest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlExportZT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormZZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlImportZT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LDStatis.cs" />
+    <Compile Include="FormHarvest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileZip.cs" />
+    <Compile Include="FormExportZT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="CmdExportZT.cs" />
+    <Compile Include="ConvertData.cs" />
+    <Compile Include="ComItem.cs" />
+    <Compile Include="CmdExportSub.cs" />
+    <Compile Include="FormExportSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportZT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttributesEdit\AttributesEdit.csproj">
+      <Project>{0e4d2cb2-b00a-4ae5-b6cb-7bb57ca46adb}</Project>
+      <Name>AttributesEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConSQLServerInfo\ConSQLServerInfo.csproj">
+      <Project>{2644c41b-eb7d-4859-bcfa-734c85614ee7}</Project>
+      <Name>ConSQLServerInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEdit\DataEdit.csproj">
+      <Project>{9e6a9a4c-80d1-4a84-8a15-53743f9d8fa6}</Project>
+      <Name>DataEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBMid\ForestManagerDBMid.csproj">
+      <Project>{6eebcd8b-f540-4302-99a4-f65d83576b70}</Project>
+      <Name>ForestManagerDBMid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBService\ForestManagerDBService.csproj">
+      <Project>{ddabcc30-8753-4e0c-8027-f570e8ca439f}</Project>
+      <Name>ForestManagerDBService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerLogic\ForestManagerLogic.csproj">
+      <Project>{8ec05a55-5936-430f-b856-3f5379157d68}</Project>
+      <Name>ForestManagerLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeEdit\ShapeEdit.csproj">
+      <Project>{9a841dae-8960-405c-a8c2-bce30c40616a}</Project>
+      <Name>ShapeEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJ_DLL\TJ_DLL.csproj">
+      <Project>{c723dba7-625b-4646-935b-7a6814c65b30}</Project>
+      <Name>TJ_DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopologyCheck\TopologyCheck.csproj">
+      <Project>{bb9e7027-c84c-4ebc-895f-43aa40ca0d69}</Project>
+      <Name>TopologyCheck</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,11 @@
+E:\for\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.csprojResolveAssemblyReference.cache
+E:\for\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.UserControlUpdateAS2.resources
+E:\for\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.Properties.Resources.resources
+E:\for\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.csproj.GenerateResource.Cache
+E:\for\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.dll.licenses
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.csprojResolveAssemblyReference.cache
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.UserControlUpdateAS2.resources
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.Properties.Resources.resources
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.csproj.GenerateResource.Cache
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.dll.licenses
+H:\for2017\GX_DB_INFO\obj\x86\Release\GX_DB_INFO.csproj.CoreCompileInputs.cache

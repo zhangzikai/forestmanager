@@ -1,0 +1,9 @@
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.csprojResolveAssemblyReference.cache
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.Checker.AngleInput.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.Checker.AreaInput.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.UI.FormXCPolygonCheck.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.UI.MultiLayerCheck.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.UI.RulerSet.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.UI.SingleLayerCheck.resources
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.csproj.GenerateResource.Cache
+E:\for\TopologyCheck\obj\x86\Release\TopologyCheck.dll.licenses

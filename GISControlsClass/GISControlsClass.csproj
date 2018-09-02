@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B290827-B7D0-4F5E-ACAA-11804A0B2536}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>GISControlsClass</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GISControlsClass</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="UserControlLayerControl.resx">
+      <DependentUpon>UserControlLayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLegendList.resx">
+      <DependentUpon>UserControlLegendList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlOverView.resx">
+      <DependentUpon>UserControlOverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSelectByAttributes.resx">
+      <DependentUpon>UserControlSelectByAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSelectFeatureReport.resx">
+      <DependentUpon>UserControlSelectFeatureReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSelectFeatureResport2.resx">
+      <DependentUpon>UserControlSelectFeatureResport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSelectLayerSet.resx">
+      <DependentUpon>UserControlSelectLayerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.ADF.Local.dll</HintPath>
+    </Reference>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>D:\TDProject1\test\ForestManager\bin\MS\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="ESRI.ArcGIS.AxControls" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="System.Data" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="UserControlLayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLegendList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlOverView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSelectByAttributes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSelectFeatureReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSelectFeatureResport2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSelectLayerSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlsSynchronizer.cs" />
+    <Compile Include="Maps.cs" />
+    <Compile Include="Cont\Carto\UI\AttributeQueryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConSQLServerInfo\ConSQLServerInfo.csproj">
+      <Project>{2644c41b-eb7d-4859-bcfa-734c85614ee7}</Project>
+      <Name>ConSQLServerInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxyButton.MapBaseTools\ProxyButton.MapBaseTools.csproj">
+      <Project>{c1ace5b6-f337-424d-acbc-bea7abf7b75a}</Project>
+      <Name>ProxyButton.MapBaseTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxyButton.PageBaseTools\ProxyButton.PageBaseTools.csproj">
+      <Project>{2fce2f2a-9ed0-4fc8-8d9d-bd496dd0de8d}</Project>
+      <Name>ProxyButton.PageBaseTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EEBCD8B-F540-4302-99A4-F65D83576B70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>td.db.mid</RootNamespace>
+    <AssemblyName>ForestManagerDBMid</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TDORM4DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forest\BASE_D_RESIDENT_10K_Mid.cs" />
+    <Compile Include="forest\BASE_L_CUN_10K_Mid.cs" />
+    <Compile Include="forest\BASE_L_LINBAN_10K_Mid.cs" />
+    <Compile Include="forest\BASE_L_ROAD_10K_Mid.cs" />
+    <Compile Include="forest\BASE_L_XIANG_10K_Mid.cs" />
+    <Compile Include="forest\BASE_L_XIAN_10K_Mid.cs" />
+    <Compile Include="forest\BASE_P_CUN_10K_Mid.cs" />
+    <Compile Include="forest\BASE_P_LINBAN_10K_Mid.cs" />
+    <Compile Include="forest\BASE_P_WATER_10K_Mid.cs" />
+    <Compile Include="forest\BASE_P_XIANG_10K_Mid.cs" />
+    <Compile Include="forest\BASE_P_XIAN_10K_Mid.cs" />
+    <Compile Include="forest\FOR_XBBH_2016_Mid.cs" />
+    <Compile Include="forest\FOR_XIAOBAN_2015_Mid.cs" />
+    <Compile Include="forest\FOR_XIAOBAN_2016_Mid.cs" />
+    <Compile Include="forest\INDEX_A_10K_Mid.cs" />
+    <Compile Include="forest\T_ZT_CF_CCLB_Mid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forest\T_ZT_CF_MMJC_Mid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forest\T_ZT_CF_SZ_JC_TO_CC_Mid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forest\T_ZT_CF_SZ_JC_TO_CZ_Mid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forest\T_ZT_HZ_INFO_Mid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forest\ZT_CF_Mid.cs" />
+    <Compile Include="forest\ZT_D_LDZZ_2016_Mid.cs" />
+    <Compile Include="forest\ZT_HZ_2016_Mid.cs" />
+    <Compile Include="forest\ZT_LDZZ_2016_Mid.cs" />
+    <Compile Include="forest\ZT_LYAJ_Mid.cs" />
+    <Compile Include="forest\ZT_L_LDZZ_2016_Mid.cs" />
+    <Compile Include="forest\ZT_YGJC_2016_Mid.cs" />
+    <Compile Include="forest\ZT_ZH_Mid.cs" />
+    <Compile Include="forest\ZT_ZL_2016_Mid.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sys\SYS_MAX_ID_Mid.cs" />
+    <Compile Include="sys\T_DESIGNKIND_Mid.cs" />
+    <Compile Include="sys\T_EDITTASK_Mid.cs" />
+    <Compile Include="sys\T_EDITTASK_ZT_Mid.cs" />
+    <Compile Include="sys\T_LOG_Mid.cs" />
+    <Compile Include="sys\T_MapLayer_Mid.cs" />
+    <Compile Include="sys\T_Path_Mid.cs" />
+    <Compile Include="sys\T_STAT_REPORT_Mid.cs" />
+    <Compile Include="sys\T_SYS_DB_INFO_Mid.cs" />
+    <Compile Include="sys\T_SYS_FLOW_AUTHOR_Mid.cs" />
+    <Compile Include="sys\T_SYS_FLOW_DEPT_Mid.cs" />
+    <Compile Include="sys\T_SYS_FLOW_USER_Mid.cs" />
+    <Compile Include="sys\T_SYS_LD_ADMIN_CODES_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_CODEINDEX_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_CODE_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_FIELDS_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_GMLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_GROWTHMODEL_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_GYLQW_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_HSLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_JJLCQ_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_JJLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_LDZZBCBZB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_LJLZ_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_QMLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_SLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_TABLE_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_XJLJSSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_META_YCLSZHB_Mid.cs" />
+    <Compile Include="sys\T_SYS_USER_AUTHOR_Mid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sde\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

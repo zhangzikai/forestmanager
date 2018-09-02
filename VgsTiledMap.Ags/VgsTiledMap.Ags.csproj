@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12E17782-81C4-4ADE-96FB-A7DC4CC772A7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>VgsTiledMap.Ags</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>VgsTiledMap.Ags</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="VgsTiledMap\Ags\AddProviderForm.resx">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\FormPreCache.resx">
+      <DependentUpon>FormPreCache.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\forms\FormCacheSetting.resx">
+      <DependentUpon>FormCacheSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\forms\FormGeoCoding.resx">
+      <DependentUpon>FormGeoCoding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\VgsTiledMapAboutBox.resx">
+      <DependentUpon>VgsTiledMapAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\VgsTile\Forms\AddLindiServiceForm.resx">
+      <DependentUpon>AddLindiServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\VgsTile\Forms\VgsFormTileCacheSetting.resx">
+      <DependentUpon>VgsFormTileCacheSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\VgsTile\Forms\VgsPreCacheStatusForm.resx">
+      <DependentUpon>VgsPreCacheStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VgsTiledMap\Ags\VgsTile\Forms\VgsTileDownloadForm.resx">
+      <DependentUpon>VgsTileDownloadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="VgsTiledMap">
+      <HintPath>..\GXFormMainFrame\bin\dlls\VgsTiledMap.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.Framework" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="ESRI.ArcGIS.ArcMapUI" />
+    <Reference Include="stdole" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="VgsTiledMap\Ags\forms\FormCacheSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\ExportCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTiledMapToolbar.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Forms\VgsPreCacheStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\FormPreCache.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\AddSOSOSatelliteCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\IConfig.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Configs\ConfigLindi.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddOsmCycleLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGoogleTerrainCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGeoserverLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\OsmMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsArcTileMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\Vgs\AddVgsSatelliteCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddBingHybridLayerCommand.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\ImageTileInfo.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\VgsTiledCustomLayerBase.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\IVgsTiledMapServiceLayer.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\VgsTiledMapServiceLayer.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\VgsGoogleTiledLayer.cs" />
+    <Compile Include="VgsTiledMap\Ags\TileMapService.cs" />
+    <Compile Include="VgsTiledMap\Ags\TileMap.cs" />
+    <Compile Include="VgsTiledMap\Ags\DownloadCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigTms.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigOsm.cs" />
+    <Compile Include="VgsTiledMap\Ags\BingMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\Projector.cs" />
+    <Compile Include="VgsTiledMap\Ags\MenuDef\VgsTileServiceMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGoogleMapCommand.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\ZoomLevelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\PreCacheVgsTiledMapCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\OsmCycleTileSource.cs" />
+    <Compile Include="VgsTiledMap\Ags\MapDownload.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigGeoserver.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigBing.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Vgs\VgsLindiTileSchema.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddSpatialCloudLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddSOSOMapCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddServicesCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\TiandiTu\AddTiandTuEMapAnnoCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddOsmLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\Transform.cs" />
+    <Compile Include="VgsTiledMap\Ags\GeoCoding.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsArcTileLayer.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\VgsKiberTileCache.cs" />
+    <Compile Include="VgsTiledMap\Ags\TileLoader.cs" />
+    <Compile Include="VgsTiledMap\Ags\TiledMap.cs" />
+    <Compile Include="VgsTiledMap\Ags\SpatialCloudTileSource.cs" />
+    <Compile Include="VgsTiledMap\Ags\Resource.cs" />
+    <Compile Include="VgsTiledMap\Ags\OsmMapnikTileSource.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigWmsC.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigSpatialCloud.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigGoogle.cs" />
+    <Compile Include="VgsTiledMap\Ags\ArcTilerPropertyPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\VgsMapTilerInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\VgsTilerHelper.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Forms\VgsTileDownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\ArcMapWindow.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\Properties\Resources.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigSOSO.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTiledMapAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\AddProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\CacheSetting.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Vgs\VgsLindiTileSource.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\MenuDef\TiandiTuMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddWmsCLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\TiandiTu\AddTiandTuImgCommand.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\Lod.cs" />
+    <Compile Include="VgsTiledMap\Ags\SpatialCloudSchema.cs" />
+    <Compile Include="VgsTiledMap\Ags\Properties\Settings.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsCustomLayerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\CheckUpdateCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandiTuImgAnnoRequest.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandiTuAnnoRequest.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandituImgRequest.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandiTuRequest.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Forms\AddLindiServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\AddGoogleChinaSatelliteCommand.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\TileInfo.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\Extent.cs" />
+    <Compile Include="VgsTiledMap\Ags\ToolMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\TmsTileMapServiceParser.cs" />
+    <Compile Include="VgsTiledMap\Ags\SpatialReferences.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigGeodanGeoserver.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Vgs\VgsLindTileRequest.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandiTuSchema.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddSOSOLabelsCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\AddVgsTileServiceCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\TiandiTu\AddTiandTuImgAnnoCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddOsmTilesAtHomeLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGoogleSatelliteCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGoogleChinaHybridCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\OsmMapType.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\AgsCommands\TiandiTu\AddTiandTuEMapCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddGoogleLabelsCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AboutVgsTiledMapCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\SpatialCloudAuthSign.cs" />
+    <Compile Include="VgsTiledMap\Ags\SOSOMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigHelper.cs" />
+    <Compile Include="VgsTiledMap\Ags\Precache.cs" />
+    <Compile Include="VgsTiledMap\Ags\MultipleThreadResetEvent.cs" />
+    <Compile Include="VgsTiledMap\Ags\forms\FormGeoCoding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\ConfigurationHelper.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigBingHybrid.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Configs\ConfigTiandiTu.cs" />
+    <Compile Include="VgsTiledMap\Ags\Transporter.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigInvertedTMS.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\Forms\VgsFormTileCacheSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\AddWmsCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VgsTiledMap\Ags\AddBingRoadLayerCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\LogoToolControl.cs" />
+    <Compile Include="VgsTiledMap\Ags\KMLWebRequestStateObject.cs" />
+    <Compile Include="VgsTiledMap\Ags\EnumArcVgsTileLayer.cs" />
+    <Compile Include="VgsTiledMap\Ags\ConfigEsri.cs" />
+    <Compile Include="VgsTiledMap\Ags\CheckVersion.cs" />
+    <Compile Include="VgsTiledMap\Ags\CacheSettings.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddSOSOHybridCommand.cs" />
+    <Compile Include="VgsTiledMap\Ags\AddBingAerialLayerCommand.cs" />
+    <Compile Include="ESRI\ArcGIS\Solutions\TileService\RawTile.cs" />
+    <Compile Include="VgsTiledMap\Ags\Util.cs" />
+    <Compile Include="VgsTiledMap\Ags\GoogleMenuDef.cs" />
+    <Compile Include="VgsTiledMap\Ags\VgsTile\TileSources\TiandiTu\VgsTiandiTuTileSource.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

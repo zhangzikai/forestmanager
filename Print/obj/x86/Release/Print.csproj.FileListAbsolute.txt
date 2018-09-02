@@ -1,0 +1,4 @@
+E:\for\Print\obj\x86\Release\Print.csprojResolveAssemblyReference.cache
+E:\for\Print\obj\x86\Release\Print.Properties.Resources.resources
+E:\for\Print\obj\x86\Release\Print.csproj.GenerateResource.Cache
+E:\for\Print\obj\x86\Release\Print.dll.licenses

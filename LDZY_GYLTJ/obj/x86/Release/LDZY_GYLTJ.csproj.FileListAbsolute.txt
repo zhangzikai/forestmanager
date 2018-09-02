@@ -1,0 +1,13 @@
+E:\for\LDZY_GYLTJ\bin\Release\LDZY_GYLTJ.dll
+E:\for\LDZY_GYLTJ\bin\Release\LDZY_GYLTJ.pdb
+E:\for\LDZY_GYLTJ\bin\Release\System.Data.SQLite.dll
+E:\for\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.csprojResolveAssemblyReference.cache
+E:\for\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.dll
+E:\for\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.pdb
+H:\for2017\LDZY_GYLTJ\bin\Release\LDZY_GYLTJ.dll
+H:\for2017\LDZY_GYLTJ\bin\Release\LDZY_GYLTJ.pdb
+H:\for2017\LDZY_GYLTJ\bin\Release\System.Data.SQLite.dll
+H:\for2017\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.csprojResolveAssemblyReference.cache
+H:\for2017\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.csproj.CoreCompileInputs.cache
+H:\for2017\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.dll
+H:\for2017\LDZY_GYLTJ\obj\x86\Release\LDZY_GYLTJ.pdb

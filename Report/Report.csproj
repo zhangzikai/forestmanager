@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E3EB8FF-3263-43A5-8305-8C9CC8A11934}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Report</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Report</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitFormx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitFormx.Designer.cs">
+      <DependentUpon>WaitFormx.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetail.resx">
+      <DependentUpon>FrmDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectTable.resx">
+      <DependentUpon>frmSelectTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="AJZHReportStatic.resx">
+      <DependentUpon>AJZHReportStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQDJReportStatic.resx">
+      <DependentUpon>FQDJReportStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQReportStatic.resx">
+      <DependentUpon>FQReportStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCustom.resx">
+      <DependentUpon>ReportCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDesigner.resx">
+      <DependentUpon>ReportDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportExporter.resx">
+      <DependentUpon>ReportExporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportList.resx">
+      <DependentUpon>ReportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStatic.resx">
+      <DependentUpon>ReportStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SfReportStatic.resx">
+      <DependentUpon>SfReportStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitDialog.resx">
+      <DependentUpon>WaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitFormx.resx">
+      <DependentUpon>WaitFormx.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.CartographyTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Catalog, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CatalogUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.System, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="GDB.SQLServerExpress">
+      <HintPath>..\GDB.SQLServerExpress\bin\Debug\GDB.SQLServerExpress.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger, Version=1.0.5408.24955, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject1\test\ForestManager\bin\MS\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Data" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="DevExpress.Printing.v14.1.Core" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Compile Include="CVRecord.cs" />
+    <Compile Include="FrmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetail.Designer.cs">
+      <DependentUpon>FrmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FQReportStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCustom.Designer.cs">
+      <DependentUpon>ReportCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner.Designer.cs">
+      <DependentUpon>ReportDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportExporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportExporter.Designer.cs">
+      <DependentUpon>ReportExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFactory.cs" />
+    <Compile Include="ProcessInfo.cs" />
+    <Compile Include="report\cf\CF_Report_Base.cs" />
+    <Compile Include="report\sf\SF_Report_Base.cs" />
+    <Compile Include="report\xb\XB_Report_10.cs" />
+    <Compile Include="report\xb\XB_Report_11.cs" />
+    <Compile Include="report\xb\XB_Report_12.cs" />
+    <Compile Include="report\xb\XB_Report_13.cs" />
+    <Compile Include="report\xb\XB_Report_14.cs" />
+    <Compile Include="report\xb\XB_Report_15.cs" />
+    <Compile Include="report\xb\XB_Report_16.cs" />
+    <Compile Include="report\xb\XB_Report_17.cs" />
+    <Compile Include="report\xb\XB_Report_18.cs" />
+    <Compile Include="report\xb\XB_Report_19.cs" />
+    <Compile Include="report\xb\XB_Report_1_1.cs" />
+    <Compile Include="report\xb\XB_Report_1_3.cs" />
+    <Compile Include="report\xb\XB_Report_2.cs" />
+    <Compile Include="report\xb\XB_Report_20.cs" />
+    <Compile Include="report\xb\XB_Report_21.cs" />
+    <Compile Include="report\xb\XB_Report_22.cs" />
+    <Compile Include="report\xb\XB_Report_23.cs" />
+    <Compile Include="report\xb\XB_Report_24.cs" />
+    <Compile Include="report\xb\XB_Report_25.cs" />
+    <Compile Include="report\xb\XB_Report_26.cs" />
+    <Compile Include="report\xb\XB_Report_27.cs" />
+    <Compile Include="report\xb\XB_Report_28.cs" />
+    <Compile Include="report\xb\XB_Report_29.cs" />
+    <Compile Include="report\xb\XB_Report_2_1.cs" />
+    <Compile Include="report\xb\XB_Report_3.cs" />
+    <Compile Include="report\xb\XB_Report_30.cs" />
+    <Compile Include="report\xb\XB_Report_31.cs" />
+    <Compile Include="report\xb\XB_Report_32.cs" />
+    <Compile Include="report\xb\XB_Report_33.cs" />
+    <Compile Include="report\xb\XB_Report_34.cs" />
+    <Compile Include="report\xb\XB_Report_35.cs" />
+    <Compile Include="report\xb\XB_Report_4.cs" />
+    <Compile Include="report\xb\XB_Report_5.cs" />
+    <Compile Include="report\xb\XB_Report_6.cs" />
+    <Compile Include="report\xb\XB_Report_7.cs" />
+    <Compile Include="report\xb\XB_Report_8.cs" />
+    <Compile Include="report\xb\XB_Report_9.cs" />
+    <Compile Include="report\xb\XB_Report_Base.cs" />
+    <Compile Include="report\xb\XB_Report_1.cs" />
+    <Compile Include="report\xb\XB_Report_xbyz.cs" />
+    <Compile Include="report\xb\XB_Report_xbyzpb.cs" />
+    <Compile Include="UserControlDistCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportEntity.cs" />
+    <Compile Include="report\sf\SF_Report_4.cs" />
+    <Compile Include="ReportList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report\sf\SF_Report_3.cs" />
+    <Compile Include="SfReportStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\sf\SF_Report_2.cs" />
+    <Compile Include="report\cf\CF_Report_6.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="report\cf\CF_Report_5.cs" />
+    <Compile Include="StaticMsg.cs" />
+    <Compile Include="report\sf\SF_Report_1.cs" />
+    <Compile Include="report\zh\ZH_Report_0.cs" />
+    <Compile Include="report\sf\SF_Report_0.cs" />
+    <Compile Include="ReportStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\cf\CF_Report_4.cs" />
+    <Compile Include="StatisticsTheme.cs" />
+    <Compile Include="StatisticsInfo.cs" />
+    <Compile Include="ExcelAccess.cs" />
+    <Compile Include="report\cf\CF_Report_3.cs" />
+    <Compile Include="report\cf\CF_Report_2.cs" />
+    <Compile Include="DateEditEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomVistaPopupDateEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomVistaDateEditCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SystemType.cs" />
+    <Compile Include="report\cf\CF_Report_1.cs" />
+    <Compile Include="SLFGL.cs" />
+    <Compile Include="report\cf\CF_Report_0.cs" />
+    <Compile Include="FQDJReportStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.cs" />
+    <Compile Include="ReportParamter.cs" />
+    <Compile Include="AJZHReportStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportInit.cs" />
+    <Compile Include="ReportEntry.cs" />
+    <Compile Include="report\cf\CF_Report_5_1.cs" />
+    <Compile Include="WaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\aj\AJ_Report_0.cs" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="SZMODEL_GXYSSZXJ">
+      <HintPath>..\SZMODEL_GXYSSZXJ\bin\Debug\SZMODEL_GXYSSZXJ.dll</HintPath>
+    </Reference>
+    <Reference Include="TDORM4DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TDUtility">
+      <HintPath>..\GXFormMainFrame\bin\dlls\TDUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttributesEdit\AttributesEdit.csproj">
+      <Project>{0e4d2cb2-b00a-4ae5-b6cb-7bb57ca46adb}</Project>
+      <Name>AttributesEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConSQLServerInfo\ConSQLServerInfo.csproj">
+      <Project>{2644c41b-eb7d-4859-bcfa-734c85614ee7}</Project>
+      <Name>ConSQLServerInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEdit\DataEdit.csproj">
+      <Project>{9E6A9A4C-80D1-4A84-8A15-53743F9D8FA6}</Project>
+      <Name>DataEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBMid\ForestManagerDBMid.csproj">
+      <Project>{6eebcd8b-f540-4302-99a4-f65d83576b70}</Project>
+      <Name>ForestManagerDBMid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBService\ForestManagerDBService.csproj">
+      <Project>{ddabcc30-8753-4e0c-8027-f570e8ca439f}</Project>
+      <Name>ForestManagerDBService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerLogic\ForestManagerLogic.csproj">
+      <Project>{8ec05a55-5936-430f-b856-3f5379157d68}</Project>
+      <Name>ForestManagerLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBase\FormBase.csproj">
+      <Project>{dba8d995-d157-4b48-b874-800318921650}</Project>
+      <Name>FormBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GX_DB_INFO\GX_DB_INFO.csproj">
+      <Project>{bb6119ee-c87c-4a00-bb6e-eed533bade06}</Project>
+      <Name>GX_DB_INFO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperateLog\OperateLog.csproj">
+      <Project>{f1653fe5-dfe3-4a01-9e81-06f9dbb675b6}</Project>
+      <Name>OperateLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryCommon\QueryCommon.csproj">
+      <Project>{2be85c11-3d53-4daa-bef5-e7968c9e47c0}</Project>
+      <Name>QueryCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeEdit\ShapeEdit.csproj">
+      <Project>{9a841dae-8960-405c-a8c2-bce30c40616a}</Project>
+      <Name>ShapeEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

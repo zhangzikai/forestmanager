@@ -1,0 +1,14 @@
+1|杉木类|(YOU_SHI_SZ like '12%')
+2|马尾松|(YOU_SHI_SZ like '11%' or YOU_SHI_SZ like '13%' or YOU_SHI_SZ like '14%' or YOU_SHI_SZ like '16%')
+3|国外松|(YOU_SHI_SZ like '15%')
+4|速生桉|(convert(int,YOU_SHI_SZ ) >= 290 and convert(int,YOU_SHI_SZ ) <= 307)
+5|一般桉|(convert(int,YOU_SHI_SZ ) >= 280 and convert(int,YOU_SHI_SZ ) <= 285)
+6|速生相|(convert(int,YOU_SHI_SZ ) >= 310 and convert(int,YOU_SHI_SZ ) <= 320)
+7|栎栲类|(YOU_SHI_SZ like '22%' or YOU_SHI_SZ = '230')
+8|其它阔|(YOU_SHI_SZ like '21%' or (convert(int,YOU_SHI_SZ ) >= 240 and convert(int,YOU_SHI_SZ ) < 280) or (convert(int,YOU_SHI_SZ ) >= 330 and convert(int,YOU_SHI_SZ ) <= 351))
+9|其它果|(convert(int,YOU_SHI_SZ ) >= 600 and convert(int,YOU_SHI_SZ ) <= 646)
+10|八角|YOU_SHI_SZ = '663'
+11|其它食|(convert(int,YOU_SHI_SZ ) >=660 and convert(int,YOU_SHI_SZ ) <= 674   and YOU_SHI_SZ <> '663' )
+12|药用林|(convert(int,YOU_SHI_SZ ) >=690 and convert(int,YOU_SHI_SZ ) <= 699 )
+13|化工林|(convert(int,YOU_SHI_SZ ) >=680 and convert(int,YOU_SHI_SZ ) <= 689 )
+14|其它经|YOU_SHI_SZ like '7%'

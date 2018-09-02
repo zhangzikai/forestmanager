@@ -1,0 +1,67 @@
+﻿IF OBJECT_ID('T_STAT_06_HB')IS NOT NULL DROP VIEW T_STAT_06_HB
+GO
+CREATE VIEW T_STAT_06_HB AS 
+	SELECT *
+	FROM (SELECT SHENG, SHI, XIAN, (XIAN + XIANG) AS XIANG, CUN, LIN_YE_JU ,(LIN_YE_JU + LIN_CHANG ) AS LIN_CHANG, LIN_BAN, MIAN_JI,
+		(CASE
+			WHEN BH_DJ='1' THEN '1'
+			WHEN BH_DJ='2' THEN '2'
+			WHEN BH_DJ='3' THEN '3'
+			WHEN BH_DJ='4' THEN '4'	
+			WHEN DL='0200' THEN '5' END) AS BH_DJ,
+		(CASE
+			WHEN Q_BH_DJ='1' THEN '1'
+			WHEN Q_BH_DJ='2' THEN '2'
+			WHEN Q_BH_DJ='3' THEN '3'
+			WHEN Q_BH_DJ='4' THEN '4'			
+			WHEN Q_DL='0200' THEN '5' END) AS Q_BH_DJ,
+		(CASE
+			WHEN BHYY IN('10','11','12','13') THEN '10'
+			WHEN BHYY IN('20','21','22','23','24') THEN '20'
+			WHEN BHYY IN('30','31','32','33') THEN '30'
+			WHEN BHYY IN('40','41','42') THEN '40'
+			WHEN BHYY IN('70','71','72','73') THEN '70'
+			WHEN BHYY IN('80','81','82') THEN '80'
+			WHEN BHYY IN('90','91','92','93','96') THEN '90'
+			WHEN BHYY='99' THEN '99'
+			WHEN BHYY='50' THEN '50'
+		END) AS BHYY
+		FROM T_STAT_BH) AS FF
+	WHERE BH_DJ <> Q_BH_DJ
+GO
+IF OBJECT_ID('T_STAT_06_TMP')IS NOT NULL DROP VIEW T_STAT_06_TMP
+GO
+CREATE VIEW T_STAT_06_TMP AS 
+	SELECT
+		CASE GROUPING(XIAN) WHEN 1 THEN '00' ELSE XIAN END AS XIAN,
+		CASE GROUPING(XIANG) WHEN 1 THEN '00' ELSE XIANG END AS XIANG,
+		CASE GROUPING(Q_BH_DJ) WHEN 1 THEN '00' ELSE Q_BH_DJ END AS Q_BH_DJ,
+		CASE GROUPING(BH_DJ) WHEN 1 THEN '00' ELSE BH_DJ END AS BH_DJ,
+		CASE GROUPING(BHYY) WHEN 1 THEN '00' ELSE BHYY END AS BHYY,	
+		SUM(MIAN_JI) AS MIAN_JI
+	  FROM T_STAT_06_HB 
+	  GROUP BY XIAN,XIANG,Q_BH_DJ,BH_DJ,BHYY WITH  CUBE 
+GO
+IF OBJECT_ID('T_STAT_06_DT')IS NOT NULL DROP VIEW T_STAT_06_DT
+GO
+CREATE VIEW T_STAT_06_DT AS  SELECT * FROM T_STAT_06_TMP WHERE XIAN<>'00'
+GO
+IF OBJECT_ID('T_STAT_06')IS NOT NULL DROP VIEW T_STAT_06
+GO
+create view T_STAT_06 as
+  select 
+	case XIANG when '00' then XIAN  ELSE XIANG end  AS FLD1,
+	Q_BH_DJ as FLD2,
+	BH_DJ as FLD3,
+	max(case BHYY when '00' then mian_ji  end )as FLD4,
+	max(case BHYY when '10' then mian_ji  end )as FLD5,
+	max(case BHYY when '20' then mian_ji  end )as FLD6,
+	max(case BHYY when '30' then mian_ji  end )as FLD7,
+	max(case BHYY when '40' then mian_ji  end )as FLD8,
+	max(case BHYY when '50' then mian_ji  end )as FLD9,
+	max(case BHYY when '70' then mian_ji  end )as FLD10,
+	max(case BHYY when '80' then mian_ji  end )as FLD11,
+	max(case BHYY when '90' then mian_ji  end )as FLD12,
+	max(case BHYY when '99' then mian_ji  end )as FLD13 
+  from T_STAT_06_DT
+  group by XIAN,XIANG,Q_BH_DJ,BH_DJ

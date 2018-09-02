@@ -1,0 +1,13 @@
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.csprojResolveAssemblyReference.cache
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.FormTest.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.Properties.Resources.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlDistCode.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlInfo.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlLocation.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlLocation2.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlMapFind.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlPlace.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.UserControlQueryResult.resources
+E:\for\QueryCommon\obj\x86\Release\LCTest.IdentifyFrom.resources
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.csproj.GenerateResource.Cache
+E:\for\QueryCommon\obj\x86\Release\QueryCommon.dll.licenses

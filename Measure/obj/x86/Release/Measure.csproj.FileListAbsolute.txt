@@ -1,0 +1,5 @@
+E:\for\Measure\obj\x86\Release\Measure.csprojResolveAssemblyReference.cache
+E:\for\Measure\obj\x86\Release\Measure.FormMeasure.resources
+E:\for\Measure\obj\x86\Release\Measure.Measure.resources
+E:\for\Measure\obj\x86\Release\Measure.csproj.GenerateResource.Cache
+E:\for\Measure\obj\x86\Release\Measure.dll.licenses

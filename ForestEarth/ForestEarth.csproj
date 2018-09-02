@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBCDA8EF-967A-4078-A959-B3DF5A8B476E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ForestEarth</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ForestEarth</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="FrmEarth.resx">
+      <DependentUpon>FrmEarth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EvEarthDriverLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.EvEarthDriverLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EviaEarthCommonLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.EviaEarthCommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EviaEarthLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.EviaEarthLib.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=1.0.4930.25493, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GXFormMainFrame\bin\dlls\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\GXFormMainFrame\bin\dlls\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="EarthBusiness">
+      <HintPath>..\EarthBusiness\bin\Debug\EarthBusiness.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v14.1" />
+    <Reference Include="AxInterop.EviaEarthLib">
+      <HintPath>..\GXFormMainFrame\bin\dlls\AxInterop.EviaEarthLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EviaEarthVectorLib">
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.EviaEarthVectorLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ogr_csharp">
+      <HintPath>..\GXFormMainFrame\bin\dlls\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EviaEarthObjectLib">
+      <HintPath>..\GXFormMainFrame\bin\dlls\Interop.EviaEarthObjectLib.dll</HintPath>
+    </Reference>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EarthHelp\FrmFly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmIdentifyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmXbLocate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmServiceConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\FrmFlySet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEarth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClsConfigManage.cs" />
+    <Compile Include="CameraInfo.cs" />
+    <Compile Include="PathClass.cs" />
+    <Compile Include="PTImage.cs" />
+    <Compile Include="EarthHelp\FrmHotPot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthHelp\UCThematicControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="ForestEarth.Properties.Resources.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmFlySet.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmXbLocate.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmLegend.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmInformation.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmFly.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmName.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmIdentifyInfo.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmHotPot.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.UCThematicControl.resources" />
+    <EmbeddedResource Include="ForestEarth.EarthHelp.FrmServiceConfig.resources" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

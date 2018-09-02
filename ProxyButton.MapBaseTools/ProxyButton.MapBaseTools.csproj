@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1ACE5B6-F337-424D-ACBC-BEA7ABF7B75A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ProxyButton.MapBaseTools</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ProxyButton</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.Display.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ProxyButton\My\MyApplication.cs" />
+    <Compile Include="ProxyButton\My\MyComputer.cs" />
+    <Compile Include="ProxyButton\My\MyProject.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionSelectFeaturesTool.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionSelectByGraphicsCommand.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionSelectScreenCommand.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionSelectAllCommand.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionSwitchSelectionCommand.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionClearSelectionCommand.cs" />
+    <Compile Include="ProxyButton\FeatureSelectionZoomToSelectedCommand.cs" />
+    <Compile Include="ProxyButton\MapZoomInTool.cs" />
+    <Compile Include="ProxyButton\MapZoomOutTool.cs" />
+    <Compile Include="ProxyButton\MapZoomPanTool.cs" />
+    <Compile Include="ProxyButton\MapZoomInFixedCommand.cs" />
+    <Compile Include="ProxyButton\MapZoomOutFixedCommand.cs" />
+    <Compile Include="ProxyButton\MapFullExtentCommand.cs" />
+    <Compile Include="ProxyButton\MapPanTool.cs" />
+    <Compile Include="ProxyButton\MapRefreshCommand.cs" />
+    <Compile Include="ProxyButton\MapZoomToLastExtentForwardCommand.cs" />
+    <Compile Include="ProxyButton\MapZoomToLastExtentBackCommand.cs" />
+    <Compile Include="ProxyButton\MapPageLeftCommand.cs" />
+    <Compile Include="ProxyButton\MapPageRightCommand.cs" />
+    <Compile Include="ProxyButton\MapPageUpCommand.cs" />
+    <Compile Include="ProxyButton\MapPageDownCommand.cs" />
+    <Compile Include="ProxyButton\MapRotateTool.cs" />
+    <Compile Include="ProxyButton\MapClearRotateCommand.cs" />
+    <Compile Include="ProxyButton\MapLeftCommand.cs" />
+    <Compile Include="ProxyButton\MapRightCommand.cs" />
+    <Compile Include="ProxyButton\MapUpCommand.cs" />
+    <Compile Include="ProxyButton\MapDownCommand.cs" />
+    <Compile Include="ProxyButton\MapSelectTool.cs" />
+    <Compile Include="ProxyButton\MapIdentifyTool.cs" />
+    <Compile Include="ProxyButton\MapMeasureTool.cs" />
+    <Compile Include="ProxyButton\MapFindCommand.cs" />
+    <Compile Include="ProxyButton\EditingSketchTool.cs" />
+    <EmbeddedResource Include="ProxyButton.PanMove.cur" />
+    <EmbeddedResource Include="ProxyButton.ZOOMINOUTMOVE.CUR" />
+    <EmbeddedResource Include="ProxyButton.Pan.cur" />
+    <EmbeddedResource Include="ProxyButton.Default.cur" />
+    <EmbeddedResource Include="ProxyButton.ZoomIn.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectByLocation.bmp" />
+    <EmbeddedResource Include="ProxyButton.arrow_state_blue_left.png" />
+    <EmbeddedResource Include="ProxyButton.IdentifyMDown.cur" />
+    <EmbeddedResource Include="ProxyButton.SelectFeatures.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectByAttributes.bmp" />
+    <EmbeddedResource Include="ProxyButton.AddData.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectTool.cur" />
+    <EmbeddedResource Include="ProxyButton.Tool1.cur" />
+    <EmbeddedResource Include="ProxyButton.SelectFeaturesClear.bmp" />
+    <EmbeddedResource Include="ProxyButton.IdentifyTool.bmp" />
+    <EmbeddedResource Include="ProxyButton.Identify.bmp" />
+    <EmbeddedResource Include="ProxyButton.arrow_state_blue_collapsed.png" />
+    <EmbeddedResource Include="ProxyButton.SelectLayerSet.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectByBuffer2.bmp" />
+    <EmbeddedResource Include="ProxyButton.PanLeft.bmp" />
+    <EmbeddedResource Include="ProxyButton.Pan.bmp" />
+    <EmbeddedResource Include="ProxyButton.PanUp.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectedFeaturesReport.bmp" />
+    <EmbeddedResource Include="ProxyButton.FeatureSelectionSelectFeaturesTool.resources" />
+    <EmbeddedResource Include="ProxyButton.arrow_state_blue_expanded.png" />
+    <EmbeddedResource Include="ProxyButton.SelectToolMove.cur" />
+    <EmbeddedResource Include="ProxyButton.Identify_md.cur" />
+    <EmbeddedResource Include="ProxyButton.SelectTool.bmp" />
+    <EmbeddedResource Include="ProxyButton.PanDown.bmp" />
+    <EmbeddedResource Include="ProxyButton.Tool1.bmp" />
+    <EmbeddedResource Include="ProxyButton.ZoomOut.cur" />
+    <EmbeddedResource Include="ProxyButton.Rotate.cur" />
+    <EmbeddedResource Include="ProxyButton.PanRight.bmp" />
+    <EmbeddedResource Include="ProxyButton.ZoomOutMove.cur" />
+    <EmbeddedResource Include="ProxyButton.arrow_state_blue_right.png" />
+    <EmbeddedResource Include="ProxyButton.ZOOMINOUT.CUR" />
+    <EmbeddedResource Include="ProxyButton.SelectByBuffer.bmp" />
+    <EmbeddedResource Include="ProxyButton.ZoomInMove.cur" />
+    <EmbeddedResource Include="ProxyButton.SelectByGraphics.bmp" />
+    <EmbeddedResource Include="ProxyButton.ZoomIn.cur" />
+    <EmbeddedResource Include="ProxyButton.arrow_circle_double.png" />
+    <EmbeddedResource Include="ProxyButton.search_16.png" />
+    <EmbeddedResource Include="ProxyButton.SelectFeatures.cur" />
+    <EmbeddedResource Include="ProxyButton.ZoomOut.bmp" />
+    <EmbeddedResource Include="ProxyButton.Rotate.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectScreen.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectFeaturesAll.bmp" />
+    <EmbeddedResource Include="ProxyButton.SelectFeaturesMDown.cur" />
+    <EmbeddedResource Include="ProxyButton.Identify.cur" />
+    <EmbeddedResource Include="ProxyButton.SelectSwitch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

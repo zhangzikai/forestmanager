@@ -1,0 +1,7 @@
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.csprojResolveAssemblyReference.cache
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.FormGylStat.resources
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.FormLDZZYMonthReport.resources
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.FormLdzzyStat.resources
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.Properties.Resources.resources
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.csproj.GenerateResource.Cache
+E:\for\gylandzzytj\obj\x86\Release\gylandzzytj.dll.licenses

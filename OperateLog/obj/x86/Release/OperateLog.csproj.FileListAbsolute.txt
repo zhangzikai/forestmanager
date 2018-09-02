@@ -1,0 +1,8 @@
+E:\for\OperateLog\obj\x86\Release\OperateLog.csprojResolveAssemblyReference.cache
+E:\for\OperateLog\obj\x86\Release\OperateLog.FormUpdateGDB.resources
+E:\for\OperateLog\obj\x86\Release\OperateLog.FormUserManage.resources
+E:\for\OperateLog\obj\x86\Release\OperateLog.UserControlDataBaseLogin.resources
+E:\for\OperateLog\obj\x86\Release\OperateLog.UserControlLog.resources
+E:\for\OperateLog\obj\x86\Release\OperateLog.Properties.Resources.resources
+E:\for\OperateLog\obj\x86\Release\OperateLog.csproj.GenerateResource.Cache
+E:\for\OperateLog\obj\x86\Release\OperateLog.dll.licenses

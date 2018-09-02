@@ -1,0 +1,11 @@
+E:\for\Report\obj\x86\Release\td.forest.report.frmSelectTable.resources
+E:\for\Report\obj\x86\Release\Report.AJZHReportStatic.resources
+E:\for\Report\obj\x86\Release\Report.FQDJReportStatic.resources
+E:\for\Report\obj\x86\Release\Report.FQReportStatic.resources
+E:\for\Report\obj\x86\Release\Report.ReportList.resources
+E:\for\Report\obj\x86\Release\Report.ReportStatic.resources
+E:\for\Report\obj\x86\Release\Report.SfReportStatic.resources
+E:\for\Report\obj\x86\Release\Report.WaitDialog.resources
+E:\for\Report\obj\x86\Release\Report.csproj.GenerateResource.Cache
+E:\for\Report\obj\x86\Release\Report.dll.licenses
+E:\for\Report\obj\x86\Release\Report.csprojResolveAssemblyReference.cache

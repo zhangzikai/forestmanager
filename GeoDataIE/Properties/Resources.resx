@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LDGYL" xml:space="preserve">
+    <value>select town as 统计单位,convert(decimal(18,2),mj) as 本年度国家公益林面积,convert(decimal(18,2),mj0) as 上年度国家公益林面积
+,convert(decimal(18,2),mj-mj0) as 增加
+,convert(decimal(18,2),cq) as 长期减少
+,convert(decimal(18,2),fw) as 设施减少
+,convert(decimal(18,2),ls) as 临时减少
+,convert(decimal(18,2),wf) as 违法减少
+,convert(decimal(18,2),hl) as 毁林减少
+,convert(decimal(18,2),dmj) as 本年度地方公益林面积,convert(decimal(18,2),dmj0) as 上年度地方公益林面积
+,convert(decimal(18,2),dmj-dmj0) as 地方增加
+,convert(decimal(18,2),dcq) as 地方长期减少
+,convert(decimal(18,2),dfw) as 地方设施减少
+,convert(decimal(18,2),dls) as 地方临时减少
+,convert(decimal(18,2),dwf) as 地方违法减少
+,convert(decimal(18,2),dhl) as 地方毁林减少
+from (select 
+(case when grouping(code_table.CNAME) = 1  then '全县总计' else ISNULL(code_table.CNAME,'null') end) as town,grouping(code_table.CNAME) as isgroup,
+SUM(case when SHI_QUAN_D='10' then MIAN_JI else 0 end) as mj,
+SUM(case when SHI_QUAN_D like '2%' then MIAN_JI else 0 end) as dmj,
+-- 长期占用
+sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='1' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as cq,
+sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='1' and SHI_QUAN_D like '2%' then [MIAN_JI] else 0 end ) as dcq,
+  -- 直接为林业生产服务 
+  sum(case when (Q_DI_LEI not like '9%' and Q_DI_LEI not like '8%') and DI_LEI like '8%' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as fw,
+  sum(case when (Q_DI_LEI not like '9%' and Q_DI_LEI not like '8%') and DI_LEI like '8%' and SHI_QUAN_D like '2%' then [MIAN_JI] else 0 end ) as dfw,
+  -- 临时占用 
+  sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='2' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as ls,
+  sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='2' and SHI_QUAN_D like '2%' then [MIAN_JI] else 0 end ) as dls,
+  -- 违法使用 
+  sum(case when ( Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='42' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as wf,
+  sum(case when ( Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='42' and SHI_QUAN_D like '2%' then [MIAN_JI] else 0 end ) as dwf,
+  -- 毁林开垦  
+  sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='50' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as hl,
+  sum(case when (Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='50' and SHI_QUAN_D like '2%' then [MIAN_JI] else 0 end ) as dhl
+  -- 
+   from FOR_XIAOBAN_2013 as xb_table inner join T_SYS_META_CODE as code_table on xb_table.XIANG = code_table.CCODE group by rollup(code_table.CNAME)     
+   ) as mergeMJ   
+   left join 
+   (select 
+     (case when grouping(code_table.CNAME) = 1  then '全县总计' else ISNULL(code_table.CNAME,'null') end) as town0,
+     SUM(case when SHI_QUAN_D='10' then MIAN_JI else 0 end) as mj0,SUM(case when SHI_QUAN_D like '2%' then MIAN_JI else 0 end) as dmj0 from FOR_XIAOBAN_2012 as xb inner join T_SYS_META_CODE as code_table on xb.XIANG = code_table.CCODE
+     group by rollup(code_table.CNAME)
+   ) as lastMJ 
+ on mergeMJ.town=lastMJ.town0 order by isgroup desc
+   --group by rollup(town)
+   --inner join T_SYS_META_CODE as code on MergeMJ.XIANG = code.CCODE group by MergeMJ.town order by MIN(code.ccode),MergeMJ.town</value>
+  </data>
+  <data name="LDTZ3" xml:space="preserve">
+    <value>select (select CNAME from T_SYS_META_CODE where CCODE=XIAN and CTYPE='县') as 县,(select CNAME from T_SYS_META_CODE where CCODE=XIANG and CTYPE='乡') as 乡,
+(select CNAME from T_SYS_META_CODE where CCODE=CUN and CTYPE='村') as 村,XIAO_BAN,XI_BAN,
+(case when BHYY='42' then wf else 0 end) as wfhj,(case when BHYY='42' and DI_LEI in ('111','112','120','130') then wf else 0 end) as wfyl,
+(case when BHYY='42' and DI_LEI='301' then wf else 0 end) as wftg,(case when BHYY='42' and (DI_LEI not in('111','112','120','130','301')) then wf else 0 end) as wfqt,
+(case when BHYY='42' then wf1 else 0 end) as wfhj1,(case when BHYY='42' and DI_LEI in ('111','112','120','130') then wf1 else 0 end) as wfyl1,
+(case when BHYY='42' and DI_LEI='301' then wf1 else 0 end) as wftg1,(case when BHYY='42' and (DI_LEI not in('111','112','120','130','301')) then wf1 else 0 end) as wfqt1,
+(case when BHYY='50' then kk else 0 end) as kkhj,(case when BHYY='50' and DI_LEI in ('111','112','120','130') then kk else 0 end) as kkyl,
+(case when BHYY='50' and DI_LEI='301' then kk else 0 end) as kktg,(case when BHYY='50' and (DI_LEI not in('111','112','120','130','301')) then kk else 0 end) as kkqt,
+(case when BHYY='50' then kk1 else 0 end) as kkhj1,(case when BHYY='50' and DI_LEI in ('111','112','120','130') then kk1 else 0 end) as kkyl1,
+(case when BHYY='50' and DI_LEI='301' then kk1 else 0 end) as kktg1,(case when BHYY='50' and (DI_LEI not in('111','112','120','130','301')) then kk1 else 0 end) as kkqt1,
+JLSJ from (
+select XIAN,XIANG,CUN,XIAO_BAN,XI_BAN,DI_LEI,SHSJ,JLSJ,BHYY,
+(case when BHYY='42' then [MIAN_JI] else 0 end ) as wf,
+(case when BHYY='42' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as wf1,
+(case when BHYY='50' then [MIAN_JI] else 0 end ) as kk,
+(case when BHYY='50' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end ) as kk1
+ from ZT_LDZZ_2013 where BHYY in('42','50')) as QUERY_RESULT</value>
+  </data>
+  <data name="LDTZ2" xml:space="preserve">
+    <value>select (select CNAME from T_SYS_META_CODE where CCODE=XIAN and CTYPE='县') as 县,(select CNAME from T_SYS_META_CODE where CCODE=XIANG and CTYPE='乡') as 乡,(select CNAME from T_SYS_META_CODE where CCODE=CUN and CTYPE='村') as 村,XI_BAN,
+(case when BHYY like '3%' then ghzj else 0 end) as hj,(case when BHYY like '3%' and DI_LEI in ('111','112','120','130') then ghzj else 0 end) as yl,
+(case when BHYY like '3%' and DI_LEI='301' then ghzj else 0 end) as tg,(case when BHYY like '3%' and (DI_LEI not in('111','112','120','130','301')) then ghzj else 0 end) as qt,
+(case when BHYY not like '3%' then qtz else 0 end) as hj1,(case when BHYY not like '3%' and DI_LEI in ('111','112','120','130') then qtz else 0 end) as yl1,
+(case when BHYY not like '3%' and DI_LEI='301' then qtz else 0 end) as tg1,(case when BHYY not like '3%' and (DI_LEI not in('111','112','120','130','301')) then qtz else 0 end) as qt1,
+SHSJ,JLSJ from (
+select XIAN,XIANG,CUN,XI_BAN,DI_LEI,SHSJ,JLSJ,BHYY,
+(case when BHYY like '3%' and Q_DI_LEI like '9%' and (DI_LEI not like '9%') then [MIAN_JI] when BHYY like '3%' and (Q_DI_LEI not like '9%') and DI_LEI like '9%' then 0-[MIAN_JI] else 0 end ) as ghzj,
+(case when (BHYY not like '3%') and Q_DI_LEI like '9%' and (DI_LEI not like '9%') then [MIAN_JI] else 0 end ) as qtz
+ from ZT_LDZZ_2013) as QUERY_RESULT</value>
+  </data>
+  <data name="LDTZ1" xml:space="preserve">
+    <value>select dw,xmmc,pzwh,shsj,pzdw,
+(case when LDYT like '1%' then '基础设施项目' when LDYT='20' then '公共事业和民生项目' when LDYT in('30','40','50','51','52','53') then '经营性项目' when LDYT like '6%' then '城镇、园区建设项目' else '其他' end) as 项目类型,
+(case when XMLX='1' then '永久占地' when XMLX='2' then '临时占地' when XMLX='3' then '农村集体建设用地' when XMLX='4' then '直接为林业生产服务的工程设施占用林地' else '' end) as 林地性质,
+ZYBM,ZBHFF,JLSJ,(yl+sl+tg+qg+wcl+mp+cf+hs+yld+qt) as 合计,yl,sl,tg,qg,wcl,mp,cf,hs,yld,qt,(yl1+sl1+tg1+qg1+wcl1+mp1+cf1+hs1+yld1+qt1) as 合计1,yl1,sl1,tg1,qg1,wcl1,mp1,cf1,hs1,yld1,qt1 from (
+select (select CNAME from T_SYS_META_CODE where CCODE=XIAN and CTYPE='县') as dw,XMMC,PZWH,SHSJ,(select CNAME from T_SYS_META_CODE where CCODE=SPJB and CTYPE='审批级别') as pzdw,
+LDYT,XMLX,ZYBM,ZBHFF,JLSJ,
+(case when BHYY&lt;&gt;'42' and DI_LEI in ('111','112','120','130') then [MIAN_JI] else 0 end) as yl,
+(case when BHYY&lt;&gt;'42' and DI_LEI='200' then [MIAN_JI] else 0 end) as sl,
+(case when BHYY&lt;&gt;'42' and DI_LEI='301' then [MIAN_JI] else 0 end) as tg,
+(case when BHYY&lt;&gt;'42' and DI_LEI='302' then [MIAN_JI] else 0 end) as qg,
+(case when BHYY&lt;&gt;'42' and DI_LEI='401' then [MIAN_JI] else 0 end) as wcl,
+(case when BHYY&lt;&gt;'42' and DI_LEI='500' then [MIAN_JI] else 0 end) as mp,
+(case when BHYY&lt;&gt;'42' and DI_LEI='601' then [MIAN_JI] else 0 end) as cf,
+(case when BHYY&lt;&gt;'42' and DI_LEI='602' then [MIAN_JI] else 0 end) as hs,
+(case when BHYY&lt;&gt;'42' and DI_LEI in('701','702','703','704','705','706') then [MIAN_JI] else 0 end) as yld,
+(case when BHYY&lt;&gt;'42' and DI_LEI not in('111','112','120','130','200','301','302','401','500','601','602','701','702','703','704','705','706') then [MIAN_JI] else 0 end) as qt,
+(case when BHYY&lt;&gt;'42' and DI_LEI in ('111','112','120','130') then [MIAN_JI] else 0 end) as yl1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='200' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as sl1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='301' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as tg1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='302' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as qg1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='401' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as wcl1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='500' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as mp1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='601' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as cf1,
+(case when BHYY&lt;&gt;'42' and DI_LEI='602' and SHI_QUAN_D='10' then [MIAN_JI] else 0 end) as hs1,
+(case when BHYY&lt;&gt;'42' and DI_LEI in('701','702','703','704','705','706') then [MIAN_JI] else 0 end) as yld1,
+(case when BHYY&lt;&gt;'42' and DI_LEI not in('111','112','120','130','200','301','302','401','500','601','602','701','702','703','704','705','706') then [MIAN_JI] else 0 end) as qt1
+  from ZT_LDZZ_2013) as QUERY_RESULT</value>
+  </data>
+  <data name="LDTZ" xml:space="preserve">
+    <value>select town as 统计单位,convert(decimal(18,2),mj) as 本年度面积,convert(decimal(18,2),mj0) as 上年度面积,convert(decimal(18,2),ghz-ghj+qtz) as 林地增减小计
+,convert(decimal(18,2),ghz-ghj) as 规划调整增减,convert(decimal(18,2),qtz) as 其他增加,convert(decimal(18,2),cqyl+cqtg+cqqt) as 长期减少小计
+,convert(decimal(18,2),cqyl) as 长期减少有林地,convert(decimal(18,2),cqtg) as 长期减少特灌,convert(decimal(18,2),cqqt) as 长期减少其他
+,convert(decimal(18,2),fwyl+fwtg+fwqt) as 设施减少小计,convert(decimal(18,2),fwyl) as 设施减少有林地,convert(decimal(18,2),fwtg) as 设施减少特灌
+,convert(decimal(18,2),fwqt) as 设施减少其他,convert(decimal(18,2),lsyl+lstg+lsqt) as 临时减少小计,convert(decimal(18,2),lsyl) as 临时减少有林地
+,convert(decimal(18,2),lstg) as 临时减少特灌,convert(decimal(18,2),lsqt) as 临时减少其他,convert(decimal(18,2),wfyl+wftg+wfqt) as 违法减少小计
+,convert(decimal(18,2),wfyl) as 违法减少有林地,convert(decimal(18,2),wftg) as 违法减少特灌,convert(decimal(18,2),wfqt) as 违法减少其他
+,convert(decimal(18,2),hlyl+hltg+hlqt) as 毁林减少小计,convert(decimal(18,2),hlyl) as 毁林减少有林地,convert(decimal(18,2),hltg) as 毁林减少特灌,convert(decimal(18,2),hlqt) as 毁林减少其他
+from (select 
+(case when grouping(code_table.CNAME) = 1  then '全县总计' else ISNULL(code_table.CNAME,'null') end) as town,grouping(code_table.CNAME) as isgroup,
+SUM(MIAN_JI) as mj,
+sum(case when BHYY like '3%' and Q_DI_LEI like '9%' and (DI_LEI not like '9%') then [MIAN_JI] else 0 end ) as ghz,
+sum(case when BHYY like '3%' and (Q_DI_LEI not like '9%') and DI_LEI like '9%' then [MIAN_JI] else 0 end ) as ghj,
+sum(case when (BHYY not like '3%') and Q_DI_LEI like '9%' and (DI_LEI not like '9%') then [MIAN_JI] else 0 end ) as qtz,
+-- 长期占用
+sum(case when (Q_DI_LEI like '1%') and DI_LEI like '9%' and YDZL='1' then [MIAN_JI] else 0 end ) as cqyl,
+ sum(case when (Q_DI_LEI='301') and DI_LEI like '9%' and YDZL='1' then [MIAN_JI] else 0 end ) as cqtg,
+  sum(case when (Q_DI_LEI&lt;&gt;'301' and Q_DI_LEI not like '1%' and Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='1' then [MIAN_JI] else 0 end ) as cqqt,
+  -- 直接为林业生产服务
+  sum(case when (Q_DI_LEI like '1%') and DI_LEI like '8%' then [MIAN_JI] else 0 end ) as fwyl,
+  sum(case when (Q_DI_LEI='301') and DI_LEI like '8%' then [MIAN_JI] else 0 end ) as fwtg,
+  sum(case when (Q_DI_LEI&lt;&gt;'301' and Q_DI_LEI not like '1%' and Q_DI_LEI not like '9%' and Q_DI_LEI not like '8%') and DI_LEI like '8%' then [MIAN_JI] else 0 end ) as fwqt,
+  -- 临时占用
+  sum(case when (Q_DI_LEI like '1%') and DI_LEI like '9%' and YDZL='2' then [MIAN_JI] else 0 end ) as lsyl,
+  sum(case when (Q_DI_LEI='301') and DI_LEI like '9%' and YDZL='2' then [MIAN_JI] else 0 end ) as lstg,
+  sum(case when (Q_DI_LEI&lt;&gt;'301' and Q_DI_LEI not like '1%' and Q_DI_LEI not like '9%') and DI_LEI like '9%' and YDZL='2' then [MIAN_JI] else 0 end ) as lsqt,
+  -- 违法使用
+  sum(case when (Q_DI_LEI like '1%') and DI_LEI like '9%' and BHYY='42' then [MIAN_JI] else 0 end ) as wfyl,
+  sum(case when (Q_DI_LEI='301') and DI_LEI like '9%' and BHYY='42' then [MIAN_JI] else 0 end ) as wftg,
+  sum(case when (Q_DI_LEI&lt;&gt;'301' and Q_DI_LEI not like '1%' and Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='42' then [MIAN_JI] else 0 end ) as wfqt,
+  -- 毁林开垦
+  sum(case when (Q_DI_LEI like '1%') and DI_LEI like '9%' and BHYY='50' then [MIAN_JI] else 0 end ) as hlyl,
+  sum(case when (Q_DI_LEI='301') and DI_LEI like '9%' and BHYY='50' then [MIAN_JI] else 0 end ) as hltg,
+  sum(case when (Q_DI_LEI&lt;&gt;'301' and Q_DI_LEI not like '1%' and Q_DI_LEI not like '9%') and DI_LEI like '9%' and BHYY='50' then [MIAN_JI] else 0 end ) as hlqt
+  -- 
+   from FOR_XIAOBAN_2013 as xb_table inner join T_SYS_META_CODE as code_table on xb_table.XIANG = code_table.CCODE group by rollup(code_table.CNAME)
+   --code_table.CNAME,xb_table.XIANG
+   ) as mergeMJ   
+   left join 
+   (select 
+     (case when grouping(code_table.CNAME) = 1  then '全县总计' else ISNULL(code_table.CNAME,'null') end) as town0,
+     SUM(MIAN_JI) as mj0 from FOR_XIAOBAN_2012 as xb inner join T_SYS_META_CODE as code_table on xb.XIANG = code_table.CCODE
+     group by rollup(code_table.CNAME)
+   ) as lastMJ 
+ on mergeMJ.town=lastMJ.town0 order by isgroup desc
+   --group by rollup(town)
+   --inner join T_SYS_META_CODE as code on MergeMJ.XIANG = code.CCODE group by MergeMJ.town order by MIN(code.ccode),MergeMJ.town</value>
+  </data>
+</root>

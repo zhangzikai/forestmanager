@@ -1,0 +1,9 @@
+E:\for\ForestEarth\obj\x86\Release\ForestEarth.csprojResolveAssemblyReference.cache
+E:\for\ForestEarth\obj\x86\Release\ForestEarth.FrmEarth.resources
+E:\for\ForestEarth\obj\x86\Release\ForestEarth.csproj.GenerateResource.Cache
+E:\for\ForestEarth\obj\x86\Release\ForestEarth.dll.licenses
+H:\for2017\ForestEarth\obj\x86\Release\ForestEarth.csprojResolveAssemblyReference.cache
+H:\for2017\ForestEarth\obj\x86\Release\ForestEarth.FrmEarth.resources
+H:\for2017\ForestEarth\obj\x86\Release\ForestEarth.csproj.GenerateResource.Cache
+H:\for2017\ForestEarth\obj\x86\Release\ForestEarth.dll.licenses
+H:\for2017\ForestEarth\obj\x86\Release\ForestEarth.csproj.CoreCompileInputs.cache

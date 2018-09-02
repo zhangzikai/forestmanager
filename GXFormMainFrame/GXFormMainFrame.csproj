@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4E71E8A-CC89-4313-B32B-3A9A5D9D7E9D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>GXFormMainFrame</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GXFormMainFrame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>client.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="etl\aj\FindMidFromLayer_AJ.cs" />
+    <Compile Include="etl\cf\FindMidFromLayer_CF.cs" />
+    <Compile Include="etl\FindMidFromTable_Base.cs" />
+    <Compile Include="etl\hz\FindMidFromTable_HZ.cs" />
+    <Compile Include="etl\ldzy\FindMidFromLayer_LDZY.cs" />
+    <Compile Include="etl\xb\FindMidFromLayer_XB.cs" />
+    <Compile Include="etl\zh\FindMidFromLayer_ZH.cs" />
+    <Compile Include="etl\zl\FindMidFromLayer_ZL.cs" />
+    <Compile Include="etl\zz\FindMidFromLayer_ZZ.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="etl\FindMidFromLayer_Base.cs" />
+    <Compile Include="SQLServerConString.cs" />
+    <EmbeddedResource Include="FormLogin4.resx">
+      <DependentUpon>FormLogin4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin5.resx">
+      <DependentUpon>FormLogin5.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin6.resx">
+      <DependentUpon>FormLogin6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitGISForm.resx">
+      <DependentUpon>InitGISForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrameEdit.resx">
+      <DependentUpon>MainFrameEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrameQuery.resx">
+      <DependentUpon>MainFrameQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrameSystem.resx">
+      <DependentUpon>MainFrameSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>bin\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger">
+      <HintPath>bin\dlls\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.89.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\dlls\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="DevExpress.XtraBars.v14.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.AxControls" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="DevExpress.XtraEditors.v14.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="DevExpress.Printing.v14.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="ESRI.ArcGIS.Version" />
+    <Reference Include="ProxyButton.PageBaseTools">
+      <HintPath>..\ProxyButton.PageBaseTools\bin\Debug\ProxyButton.PageBaseTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GDB.SQLServerExpress">
+      <HintPath>..\GDB.SQLServerExpress\bin\Debug\GDB.SQLServerExpress.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Compile Include="FormLogin4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitGISForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitGISForm.Designer.cs">
+      <DependentUpon>InitGISForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormLogin5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseInitializer.cs" />
+    <Compile Include="MainFrameEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrameQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrameSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Reference Include="TDORM4DB">
+      <HintPath>bin\dlls\TDORM4DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TDUtility">
+      <HintPath>bin\dlls\TDUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client.ico" />
+    <EmbeddedResource Include="Resources\skin\_110.png" />
+    <EmbeddedResource Include="Resources\skin\_000_3.png" />
+    <EmbeddedResource Include="Resources\skin\000_3.png" />
+    <EmbeddedResource Include="Resources\skin\000.png" />
+    <EmbeddedResource Include="Resources\skin\1.png" />
+    <EmbeddedResource Include="Resources\skin\110.png" />
+    <EmbeddedResource Include="Resources\skin\2.png" />
+    <EmbeddedResource Include="Resources\skin\220.png" />
+    <EmbeddedResource Include="Resources\skin\221.png" />
+    <EmbeddedResource Include="Resources\skin\3.png" />
+    <EmbeddedResource Include="Resources\skin\330.png" />
+    <EmbeddedResource Include="Resources\skin\4.png" />
+    <EmbeddedResource Include="Resources\skin\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttributesEdit\AttributesEdit.csproj">
+      <Project>{0e4d2cb2-b00a-4ae5-b6cb-7bb57ca46adb}</Project>
+      <Name>AttributesEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cartography\Cartography.csproj">
+      <Project>{46fe0b58-76db-4290-b138-470d9d5c2f8f}</Project>
+      <Name>Cartography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEdit\DataEdit.csproj">
+      <Project>{9e6a9a4c-80d1-4a84-8a15-53743f9d8fa6}</Project>
+      <Name>DataEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Desktop\Desktop.csproj">
+      <Project>{5c2817c4-dca3-4abd-9116-633c8809dda1}</Project>
+      <Name>Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestEarth\ForestEarth.csproj">
+      <Project>{dbcda8ef-967a-4078-a959-b3df5a8b476e}</Project>
+      <Name>ForestEarth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBMid\ForestManagerDBMid.csproj">
+      <Project>{6eebcd8b-f540-4302-99a4-f65d83576b70}</Project>
+      <Name>ForestManagerDBMid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerDBService\ForestManagerDBService.csproj">
+      <Project>{ddabcc30-8753-4e0c-8027-f570e8ca439f}</Project>
+      <Name>ForestManagerDBService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestManagerLogic\ForestManagerLogic.csproj">
+      <Project>{8ec05a55-5936-430f-b856-3f5379157d68}</Project>
+      <Name>ForestManagerLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDataIE\GeoDataIE.csproj">
+      <Project>{632d74fe-be23-4f2b-8877-c58eb3568abc}</Project>
+      <Name>GeoDataIE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GISControlsClass\GISControlsClass.csproj">
+      <Project>{8b290827-b7d0-4f5e-acaa-11804a0b2536}</Project>
+      <Name>GISControlsClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GX_DB_INFO\GX_DB_INFO.csproj">
+      <Project>{bb6119ee-c87c-4a00-bb6e-eed533bade06}</Project>
+      <Name>GX_DB_INFO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gylandzzytj\gylandzzytj.csproj">
+      <Project>{acf46980-f9ad-4ed0-9f21-6aeb882544ba}</Project>
+      <Name>gylandzzytj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LDZY_ZTZL\LDZY_ZTZL.csproj">
+      <Project>{784cb83d-5e0a-4637-b76e-3a9f7e391b3b}</Project>
+      <Name>LDZY_ZTZL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LDZY_ZTZZ\LDZY_ZTZZ.csproj">
+      <Project>{89a47cde-5e43-4239-89d2-4a7697df0f6b}</Project>
+      <Name>LDZY_ZTZZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainFrameBase\MainFrameBase.csproj">
+      <Project>{f5220c15-f162-404f-80bd-48f2c0fdf03b}</Project>
+      <Name>MainFrameBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Measure\Measure.csproj">
+      <Project>{926d1857-89c3-4b20-9adb-fbee9760ffa7}</Project>
+      <Name>Measure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperateLog\OperateLog.csproj">
+      <Project>{f1653fe5-dfe3-4a01-9e81-06f9dbb675b6}</Project>
+      <Name>OperateLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Print\Print.csproj">
+      <Project>{13a4a60f-14ca-4b4b-bf0e-3bf15f31a9aa}</Project>
+      <Name>Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxyButton.MapBaseTools\ProxyButton.MapBaseTools.csproj">
+      <Project>{c1ace5b6-f337-424d-acbc-bea7abf7b75a}</Project>
+      <Name>ProxyButton.MapBaseTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryAnalysic\QueryAnalysic.csproj">
+      <Project>{8625e134-162a-43c3-bd2a-30f5f1769274}</Project>
+      <Name>QueryAnalysic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryCommon\QueryCommon.csproj">
+      <Project>{2be85c11-3d53-4daa-bef5-e7968c9e47c0}</Project>
+      <Name>QueryCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Report\Report.csproj">
+      <Project>{4e3eb8ff-3263-43a5-8305-8c9cc8a11934}</Project>
+      <Name>Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeEdit\ShapeEdit.csproj">
+      <Project>{9a841dae-8960-405c-a8c2-bce30c40616a}</Project>
+      <Name>ShapeEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatisChart\StatisChart.csproj">
+      <Project>{ebecb9f4-27c0-4ea2-9818-548489719f92}</Project>
+      <Name>StatisChart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopologyCheck\TopologyCheck.csproj">
+      <Project>{bb9e7027-c84c-4ebc-895f-43aa40ca0d69}</Project>
+      <Name>TopologyCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VgsTiledMap.Ags\VgsTiledMap.Ags.csproj">
+      <Project>{12e17782-81c4-4ade-96fb-a7dc4cc772a7}</Project>
+      <Name>VgsTiledMap.Ags</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

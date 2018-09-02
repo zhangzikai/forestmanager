@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{926D1857-89C3-4B20-9ADB-FBEE9760FFA7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Measure</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Measure</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="FormMeasure.resx">
+      <DependentUpon>FormMeasure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Measure.resx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="ESRI.ArcGIS.AxControls" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="stdole" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="ClearMeasureCommand.cs" />
+    <Compile Include="ConvertElementCommand.cs" />
+    <Compile Include="Measures.cs" />
+    <Compile Include="FormMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasureTool.cs" />
+    <Compile Include="FormMeasureArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMeasureDistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMeasureMarker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasureAreaTool.cs" />
+    <Compile Include="MeasureAreaTool2.cs" />
+    <Compile Include="MeasureDistanceTool.cs" />
+    <Compile Include="MeasureDistanceTool2.cs" />
+    <Compile Include="MeasureElementTool.cs" />
+    <Compile Include="MeasureElementTool2.cs" />
+    <Compile Include="MeasureFeatureTool.cs" />
+    <Compile Include="MeasureFeatureTool2.cs" />
+    <EmbeddedResource Include="Measure.MeasureDistance2.bmp" />
+    <EmbeddedResource Include="Measure.MeasureDistance.bmp" />
+    <EmbeddedResource Include="Measure.FormMeasureDistance.resources" />
+    <EmbeddedResource Include="Measure.AnalystElement.cur" />
+    <EmbeddedResource Include="Measure.MeasureElement.bmp" />
+    <EmbeddedResource Include="Measure.AnalystArea.bmp" />
+    <EmbeddedResource Include="Measure.FormMeasureArea.resources" />
+    <EmbeddedResource Include="Measure.MeasureFeatures.cur" />
+    <EmbeddedResource Include="Measure.MeasureArea.cur" />
+    <EmbeddedResource Include="Measure.ConvertDx.bmp" />
+    <EmbeddedResource Include="Measure.ClearMeasure.bmp" />
+    <EmbeddedResource Include="Measure.AnalystElement.bmp" />
+    <EmbeddedResource Include="Measure.MeasureFeatures.bmp" />
+    <EmbeddedResource Include="Measure.MeasureDistance.cur" />
+    <EmbeddedResource Include="Measure.FormMeasureMarker.resources" />
+    <EmbeddedResource Include="Measure.MeasureArea.bmp" />
+    <EmbeddedResource Include="Measure.MeasureElement.cur" />
+    <EmbeddedResource Include="Measure.AnalystArea.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Measure\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

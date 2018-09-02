@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB9E7027-C84C-4EBC-895F-43AA40CA0D69}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>TopologyCheck</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TopologyCheck</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Checker\AngleInput.resx">
+      <DependentUpon>AngleInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checker\AreaInput.resx">
+      <DependentUpon>AreaInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormXCPolygonCheck.resx">
+      <DependentUpon>FormXCPolygonCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MultiLayerCheck.resx">
+      <DependentUpon>MultiLayerCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RulerSet.resx">
+      <DependentUpon>RulerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SingleLayerCheck.resx">
+      <DependentUpon>SingleLayerCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessor" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessing" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="UI\CmdMultiLayerCheck.cs" />
+    <Compile Include="TopologyModify\TopoModifyStrategy.cs" />
+    <Compile Include="TopologyModify\ITopoModifyStrategy.cs" />
+    <Compile Include="TopologyModify\BoundaryBeyondStrategy.cs" />
+    <Compile Include="Error\ErrManager.cs" />
+    <Compile Include="Checker\ToolCursor.cs" />
+    <Compile Include="Checker\CheckToolFactory.cs" />
+    <Compile Include="UI\SingleLayerCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CmdXCPolygonCheck.cs" />
+    <Compile Include="TopologyModify\TopoModifyStrategyFactory.cs" />
+    <Compile Include="Checker\PointRepeatCheckTool.cs" />
+    <Compile Include="Checker\AreaInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopologyModify\SelfIntersectModifyStrategy.cs" />
+    <Compile Include="TopologyModify\GapModifyStrategy.cs" />
+    <Compile Include="UI\RulerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checker\OverlapCheckTool.cs" />
+    <Compile Include="Checker\ITopologyChecker.cs" />
+    <Compile Include="Checker\TopoClassChecker.cs" />
+    <Compile Include="Checker\GapErrorEntity.cs" />
+    <Compile Include="Checker\GapsCheckTool.cs" />
+    <Compile Include="Checker\BoundaryBeyondChecker.cs" />
+    <Compile Include="Checker\AngleInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormXCPolygonCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CmdSingleLayerCheck.cs" />
+    <Compile Include="Checker\OverLapChecker.cs" />
+    <Compile Include="Checker\ClearTopoErr.cs" />
+    <Compile Include="Checker\AngleChecker.cs" />
+    <Compile Include="TopologyModify\AreaModifyStrategy.cs" />
+    <Compile Include="Base\SpatialAnalysis.cs" />
+    <Compile Include="UI\MultiLayerCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checker\PointRepeatChecker.cs" />
+    <Compile Include="Checker\BoundaryBeyondCheckTool.cs" />
+    <Compile Include="UI\CmdRulerSet.cs" />
+    <Compile Include="TopologyModify\PointModifyStrategy.cs" />
+    <Compile Include="TopologyModify\AngleModifyStrategy.cs" />
+    <Compile Include="Checker\SelfIntersectChecker.cs" />
+    <Compile Include="Checker\GapsChecker.cs" />
+    <Compile Include="Error\ErrorTable.cs" />
+    <Compile Include="Error\ErrType.cs" />
+    <Compile Include="Checker\SelfIntersectCheckTool.cs" />
+    <Compile Include="TopoCheckState.cs" />
+    <Compile Include="Checker\AreaCheckTool.cs" />
+    <Compile Include="Checker\AreaChecker.cs" />
+    <Compile Include="Error\ErrorEntity.cs" />
+    <Compile Include="TopologyModify\OverlapModifyStrategy.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Checker\AngleCheckTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeEdit\ShapeEdit.csproj">
+      <Project>{9a841dae-8960-405c-a8c2-bce30c40616a}</Project>
+      <Name>ShapeEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

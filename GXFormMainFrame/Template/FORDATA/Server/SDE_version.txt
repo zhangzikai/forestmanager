@@ -1,0 +1,1 @@
+10|0|0| for SQL Server Build 685 Fri May 14 12:05:43  2010|100001|93001

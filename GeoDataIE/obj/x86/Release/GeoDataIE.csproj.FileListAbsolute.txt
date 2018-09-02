@@ -1,0 +1,7 @@
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.csprojResolveAssemblyReference.cache
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.UserControlExportHarvest.resources
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.UserControlImportHarvest.resources
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.UserControlImportLC.resources
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.Properties.Resources.resources
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.csproj.GenerateResource.Cache
+E:\for\GeoDataIE\obj\x86\Release\GeoDataIE.dll.licenses

@@ -1,0 +1,11 @@
+E:\for\TaskManage\obj\x86\Release\TaskManage.csprojResolveAssemblyReference.cache
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlDesignList.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlProjectList.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskConvert.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskCreate.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskCreate2.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskInfo.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskOpen.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.UserControlTaskOpen2.resources
+E:\for\TaskManage\obj\x86\Release\TaskManage.csproj.GenerateResource.Cache
+E:\for\TaskManage\obj\x86\Release\TaskManage.dll.licenses

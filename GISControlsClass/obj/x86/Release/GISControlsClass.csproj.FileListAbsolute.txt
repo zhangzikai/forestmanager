@@ -1,0 +1,10 @@
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.csprojResolveAssemblyReference.cache
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlLayerControl.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlLegendList.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlOverView.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlSelectByAttributes.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlSelectFeatureReport.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlSelectFeatureResport2.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.UserControlSelectLayerSet.resources
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.csproj.GenerateResource.Cache
+E:\for\GISControlsClass\obj\x86\Release\GISControlsClass.dll.licenses

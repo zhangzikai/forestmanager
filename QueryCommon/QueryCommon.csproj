@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BE85C11-3D53-4DAA-BEF5-E7968C9E47C0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>QueryCommon</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>QueryCommon</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDistCode.resx">
+      <DependentUpon>UserControlDistCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlInfo.resx">
+      <DependentUpon>UserControlInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLocation.resx">
+      <DependentUpon>UserControlLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLocation2.resx">
+      <DependentUpon>UserControlLocation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMapFind.resx">
+      <DependentUpon>UserControlMapFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPlace.resx">
+      <DependentUpon>UserControlPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlQueryResult.resx">
+      <DependentUpon>UserControlQueryResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local" />
+    <Reference Include="log4net">
+      <HintPath>..\GXFormMainFrame\bin\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger">
+      <HintPath>..\GXFormMainFrame\bin\dlls\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System.XML" />
+    <Reference Include="ESRI.ArcGIS.Controls" />
+    <Reference Include="ESRI.ArcGIS.Carto" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="ESRI.ArcGIS.SystemUI" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="ESRI.ArcGIS.AxControls" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="ESRI.ArcGIS.Display" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LCTest\IdentifyFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Identify\LayerFeatureType.cs" />
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlDistCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IdentifyTool.cs" />
+    <Compile Include="UserControlMapFind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlIdentify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Identify\LayerIdentifiedResult.cs" />
+    <Compile Include="Identify\LayerFilterProperties.cs" />
+    <Compile Include="UserControlLocation2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Identify\FlashObjectsClass.cs" />
+    <Compile Include="ZdInfo.cs" />
+    <Compile Include="ZdLqsqInfo.cs" />
+    <Compile Include="PointTool.cs" />
+    <Compile Include="RectangleTool.cs" />
+    <Compile Include="LocationCounty.cs" />
+    <Compile Include="UserControlQueryResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="LCTest\IdentifyFrom.resx">
+      <DependentUpon>IdentifyFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QueryCommon.PointTool3_.cur" />
+    <EmbeddedResource Include="QueryCommon.IdentifyMDown.cur" />
+    <EmbeddedResource Include="QueryCommon.Identify.cur" />
+    <EmbeddedResource Include="QueryCommon.Inentify.bmp" />
+    <EmbeddedResource Include="QueryCommon.PointTool.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForestUtilites\ForestUtility.csproj">
+      <Project>{d13b91b8-2568-4c4e-ad7f-d9b6984c8657}</Project>
+      <Name>ForestUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FunFactory\FunFactory.csproj">
+      <Project>{9f3a6a83-197d-495e-b226-818d8d03703b}</Project>
+      <Name>FunFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManage\TaskManage.csproj">
+      <Project>{8d14273a-4eff-4d09-ab21-bfa0cb9b00e1}</Project>
+      <Name>TaskManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

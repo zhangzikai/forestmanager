@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SystemName Name="系统名称 森林资源管理系统">森林资源管理信息平台</SystemName>
+  <SystemKey Name="系统代码">GXDataAcquisition</SystemKey>
+  <Registration>
+    <CompanyName Name="公司名称">北京思行伟业数码科技有限公司</CompanyName>
+    <CompanyURL Name="网址">
+    </CompanyURL>
+    <CompanyEMail Name="邮箱">
+    </CompanyEMail>
+    <Company Name="注册用户">注册用户</Company>
+    <TrialCount>100</TrialCount>
+    <TrialNum>C28A5819B0B5F027</TrialNum>
+  </Registration>
+  <!-- Error -->
+  <Error Name="错误">
+    <ErrorOptMode Name="错误模式">4</ErrorOptMode>
+    <ErrorSimpleInfo Name="错误模式">系统在运行过程中产生了一个错误，我们已经记录了此错误信息，并会尽快解决此问题。</ErrorSimpleInfo>
+    <ErrorLogFile Name="错误日志路径">Log\GISError.log</ErrorLogFile>
+    <ErrorSendtoMail Name="网址">
+    </ErrorSendtoMail>
+  </Error>
+  <LoginUserID>admin</LoginUserID>
+  <EditYear Name="年度">2016</EditYear>
+  <!-- 图层名称 -->
+  <MapLayer Name="图层名称">
+    <DEMLayerName Name="数字高程">DEM</DEMLayerName>
+    <!--编辑图层-->
+    <EditLayer Name="编辑图层">小班</EditLayer>
+    <ConnectLayer Name="联动图层">林班,乡,村</ConnectLayer>
+    <EditZLLayer Name="编辑图层">造林作业</EditZLLayer>
+    <EditCFLayer Name="编辑图层">采伐作业</EditCFLayer>
+    <EditFireLayer Name="编辑图层">森林火灾</EditFireLayer>
+    <EditGCLayer Name="编辑图层">林业工程</EditGCLayer>
+    <EditZZYLayer Name="编辑图层">林地征占用</EditZZYLayer>
+    <EditZHLayer Name="编辑图层">自然灾害</EditZHLayer>
+    <EditAJLayer Name="编辑图层">林业案件</EditAJLayer>
+    <EditXBLayer Name="编辑图层">变更小班</EditXBLayer>
+    <!--图幅号图层-->
+    <TfhLayerName Name="图幅号">图幅号</TfhLayerName>
+    <TfhFiledName Name="图幅号名称字段">新图幅号,旧图幅号,地名</TfhFiledName>
+    <TfhClassName Name="地名">INDEX_A_10K</TfhClassName>
+    <TfhDatasetName Name="地名数据集">INDEX</TfhDatasetName>
+    <!--地名图层-->
+    <PlaceLayerName Name="地名">县名,乡名,村名</PlaceLayerName>
+    <PlaceFiledName Name="地名名称字段">NAME,NAME,NAME</PlaceFiledName>
+    <PlaceClassName Name="地名">BASE_D_RESIDENT_10K,BASE_D_RESIDENT_10K,BASE_D_RESIDENT_10K</PlaceClassName>
+    <PlaceTypeString Name="类型">TYPE='13',TYPE='14',TYPE='15'</PlaceTypeString>
+    <PlaceDatasetName Name="地名数据集">base</PlaceDatasetName>
+    <!--道路水系等其它图层-->
+    <OtherLayerName Name="道路水系">道路1,高速公路,河流,湖泊</OtherLayerName>
+    <OtherFiledName Name="道路水系名称字段">RN,NAME,NAME,NAME</OtherFiledName>
+    <OtherClassName Name="道路水系">F_BASE_V_L_RO_250K,F_BASE_V_L_HIGHWAY_250K,F_BASE_V_L_RIVER_250K,F_BASE_V_P_LAKE_250K</OtherClassName>
+    <OtherDatasetName Name="数据集">V_250K</OtherDatasetName>
+    <!--省级图层-->
+    <ProvLayerName Name="省级区划">省</ProvLayerName>
+    <ProvFiledName Name="省名称字段">PNAME</ProvFiledName>
+    <ProvFiledCode Name="省代码字段">PAC</ProvFiledCode>
+    <!--市级图层-->
+    <CityCodeTableName Name="代码表名">T_SYS_META_CODE</CityCodeTableName>
+    <CityCodeTableFieldCode Name="代码表代码字段名">CCODE</CityCodeTableFieldCode>
+    <CityCodeTableFieldName Name="代码表名称字段名">CNAME</CityCodeTableFieldName>
+    <CityCodeTableWhereStr Name="查询">CINDEX='102'</CityCodeTableWhereStr>
+    <!--区县图层-->
+    <CountyClassName Name="区县">BASE_P_XIAN_10K</CountyClassName>
+    <CountyLayerName Name="区县 BASE_P_XIAN_10K">县</CountyLayerName>
+    <CountyFieldName Name="区县名称字段">XIAN</CountyFieldName>
+    <CountyFieldCode Name="区县代码字段">XIAN</CountyFieldCode>
+    <CountyCodeTableName Name="代码表名">T_SYS_META_CODE</CountyCodeTableName>
+    <CountyCodeTableFieldCode Name="代码表代码字段名">CCODE</CountyCodeTableFieldCode>
+    <CountyCodeTableFieldName Name="代码表名称字段名">CNAME</CountyCodeTableFieldName>
+    <CountyCodeTableWhereStr Name="查询">CINDEX='103'</CountyCodeTableWhereStr>
+    <!--乡镇图层-->
+    <TownClassName Name="乡镇">BASE_P_XIANG_10K</TownClassName>
+    <TownLayerName Name="乡镇">乡</TownLayerName>
+    <TownFieldName Name="乡镇名称字段">XIANG</TownFieldName>
+    <TownFieldCode Name="乡镇代码字段">XIANG</TownFieldCode>
+    <TownCodeTableName Name="代码表名">T_SYS_META_CODE</TownCodeTableName>
+    <TownCodeTableFieldCode Name="代码表代码字段名">CCODE</TownCodeTableFieldCode>
+    <TownCodeTableFieldName Name="代码表名称字段名">CNAME</TownCodeTableFieldName>
+    <TownCodeTableWhereStr Name="查询">CINDEX='104'</TownCodeTableWhereStr>
+    <!--村屯图层-->
+    <VillageClassName Name="村屯">BASE_P_CUN_10K</VillageClassName>
+    <VillageLayerName Name="村">村</VillageLayerName>
+    <VillageFieldName Name="村名称字段">CUN</VillageFieldName>
+    <VillageFieldCode Name="村代码字段">CUN</VillageFieldCode>
+    <VillageCodeTableName Name="代码表名">T_SYS_META_CODE</VillageCodeTableName>
+    <VillageCodeTableFieldCode Name="代码表代码字段名">CCODE</VillageCodeTableFieldCode>
+    <VillageCodeTableFieldName Name="代码表名称字段名">CNAME</VillageCodeTableFieldName>
+    <VillageCodeTableWhereStr Name="查询">CINDEX='105'</VillageCodeTableWhereStr>
+    <!--林班图层-->
+    <LinbanClassName Name="林班">BASE_P_LINBAN_10K</LinbanClassName>
+    <LinbanLayerName Name="林班">林班</LinbanLayerName>
+    <LinbanFieldName Name="林班号">LIN_BAN</LinbanFieldName>
+    <LinbanFieldCode Name="林班代码字段">CUN</LinbanFieldCode>
+    <!--小班图层-->
+    <XiaobanLayerName Name="小班">小班</XiaobanLayerName>
+    <XiaobanCodeName Name="小班编号">XIAO_BAN</XiaobanCodeName>
+    <XiaobanFieldName Name="小班编号">SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN</XiaobanFieldName>
+    <XiaobanFieldString Name="小班显示字段">SHENG</XiaobanFieldString>
+    <XiaobanFieldString2 Name="小班不显示字段">XBID,BAK1,BAK2</XiaobanFieldString2>
+    <!--造林图层-->
+    <ZaoLinGroupName Name="造林小班">造林</ZaoLinGroupName>
+    <ZaoLinGroupName2 Name="造林小班">造林专题</ZaoLinGroupName2>
+    <ZaoLinLayerName Name="造林小班">造林作业</ZaoLinLayerName>
+    <ZaoLinlyr Name="造林lyr">造林.lyr</ZaoLinlyr>
+    <ZaoLinlyr2 Name="造林底图lyr">造林-底图.lyr</ZaoLinlyr2>
+    <ZaoLinlyr3 Name="造林专题">造林-编辑状态.lyr</ZaoLinlyr3>
+    <ZaoLinlyr4 Name="造林一对多">造林-一对多.lyr</ZaoLinlyr4>
+    <ZaoLinlyr5 Name="造林作业设计">造林-作业设计.lyr</ZaoLinlyr5>
+    <ZaoLinlyr6 Name="造林类型查询">造林-类型查询.lyr</ZaoLinlyr6>
+    <ZaoLinFieldName Name="图斑编号">XI_BAN</ZaoLinFieldName>
+    <ZaoLinFieldDist Name="区划编号">XIAN,XIANG,CUN</ZaoLinFieldDist>
+    <ZaoLinFieldTime Name="更新时间">GXSJ</ZaoLinFieldTime>
+    <ZaoLinFieldString Name="造林显示字段">
+    </ZaoLinFieldString>
+    <ZaoLinFieldString2 Name="造林不显示字段">
+    </ZaoLinFieldString2>
+    <ZaoLinDataset Name="造林Dataset">ZT</ZaoLinDataset>
+    <ZaoLinLayer Name="造林FeatureClass">ZT_ZL</ZaoLinLayer>
+    <ZaoLinDataset2>ZT</ZaoLinDataset2>
+    <ZaoLinLayer2>ZT_ZL</ZaoLinLayer2>
+    <ZaoLinInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,TU_RANG_LX,YOU_SHI_SZ,MEI_GQ_ZS,ZLND,SEN_LIN_LB,G_CHENG_LB,LD_KD,LD_CD,GXSJ,DI_LEI,Q_DI_LEI</ZaoLinInputFieldName>
+    <ZaoLinFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,XI_BAN</ZaoLinFieldNameD>
+    <ZaoLinFieldNameB Name="地类,林种,优势树种,土地权属,林木使用权,森林类别,变化原因">DI_LEI,LIN_ZHONG,YOU_SHI_SZ,LD_QS,LMJYQ,SEN_LIN_LB,BHYY</ZaoLinFieldNameB>
+    <ZaoLinFieldNameL Name="造林类别,土壤类型,工程类别,资金来源,造林面积,每公顷株数,造林模式">ZAO_LIN_LB,TU_RANG_LX,G_CHENG_LB,ZJLY,MIAN_JI,MEI_GQ_ZS,ZAO_LIN_MS</ZaoLinFieldNameL>
+    <ZaoLinFieldNameC Name="">
+    </ZaoLinFieldNameC>
+    <ZaoLinTypeLayer Name="地类、林种等类型专题查询">造林界线,造林_地类,造林_林种,造林_树种,造林_工程,造林_造林类型,造林_变更来源</ZaoLinTypeLayer>
+    <!--采伐图层-->
+    <CaiFaDataset Name="采伐Dataset">ZT</CaiFaDataset>
+    <CaiFaLayer Name="采伐FeatureClass">ZT_CF</CaiFaLayer>
+    <CaiFaDataset2 Name="采伐Dataset">HIS_ZT</CaiFaDataset2>
+    <CaiFaLayer2>ZT_CF</CaiFaLayer2>
+    <CaiFaTableName Name="每木检尺表">T_ZT_CF_MMJC</CaiFaTableName>
+    <CaiFaGroupName Name="采伐图层组">采伐</CaiFaGroupName>
+    <CaiFaGroupName2 Name="采伐图层组">采伐专题</CaiFaGroupName2>
+    <CaiFaLayerName Name="采伐小班">采伐作业</CaiFaLayerName>
+    <CaiFaLayerName2 Name="作业底图">其它采伐</CaiFaLayerName2>
+    <CaiFalyr Name="采伐lyr">采伐.lyr</CaiFalyr>
+    <CaiFalyr2 Name="采伐底图lyr">采伐-底图.lyr</CaiFalyr2>
+    <CaiFalyr3 Name="采伐专题">采伐-编辑状态.lyr</CaiFalyr3>
+    <CaiFalyr4 Name="采伐一对多">采伐-一对多.lyr</CaiFalyr4>
+    <CaiFalyr5 Name="采伐作业设计">采伐-作业设计.lyr</CaiFalyr5>
+    <CaiFaFieldName Name="伐区区划小班编号">XI_BAN</CaiFaFieldName>
+    <CaiFaFieldDist Name="区划编号">XIAN,XIANG,CUN</CaiFaFieldDist>
+    <CaiFaFieldTime Name="变更时间">GXSJ</CaiFaFieldTime>
+    <CaiFaFieldString Name="采伐显示字段">
+    </CaiFaFieldString>
+    <CaiFaFieldString2 Name="采伐不显示字段">UUID,Tree_ID,DESI_KIND,Task_ID,Edit_State,YEAR</CaiFaFieldString2>
+    <CaiFaInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,LIN_ZHONG,Q_LIN_ZHONG,QI_YUAN,SEN_LIN_LB,Q_SEN_LIN_LB,YU_BI_DU,GXSJ,DI_LEI,Q_DI_LEI</CaiFaInputFieldName>
+    <CaiFaConnectFieldName>CUN,LIN_BAN,XIAO_BAN,XI_BAN;CUN,LIN_BAN,DCXB,ZYXB</CaiFaConnectFieldName>
+    <CaiFaTableFieldName Name="标准地编号">BZDH</CaiFaTableFieldName>
+    <CaiFaTableNameD Name="每木检尺字段">CUN,LIN_BAN,DCXB,ZYXB</CaiFaTableNameD>
+    <CaiFaFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,XI_BAN</CaiFaFieldNameD>
+    <CaiFaFieldNameB Name="地类,起源,林种,土地权属,森林类别,郁闭度/覆盖度,林权证号">DI_LEI,QI_YUAN,LIN_ZHONG,LD_QS,SEN_LIN_LB,YU_BI_DU,LQZH</CaiFaFieldNameB>
+    <CaiFaFieldNameL Name="采伐类型,优势树种,采伐面积,采伐次数,采伐蓄积,采伐株数,采伐木年龄,采伐木出材量">CFLX,YOU_SHI_SZ,CFMJ,CFXJ,CFZS,CFMNL,CFCCL</CaiFaFieldNameL>
+    <CaiFaFieldNameC Name="更新等级,更新方式,更新树种,更新时间">GXDJ,GXFS,GXSZ,GXSJ</CaiFaFieldNameC>
+    <CaiFaTypeLayer Name="地类、林种等类型专题查询">采伐界线,采伐_地类,采伐_林种,采伐_树种,采伐_采伐类型,采伐_变更来源</CaiFaTypeLayer>
+    <!--火灾图层-->
+    <FireDataset Name="数据集">ZT</FireDataset>
+    <FireGroupName Name="火灾图层组">火灾</FireGroupName>
+    <FireGroupName2 Name="火灾图层组">火灾专题</FireGroupName2>
+    <FireLayer Name="FeatureClass">ZT_HZ</FireLayer>
+    <FireLayerName Name="火灾编辑">森林火灾</FireLayerName>
+    <Firelyr Name="火灾lyr">火灾.lyr</Firelyr>
+    <FireTableName Name="火灾信息表">T_ZT_HZ_INFO</FireTableName>
+    <FireTableFieldName Name="火灾编号">FIRE_NO</FireTableFieldName>
+    <FireConnectFieldName>FIRE_NO;FIRE_NO</FireConnectFieldName>
+    <FireFieldName Name="图斑编号">XI_BAN</FireFieldName>
+    <FireFieldDist Name="区划编号">XIAN,XIANG,CUN</FireFieldDist>
+    <FireFieldTime Name="起火时间">QHSJ</FireFieldTime>
+    <FireFieldString Name="火灾显示字段">
+    </FireFieldString>
+    <FireFieldString2 Name="火灾不显示字段">FIRE_NO</FireFieldString2>
+    <FireInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LIN_LB,SEN_LIN_LB,YU_BI_DU,YOU_SHI_SZ,DISPE,DISASTER_C,ZHMJ,SUNSHIXJ,BAOLIUXJ,GXSJ</FireInputFieldName>
+    <FireFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN</FireFieldNameD>
+    <FireFieldNameB Name="地类,起源,林种,土地权属,土地使用权,林木所有权,林木使用权,森林类别">DI_LEI,QI_YUAN,LIN_ZHONG,LD_QS,TDJYQ,LMSYQ,LMJYQ,SEN_LIN_LB</FireFieldNameB>
+    <FireFieldNameL Name="火灾等级,火灾原因,灾害面积,损失蓄积,保留蓄积,损失株数">HZDJ,HZYY,ZHMJ,SUNSHIXJ,BLXJ,SS_ZS</FireFieldNameL>
+    <FireTypeLayer Name="火灾等级、火灾原因等类型专题查询">火灾界线,火灾_火灾等级,火灾_火灾原因</FireTypeLayer>
+    <!--征占用图层-->
+    <ZZYDataset Name="数据集">ZT</ZZYDataset>
+    <ZZYDataset2 Name="历史数据集">HIS_ZT</ZZYDataset2>
+    <ZZYGroupName Name="征占用图层组">征占用</ZZYGroupName>
+    <ZZYGroupName2 Name="征占用图层组">征占用专题</ZZYGroupName2>
+    <ZZYLayer Name="FeatureClass面">ZT_LDZZ</ZZYLayer>
+    <ZZYLayer2 Name="FeatureClass面">ZT_LDZZ</ZZYLayer2>
+    <ZZYLayerName Name="征占用编辑">林地征占用面</ZZYLayerName>
+    <ZZYLayerName0 Name="征占用编辑底图">其它项目面</ZZYLayerName0>
+    <ZZYLayerName2 Name="编辑图层名">林地征占用点,林地征占用线,林地征占用面</ZZYLayerName2>
+    <ZZYLayerName3 Name="编辑图层FeatureClass名">ZT_D_LDZZ,ZT_L_LDZZ,ZT_LDZZ</ZZYLayerName3>
+    <ZZYLayerName22 Name="编辑底图图层名">其它项目点,其它项目线,其它项目面</ZZYLayerName22>
+    <ZZYLayerName33 Name="编辑底图图层FeatureClass名">ZT_D_LDZZ,ZT_L_LDZZ,ZT_LDZZ</ZZYLayerName33>
+    <ZZYlyr Name="征占用lyr">征占用.lyr</ZZYlyr>
+    <ZZYFieldName Name="图斑编号">XI_BAN</ZZYFieldName>
+    <ZZYFieldDist Name="区划编号">XIAN,XIANG,CUN</ZZYFieldDist>
+    <ZZYFieldString Name="征占用显示字段">
+    </ZZYFieldString>
+    <ZZYFieldString2 Name="征占用不显示字段">XMBH,XBID</ZZYFieldString2>
+    <ZZYInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,Q_DI_LEI,DI_LEI,ZYBM,XFSS,GXSJ</ZZYInputFieldName>
+    <ZZYFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN</ZZYFieldNameD>
+    <ZZYFieldNameB Name="地类,林种,树种,土地权属,林木使用权,森林类别,变化原因,面积,蓄积">DI_LEI,LIN_ZHONG,YOU_SHI_SZ,LD_QS,LMJYQ,SEN_LIN_LB,BHYY,MIAN_JI,SLXJ</ZZYFieldNameB>
+    <ZZYFieldNameL Name="林地类型,林地用途,项目类型,用地种类,用地范围,林地补偿费,林地安置费,植被恢复费,总费用合计">LDLX,LDYT,XMLX,YDZL,YDFW,LDBCF,LDAZF,LMBCF,ZBHFF,ZFYHJ</ZZYFieldNameL>
+    <ZZYTypeLayer Name="地类、林种等类型专题查询">征占用界线,征占用_树种,征占用_地类,征占用_林种,征占用_林地用途,征占用_项目类型,征占用_变更来源</ZZYTypeLayer>
+    <!--自然灾害图层-->
+    <ZRZHDataset Name="灾害数据集">ZT</ZRZHDataset>
+    <ZRZHGroupName Name="灾害图层组">灾害</ZRZHGroupName>
+    <ZRZHGroupName2 Name="灾害图层组">灾害专题</ZRZHGroupName2>
+    <ZRZHLayer Name="FeatureClass">ZT_ZH</ZRZHLayer>
+    <ZRZHLayerName Name="自然灾害编辑">自然灾害</ZRZHLayerName>
+    <ZRZHlyr Name="灾害lyr">自然灾害.lyr</ZRZHlyr>
+    <ZRZHFieldName Name="图斑编号">XI_BAN</ZRZHFieldName>
+    <ZRZHFieldDist Name="区划编号">XIAN,XIANG,CUN</ZRZHFieldDist>
+    <ZRZHFieldString Name="显示字段">
+    </ZRZHFieldString>
+    <ZRZHFieldString2 Name="不显示字段">
+    </ZRZHFieldString2>
+    <ZRZHInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LIN_LB,SEN_LIN_LB,YU_BI_DU,YOU_SHI_SZ,DISPE,DISASTER_C,ZHMJ,SUNSHIXJ,BAOLIUXJ,GXSJ</ZRZHInputFieldName>
+    <ZRZHFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,XI_BAN</ZRZHFieldNameD>
+    <ZRZHFieldNameB Name="地类,林种,优势树种,土地权属,林木使用权,森林类别,变化原因">DI_LEI,LIN_ZHONG,YOU_SHI_SZ,LD_QS,LMJYQ,SEN_LIN_LB,BHYY</ZRZHFieldNameB>
+    <ZRZHFieldNameL Name="灾害类型,灾害等级,病害类型,发生面积,成灾面积,损失蓄积,保留蓄积">DISPE,DISASTER_C,BHLX,MIAN_JI,ZHMJ,SUNSHIXJ,BLXJ</ZRZHFieldNameL>
+    <ZRZHTypeLayer Name="地类、林种等类型专题查询">灾害界线,灾害_树种,灾害_地类,灾害_林种,灾害_灾害类型,灾害_灾害等级,灾害_变更来源</ZRZHTypeLayer>
+    <!--林业工程图层-->
+    <LYGCDataset Name="数据集">ZT</LYGCDataset>
+    <LYGCGroupName Name="工程图层组">工程</LYGCGroupName>
+    <LYGCGroupName2 Name="工程图层组">工程专题</LYGCGroupName2>
+    <LYGCLayer Name="FeatureClass">ZT_LYGC</LYGCLayer>
+    <LYGCLayerName Name="自然灾害编辑">林业工程</LYGCLayerName>
+    <LYGClyr Name="工程lyr">林业工程.lyr</LYGClyr>
+    <LYGCFieldName Name="图斑编号">XI_BAN</LYGCFieldName>
+    <LYGCFieldDist Name="区划编号">XIAN,XIANG,CUN</LYGCFieldDist>
+    <LYGCFieldString Name="显示字段">
+    </LYGCFieldString>
+    <LYGCFieldString2 Name="不显示字段">
+    </LYGCFieldString2>
+    <LYGCInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,Q_DI_LEI,DI_LEI,TU_RANG_LX,YOU_SHI_SZ,MEI_GQ_ZS,ZLND,SEN_LIN_LB,G_CHENG_LB,LD_KD,LD_CD,GXSJ</LYGCInputFieldName>
+    <!--林业案件图层-->
+    <AnJianDataset Name="数据集">ZT</AnJianDataset>
+    <AnJianGroupName Name="案件图层组">案件</AnJianGroupName>
+    <AnJianGroupName2 Name="案件图层组">案件专题</AnJianGroupName2>
+    <AnJianLayer Name="FeatureClass">ZT_LYAJ</AnJianLayer>
+    <AnJianLayerName Name="案件编辑">林业案件</AnJianLayerName>
+    <AnJianlyr Name="案件lyr">林业案件.lyr</AnJianlyr>
+    <AnJianFieldName Name="图斑编号">XI_BAN</AnJianFieldName>
+    <AnJianFieldDist Name="区划编号">XIAN,XIANG,CUN</AnJianFieldDist>
+    <AnJianFieldString Name="显示字段">
+    </AnJianFieldString>
+    <AnJianFieldString2 Name="不显示字段">
+    </AnJianFieldString2>
+    <AnJianInputFieldName>SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,BHYY,MIAN_JI,Q_LD_QS,LD_QS,Q_DI_LEI,DI_LEI,QI_YUAN,Q_SEN_LIN_LB,SEN_LIN_LB,YU_BI_DU,MEI_GQ_ZS,CFMJ,CFLX,CFXJ,BLXJ,GXSJ</AnJianInputFieldName>
+    <AnJianFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,XI_BAN</AnJianFieldNameD>
+    <AnJianFieldNameB Name="地类,林种,优势树种,土地权属,林木使用权,森林类别,变化原因">DI_LEI,LIN_ZHONG,YOU_SHI_SZ,LD_QS,LMJYQ,SEN_LIN_LB,BHYY</AnJianFieldNameB>
+    <AnJianFieldNameL Name="案件类型,行为主体,损失林地面积,损失林木蓄积,损失林木株数">AJLX,XWZT,SSLDMJ,SSLMXJ,SSLMZJ,SUNSHIXJ</AnJianFieldNameL>
+    <AnJianTypeLayer Name="地类、林种等类型专题查询">案件界线,案件_地类,案件_林种,案件_案件类型,案件_变更来源</AnJianTypeLayer>
+    <!--遥感判读图层-->
+    <YGDataset Name="数据集">ZT</YGDataset>
+    <YGGroupName Name="遥感判读图层组">小班变更</YGGroupName>
+    <YGGroupName2 Name="遥感判读图层组">遥感判读</YGGroupName2>
+    <YGLayer Name="FeatureClass">ZT_YGJC</YGLayer>
+    <YGLayerName Name="遥感判读编辑">遥感判读</YGLayerName>
+    <YGLayerName2 Name="遥感判读编辑">遥感变化</YGLayerName2>
+    <YGlyr Name="遥感判读lyr">遥感判读.lyr</YGlyr>
+    <YGFieldName Name="遥感编号">NO_TB</YGFieldName>
+    <YGFieldDist Name="区划编号">XIAN,XIANG,CUN</YGFieldDist>
+    <YGFieldString Name="显示字段">
+    </YGFieldString>
+    <YGFieldString2 Name="不显示字段">FID_1,Id,FID_2,ID_1,ORIG_FID,Distance,MAX2007,MIN2007,MEAN2007,RANG2007,STD2007,MAX2012,MIN2012,MEAN2012,RANG2012,STD2012,MAXIMUM,MINIMUM,MEAN,RANGE,STD_DEV,a,需要修正,NDVI_cha,删,OBJECTID,Join_Count,TARGET_FID,JOIN_FID</YGFieldString2>
+    <YGInputFieldName Name="NO_TB,SHENG,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN">NO_TB</YGInputFieldName>
+    <YGFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,NO_TB</YGFieldNameD>
+    <YGFieldNameB Name="地类,判读地类,林种,优势树种,土地权属,森林类别,变化原因,面积">DI_LEI,PAN_DILEI,LIN_ZHONG,YOU_SHI_SZ,LD_QS,SEN_LIN_LB,BHYY,MIAN_JI</YGFieldNameB>
+    <YGFieldNameL Name="灾害类型,灾害等级,交通区位,工程类别,林地质量等级,林地保护等级,主体功能区,事权等级">DISPE,DISASTER_C,KE_JI_DU,G_CHENG_LB,ZL_DJ,BH_DJ,QYKZ,SHI_QUAN_D</YGFieldNameL>
+    <YGTypeLayer Name="地类、林种等类型专题查询">遥感界线,遥感_地类,遥感_林种,遥感_树种,遥感_变化原因</YGTypeLayer>
+    <!--公益林图层-->
+    <GYLGroupName Name="公益林图层组">小班变更</GYLGroupName>
+    <GYLGroupName2 Name="公益林图层组">公益林</GYLGroupName2>
+    <GYLLayer Name="FeatureClass">
+    </GYLLayer>
+    <GYLLayerName Name="公益林编辑">公益林</GYLLayerName>
+    <GYLLayerName2 Name="公益林编辑">公益林</GYLLayerName2>
+    <GYLlyr Name="公益林lyr">公益林.lyr</GYLlyr>
+    <GYLFieldName Name="小班编号">XIAO_BAN</GYLFieldName>
+    <GYLFieldDist Name="区划编号">XIAN,XIANG,CUN</GYLFieldDist>
+    <GYLFieldName2 Name="公益林字段 LIN_ZHONG,QI_YUAN,SEN_LIN_LB,G_CHENG_LB,JYCSLX,SHI_QUAN_D,GJGYL_BHDJ">LD_QS,LIN_ZHONG,QI_YUAN,SEN_LIN_LB,G_CHENG_LB,SHI_QUAN_D,GJGYL_BHDJ</GYLFieldName2>
+    <!--二类变化图层-->
+    <ELBHDataset Name="数据集">FOREST</ELBHDataset>
+    <ELBHGroupName Name="二类变化图层组">二类变化</ELBHGroupName>
+    <ELBHGroupName2 Name="二类变化图层组">二类变化</ELBHGroupName2>
+    <ELBHLayer Name="FeatureClass">FOR_ELBH</ELBHLayer>
+    <ELBHLayer2 Name="FeatureClass">FOR_XIAOBAN</ELBHLayer2>
+    <ELBHLayerName Name="二类变化编辑">二类变化</ELBHLayerName>
+    <ELBHLayerName2 Name="二类变化编辑">本底小班</ELBHLayerName2>
+    <ELBHlyr Name="二类变化lyr">二类变化.lyr</ELBHlyr>
+    <ELBHFieldName Name="小班编号">XIAO_BAN</ELBHFieldName>
+    <ELBHFieldDist Name="区划编号">XIAN,XIANG,CUN</ELBHFieldDist>
+    <!--小班变更图层-->
+    <XBDataset Name="小班变更数据集">FOREST</XBDataset>
+    <XBGroupName Name="小班变更">小班变更</XBGroupName>
+    <XBGroupName2 Name="小班变更">小班编辑</XBGroupName2>
+    <XBGroupName3 Name="小班图层组">林业资源</XBGroupName3>
+    <XBLayerName Name="小班变更编辑">变更小班</XBLayerName>
+    <XBLayerName1 Name="小班变更编辑">年度小班</XBLayerName1>
+    <XBLayerName0 Name="小班">小班</XBLayerName0>
+    <XBLayerName2 Name="底图">造林专题,采伐专题,火灾专题,征占用专题,自然灾害专题,林业案件专题,遥感判读</XBLayerName2>
+    <XBLayerName3 Name="底图">ZT_ZL,ZT_CF,ZT_HZ,ZT_LDZZ,ZT_ZH,ZT_LYAJ,ZT_YGJC</XBLayerName3>
+    <XBLayerName4 Name="底图lyr">造林专题.lyr,采伐专题.lyr,火灾专题.lyr,征占用专题.lyr,自然灾害专题.lyr,林业案件专题.lyr</XBLayerName4>
+    <XBLayerName22 Name="底图">造林专题,采伐专题,火灾专题,征占用塔基,征占用专题,自然灾害专题,林业案件专题,遥感判读</XBLayerName22>
+    <XBLayerName33 Name="底图">ZT_ZL,ZT_CF,ZT_HZ,ZT_LDZZ,ZT_D_LDZZ,ZT_ZH,ZT_LYAJ,ZT_YGJC</XBLayerName33>
+    <XBFieldName Name="小班编号">XIAO_BAN</XBFieldName>
+    <XBFieldName2 Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,XI_BAN</XBFieldName2>
+    <XBFieldDist Name="区划编号">XIAN,XIANG,CUN</XBFieldDist>
+    <XBLayer Name="变更小班FeatureClass">FOR_XBBH</XBLayer>
+    <XBLayer1 Name="年度小班FeatureClass">FOR_XIAOBAN</XBLayer1>
+    <XBDomain Name="小班变更域">XIAN,XIANG,CUN,BHYY</XBDomain>
+    <XBFieldString Name="小班显示字段">调查日期,小班编号,县（区）,乡（镇）,村,地名,面积,蓄积,地类,林地性质,土地所有权,土地使用权,海拔,地貌,坡向,坡度,坡位,裸岩率,土壤名称,土壤厚度,土壤质地,土壤母质,土壤侵蚀度,腐殖质厚,地下水位,立地类型,经营类型,起源,林种,林木所有权,林木使用权,事权等级,生态重要性,生态脆弱性,保护等级,工程类别,小班位置变化类型,散生木株树,树种组成,优势树种,造林年度,平均年龄,龄组,平均高,平均胸径,优势木平均高,郁闭度,自然度,群落结构,平原林网属性,可及度,商品林经营等级,枯枝落叶层厚度,混交比,株行距,管理措施,树种,造林方法,每公顷株树,保存株树,保存率,灌木优势种,草本优势种,植被类型,植被总盖度,盖度等级,灾害种类,危害部位,受灾面积,受灾程度,损失蓄积,损失株树,灾害等级,健康等级,调查人,调查日期,备注</XBFieldString>
+    <XBFieldString2 Name="小班不显示字段">XBID,BAK1,BAK2</XBFieldString2>
+    <XBTypeLayer Name="地类、林种等类型专题查询">小班界线,小班_地类,小班_林种,小班_树种,小班_变更来源,小班_更新状态</XBTypeLayer>
+    <XBTypeLayer2 Name="林地分布、林种分布、林地保护等级等林地保护类型专题查询">林地分布,林种分布,林地质量等级,林地保护等级,林地起源,林地权属,林木权属,事权等级,公益林保护等级,公益林商品林,林地变化原因,林地变更,新增林地,流失林地</XBTypeLayer2>
+    <XBFieldNameD Name="字段">XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN</XBFieldNameD>
+    <XBFieldNameB Name="地类,起源,林种,土地权属,土地使用权,林木所有权,林木所有权,林木使用权,森林类别">DI_LEI,QI_YUAN,LIN_ZHONG,LD_QS,TDJYQ,LMSYQ,LMJYQ,SEN_LIN_LB</XBFieldNameB>
+    <XBFieldNameL Name="优势树种,面积,平均年龄,龄组,郁闭度/覆盖度,公顷蓄积(活立木),每公顷株数">YOU_SHI_SZ,MIAN_JI,PINGJUN_NL,LING_ZU,YU_BI_DU,HUO_LMGQXJ,MEI_GQ_ZS</XBFieldNameL>
+    <XBFieldNameC Name="林地保护等级,林地功能分区,林地质量等级,主体功能区,事权等级,公益林保护等级,工程类别">BH_DJ,LYFQ,ZL_DJ,QYKZ,SHI_QUAN_D,GJGYL_BHDJ,G_CHENG_LB,</XBFieldNameC>
+    <DicTableName>T_SYS_META_CODE</DicTableName>
+    <!--道路图层-->
+    <RoadLayerName Name="道路">道路</RoadLayerName>
+    <!--河流图层-->
+    <RiverLayerName Name="河流">线状水系</RiverLayerName>
+    <!--湖泊图层-->
+    <LakeLayerName Name="湖泊">面状水系</LakeLayerName>
+    <!--国家图层-->
+    <CountryLayerName Name="国家">国家</CountryLayerName>
+    <CountryFieldName Name="国名字段">CNTRY_NAME</CountryFieldName>
+    <CountryValueName Value="中国">China</CountryValueName>
+    <!--图例图层-->
+    <LegendLayer Name="图例可见图层">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,造林界线,采伐界线,征占用界线,火灾界线,灾害界线,案件界线</LegendLayer>
+    <LegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,1,0,0,0,0,1,0,0,0</LegendLayerNewColumn>
+    <ZaoLinLegendLayer Name="造林图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,造林作业,采伐专题,遥感判读</ZaoLinLegendLayer>
+    <ZaoLinLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0,0</ZaoLinLegendLayerNewColumn>
+    <CaiFaLegendLayer Name="采伐图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,采伐作业,遥感判读</CaiFaLegendLayer>
+    <CaiFaLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0</CaiFaLegendLayerNewColumn>
+    <FireLegendLayer Name="火灾图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,森林火灾,遥感判读</FireLegendLayer>
+    <FireLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0</FireLegendLayerNewColumn>
+    <ZRZHLegendLayer Name="灾害图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,自然灾害,遥感判读</ZRZHLegendLayer>
+    <ZRZHLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0</ZRZHLegendLayerNewColumn>
+    <AnJianLegendLayer Name="案件图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,林业案件,遥感判读</AnJianLegendLayer>
+    <AnJianLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0</AnJianLegendLayerNewColumn>
+    <ZZYLegendLayer Name="征占用图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,林地征占用点,林地征占用线,林地征占用面,遥感判读</ZZYLegendLayer>
+    <ZZYLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0,0,0</ZZYLegendLayerNewColumn>
+    <XBLegendLayer Name="变更小班图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,变更小班,遥感判读,造林专题,采伐专题,火灾专题,征占用专题,自然灾害专题,林业案件专题</XBLegendLayer>
+    <XBLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0</XBLegendLayerNewColumn>
+    <XB2LegendLayer Name="年度小班图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,变更小班,年度小班,本底小班,遥感判读,造林专题,采伐专题,火灾专题,征占用专题,自然灾害专题,林业案件专题</XB2LegendLayer>
+    <XB2LegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0</XB2LegendLayerNewColumn>
+    <CaiFa2LegendLayer Name="采伐图例可见图层是否是新的一列">采伐作业,其它采伐</CaiFa2LegendLayer>
+    <CaiFa2LegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0</CaiFa2LegendLayerNewColumn>
+    <YGLegendLayer Name="造林图例可见图层是否是新的一列">县名,乡名,村名,县_界线,乡_界线,村_界线,林班,小班,遥感变化</YGLegendLayer>
+    <YGLegendLayerNewColumn Name="图例可见图层是否是新的一列">0,0,0,0,1,0,0,0,0</YGLegendLayerNewColumn>
+    <!--数据备份图层-->
+    <BackupLayer Name="备份图层名">
+    </BackupLayer>
+  </MapLayer>
+  <StatisChart Name="统计图表">
+    <CaiFaContent Name="采伐统计类型 采伐蓄积,采伐出材量,采伐面积">CFXJ,GGCCCL+FGGCCCL,CFMJ</CaiFaContent>
+    <CaiFaClassify Name="采伐统计分类 采伐树种,林地权属,行政区划">YOU_SHI_SZ,LD_QS,XIANG</CaiFaClassify>
+    <NDCaiFaContent Name="年度小班采伐统计类型 面积,个数">MIAN_JI,1</NDCaiFaContent>
+    <NDCaiFaClassify Name="年度采伐统计分类 采伐树种,林地权属,行政区划">Q_SZ,LD_QS,XIANG</NDCaiFaClassify>
+    <ZaoLinContent Name="造林统计类型 造林面积,每公顷株数">MIAN_JI,MEI_GQ_ZS</ZaoLinContent>
+    <ZaoLinClassify Name="造林统计分类 优势树种,造林类别,土地权属,行政区划">YOU_SHI_SZ,ZAO_LIN_LB,LD_QS,XIANG</ZaoLinClassify>
+    <HuoZaiContent Name="火灾统计类型 次数">
+    </HuoZaiContent>
+    <HuoZaiClassify Name="火灾统计分类 24小时,月份,火灾原因">QHSJ,QHSJ,HZYY</HuoZaiClassify>
+  </StatisChart>
+  <DataBase Name="数据库连接参数">
+    <DBKey Name="Access or Oracle or SqlServer">Sqlite</DBKey>
+    <ConnectionStringDepository>1</ConnectionStringDepository>
+    <PersistSecurityInfo Name="false">false</PersistSecurityInfo>
+    <Initial>1</Initial>
+    <MapDBkey Name="空间数据库位置 Local or SqlServer">Local</MapDBkey>
+    <!-- Access数据库连接参数 -->
+    <Access Name="Microsoft Office Access">
+      <LocalPassword Name="223385440187273375514">
+      </LocalPassword>
+      <DataPath Name="mdb 文件夹">D:\TDProject\test\ForestManager\</DataPath>
+      <DataSource Name="mdb 路径">Data\LocalDB.mdb</DataSource>
+      <Provider Name="Microsoft.Jet.OLEDB.4.0">Microsoft.Jet.OLEDB.4.0</Provider>
+      <DBProvider Name="OleDb">OleDb</DBProvider>
+      <DBMS Name="Access">Access</DBMS>
+    </Access>
+    <!-- Oracle数据库连接参数 -->
+    <Oracle>
+      <UserID Name="255376492181263318498">255376492181263318498</UserID>
+      <Password Name="255376492181263318498">255376492181263318498</Password>
+      <DataSource Name="Oracle 服务名">ORASYS</DataSource>
+      <Provider Name="OraOLEDB.Oracle.1">OraOLEDB.Oracle.1</Provider>
+      <DBProvider Name="OracleClient or Odbc or SqlClient or SqlServerCe">OracleClient</DBProvider>
+      <DBMS Name="Oracle">Oracle</DBMS>
+    </Oracle>
+    <SqlServer>
+      <UserID>sa</UserID>
+      <Password>sa123456</Password>
+      <DataSource name="localhost,localhost,localhost">localhost</DataSource>
+      <InitialCatalog name="FORDATA_142326_2016,FQSJ,FORDATA_142326_2016,ZZYXM">FORDATA_142326_2016</InitialCatalog>
+      <Provider>SqlClient</Provider>
+      <DBProvider>SqlClient</DBProvider>
+      <DBMS>SqlServer</DBMS>
+      <Service Name="sde:sqlserver:localhost,sde:sqlserver:localhost,sde:sqlserver:localhost">sde:sqlserver:localhost</Service>
+      <Version Name="BFEBFBFF00020655">dbo.Default</Version>
+    </SqlServer>
+  </DataBase>
+  <!-- 统计数据表 -->
+  <Earth>
+    <TABLE_LOCATE Name="三维定位用图层">LOCATE</TABLE_LOCATE>
+    <TABLE_CODE Name="系统代码表">T_SYS_META_CODE</TABLE_CODE>
+    <TABLE_CODEINDEX Name="代码索引表">T_SYS_META_CODEINDEX</TABLE_CODEINDEX>
+    <TABLE_ADMIN Name="行政代码表">T_SYS_LD_ADMIN_CODES</TABLE_ADMIN>
+    <TABLE_TABLEINDEX Name="数据字典表名称索引表">T_SYS_META_TABLE</TABLE_TABLEINDEX>
+    <TABLE_FIELDSINDEX Name="数据字典表的字段索引表">T_SYS_META_FIELDS</TABLE_FIELDSINDEX>
+    <TABLE_XB Name="小班图名称">FOR_XIAOBAN</TABLE_XB>
+    <TABLE_ZL Name="造林表">ZT_ZL</TABLE_ZL>
+    <TABLE_CF Name="采伐表">ZT_CF</TABLE_CF>
+    <TABLE_HZ Name="火灾信息表">T_ZT_HZ_INFO</TABLE_HZ>
+  </Earth>
+  <!-- 添加地形图 -->
+  <DXT>
+    <DXTPath Name="地形图路径">D:\VSS_GX\GXGISSetUp\Data\工作底图</DXTPath>
+    <DXTType Name="图幅号类型">旧图幅号</DXTType>
+  </DXT>
+  <!-- 数据库添加字段 -->
+  <AddFields>
+    <FClassName Name="要素类名">FOR_XIAOBAN</FClassName>
+    <FieldNames Name="字段名">Q_MJ,Q_SZ,Q_YBD,Q_PJNL,Q_PJXJ,Q_PJSG,Q_PJDM,Q_ZXJ,Q_BSSZPJXJ,Q_BSSZNL,Q_BSSZSG,Q_BSSZGQDM,Q_YSSZXJ,Q_BSSZXJ,Q_SSXJ,GX_SPARE1,GX_SPARE2,DT_SRC,V_TMMJ,YDZL</FieldNames>
+    <FieldAliass Name="字段别名">前期小班面积,前期树种,前期郁闭度,前期平均年龄,前期平均胸径,前期平均树高,前期公顷断面,前期总蓄积,前期伴生树种平均胸径,前期伴生树种平均年龄,前期伴生树种平均树高,前期伴生树种公顷断面,前期优势树种蓄积,前期伴生树种蓄积,前期散生蓄积,更新备用字段1,更新备用字段2,数据来源,图面面积,用地种类</FieldAliass>
+    <FieldTypes Name="字段类型">double,text,double,shortint,double,double,double,longint,double,shortint,double,double,longint,longint,longint,text,text,text,double,text</FieldTypes>
+    <FieldLengths Name="字段长度">0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,6,12,10,0,1</FieldLengths>
+    <FieldDomains name="域">,SHU_ZHONG,,,,,,,,,,,,,,,,,,YDZL</FieldDomains>
+    <FieldScales name="小数位">2,0,2,0,1,1,2,0,1,0,1,2,0,0,0,0,0,0,2,0</FieldScales>
+    <MatchFields Name="匹配上一年度字段">MIAN_JI,YOU_SHI_SZ,YU_BI_DU,PINGJUN_NL,PINGJUN_XJ,PINGJUN_SG,PINGJUN_DM,ZXJ,BSSZPJXJ,BSSZNL,BSSZSG,BSSZGQDM,YSSZXJ,BSSZXJ,SSXJ</MatchFields>
+  </AddFields>
+  <AddFieldsBH>
+    <FClassName Name="要素类名">FOR_XBBH</FClassName>
+    <FieldNames Name="字段名">DT_SRC,YDZL</FieldNames>
+    <FieldAliass Name="字段别名">数据来源,用地种类</FieldAliass>
+    <FieldTypes Name="字段类型">text,text</FieldTypes>
+    <FieldLengths Name="字段长度">10,1</FieldLengths>
+    <FieldDomains name="域">,YDZL</FieldDomains>
+    <FieldScales name="小数位">0,0</FieldScales>
+  </AddFieldsBH>
+  <!-- 三类数据 -->
+  <EditData>
+    <QFields Name="前期字段">Q_LD_QS,Q_DI_LEI,Q_SEN_LB,Q_LIN_ZHONG,Q_BH_DJ</QFields>
+    <HFields Name="当前字段">LD_QS,DI_LEI,SEN_LIN_LB,LIN_ZHONG,BH_DJ</HFields>
+    <CFDilei Name="采伐地">601</CFDilei>
+    <HZDilei Name="火烧地">602</HZDilei>
+    <ZTImportFields Name="导入变化时必须从专题读取的字段">XI_BAN,MIAN_JI,DI_LEI,BHYY,BHND,YU_BI_DU,YSMG,SSLX,SSZYSZ,SSZZS,SSPJXJ,SSPJGD,PINGJUN_NL,PINGJUN_XJ,PINGJUN_SG,PINGJUN_DM,MEI_GQ_ZS,BSSZ,BSSZQY,BSSZNL,BSSZSG,BSSZPJXJ,BSSZGQDM,BSSZGQZS,ZXJ,SLXJ,YSSZXJ,BSSZXJ,SSXJ,HUO_LMGQXJ,ZFNL,ZLND,LING_ZU,LJ,GXSJ</ZTImportFields>
+    <SubImportFields Name="导入变化时必须从本底读取的字段">SHENG,SHI,XIAN,XIANG,CUN,LIN_YE_JU,LIN_CHANG,LIN_BAN,XIAO_BAN,QHFQBH,STQW</SubImportFields>
+    <ClearFields Name="值清空字段">YU_BI_DU,SSLX,SSZYSZ,SSZZS,SSPJXJ,SSPJGD,YOU_SHI_SZ,QI_YUAN,PINGJUN_NL,PINGJUN_XJ,PINGJUN_SG,PINGJUN_DM,MEI_GQ_ZS,BSSZQY,BSSZNL,BSSZSG,BSSZPJXJ,BSSZGQDM,BSSZGQZS,ZXJ,SLXJ,YSSZXJ,BSSZXJ,SSXJ,HUO_LMGQXJ,LING_ZU,LJ,CCLDJ,XJBDJ,BSSZ,XZWZL,XZWCD,XZWKD,XZWMJ</ClearFields>
+    <ListPerCount Name="属性列表每页行数">20</ListPerCount>
+    <!-- 造林 -->
+    <Afforest>
+      <!-- 属性编辑 -->
+      <KeyField Name="属性表关联关键字段">UUID</KeyField>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <BHField Name="变化原因字段">BHYY</BHField>
+      <GXField Name="更新树种字段">GXSZ</GXField>
+      <SZField Name="优势树种字段">YOU_SHI_SZ</SZField>
+      <ZLLBField Name="造林列表字段">ZAO_LIN_LB</ZLLBField>
+      <BHDomain Name="变化原因大类">11,12,13</BHDomain>
+      <ZLLBValue Name="造林类别人工促进更新代码">125</ZLLBValue>
+      <CFLayerName Name="采伐专题图层名">采伐专题</CFLayerName>
+      <CopyField Name="是否复制字段">IS_COPIED</CopyField>
+      <CopyWhere Name="复制采伐班块条件">(YOU_SHI_SZ like '28_' or YOU_SHI_SZ like '29_' or YOU_SHI_SZ like '30_') and CFFS='11'</CopyWhere>
+      <GXFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,BHYY,TU_RANG_LX,YOU_SHI_SZ,MEI_GQ_ZS,SEN_LIN_LB,G_CHENG_LB,LD_KD,LD_CD,GXSJ,LIN_ZHONG,SSZZS,ZLND,Q_SEN_LB,Q_LIN_ZHONG,BSSZ</GXFields>
+      <GXMatchFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,BHYY,TU_RANG_LX,YOU_SHI_SZ,MEI_GQ_ZS,SEN_LIN_LB,G_CHENG_LB,LD_KD,LD_CD,GXSJ,LIN_ZHONG,SSZZS,ZLND,Q_SEN_LB,Q_LIN_ZHONG,BSSZ</GXMatchFields>
+    </Afforest>
+    <!-- 采伐 -->
+    <Harvest>
+      <!-- 属性编辑 -->
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <BHDomain>21,22,23,24</BHDomain>
+      <AreaField>MIAN_JI</AreaField>
+      <ZTAreaField Name="专题面积字段">CFMJ</ZTAreaField>
+      <JCFields>CUN,LIN_BAN,DCXB,ZYXB,BZDH,BZDMJ,JCSZ,JJ,JCLX,YCZS,BYCZS,XCZS,D1,H1,D2,H2,D3,H3</JCFields>
+      <CalcFields Name="需计算字段">CFZS,CFXJ,CCLV,GGCCCL,FGGCCCL,BLMGQZS,BLMGQXJ;采伐株数,采伐蓄积,出材率,规格材出材量,非规格材出材量,保留木公顷株数,保留木公顷蓄积</CalcFields>
+      <TaskField Name="作业设计ID">Task_ID</TaskField>
+      <TaskTable Name="作业设计表">T_EditTask_ZT</TaskTable>
+      <TaskNameField Name="作业设计名称字段">taskname</TaskNameField>
+      <TaskIDField Name="作业设计ID字段">ID</TaskIDField>
+      <DatasetName Name="Dataset">ZT</DatasetName>
+      <AttrTable Name="简易伐区调查设计表">Template\简易伐区调查设计表</AttrTable>
+      <CFSZField Name="采伐树种字段">YOU_SHI_SZ</CFSZField>
+      <JCSZField Name="检尺树种字段">JCSZ</JCSZField>
+      <GXFields>XI_BAN,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,PO_XIANG,PO_DU,PO_WEI,HBG,CTMY,TU_RANG_LX,TU_CENG_HD,Q_SEN_LB,SEN_LIN_LB,Q_LIN_ZHONG,LIN_ZHONG,GJGYL_BHDJ,PINGJUN_NL,LING_ZU,QI_YUAN,PINGJUN_XJ,PINGJUN_SG,SSZZS,SSXJ,BHYY,GXSJ,MEI_GQ_ZS,YU_BI_DU,YOU_SHI_SZ,HUO_LMGQXJ</GXFields>
+      <GXMatchFields>XI_BAN,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,PO_XIANG,PO_DU,PO_WEI,HBG,CTMY,TU_RANG_LX,TU_CENG_HD,Q_SEN_LB,SEN_LIN_LB,Q_LIN_ZHONG,LIN_ZHONG,GJGYL_BHDJ,PINGJUN_NL,LING_ZU,QI_YUAN,PINGJUN_XJ,PINGJUN_SG,SSZZS,SSXJ,BHYY,GXSJ,BLMGQZS,BLMYBD,YOU_SHI_SZ,BLMGQXJ</GXMatchFields>
+    </Harvest>
+    <!-- 火灾 -->
+    <Fire>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <!--<ZTAreaField Name="专题面积字段">ZHMJ</ZTAreaField>-->
+      <DispeField Name="灾害类型字段">DISPE</DispeField>
+      <DispeValue Name="灾害类型值">20</DispeValue>
+      <BHField Name="变化原因字段">BHYY</BHField>
+      <BHValue Name="变化原因值">71</BHValue>
+      <BHDomain>71</BHDomain>
+      <FireTable Name="火灾信息表">T_ZT_HZ_INFO</FireTable>
+      <IDField Name="火灾编号字段">FIRE_NO</IDField>
+      <PlaceField Name="火灾地点字段">DIMING</PlaceField>
+      <TimeField Name="发生时间字段">QHSJ</TimeField>
+      <CalcFields Name="受害森林面积,林木损失蓄积,林木损失株数,起源,龄组">ZHMJ,SUNSHIXJ,SS_ZS,QI_YUAN,LING_ZU</CalcFields>
+      <ResultFields Name="原始林面积，人工林面积，损失成林，损失幼林">YSL_MJ,RGL_MJ,SS_CL,SS_YL</ResultFields>
+      <GXFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,YOU_SHI_SZ,DISPE,DISASTER_C,GXSJ,PINGJUN_NL,LING_ZU,YSSZXJ</GXFields>
+      <GXMatchFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,YOU_SHI_SZ,DISPE,DISASTER_C,GXSJ,PINGJUN_NL,LING_ZU,BLXJ</GXMatchFields>
+    </Fire>
+    <!-- 自然灾害 -->
+    <Disaster>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <ZTAreaField Name="专题面积字段">ZHMJ</ZTAreaField>
+      <BHDomain>72,73,81,82</BHDomain>
+      <GXFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,YOU_SHI_SZ,DISPE,DISASTER_C,GXSJ,MIAN_JI,YSSZXJ</GXFields>
+      <GXMatchFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,YOU_SHI_SZ,DISPE,DISASTER_C,GXSJ,ZHMJ,BLXJ</GXMatchFields>
+    </Disaster>
+    <!-- 林业案件 -->
+    <ForestCase>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <ZTAreaField Name="专题面积字段">CFMJ</ZTAreaField>
+      <BHDomain>50,42,21,22,23,24</BHDomain>
+      <GXFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,GXSJ,YOU_SHI_SZ,YSSZXJ</GXFields>
+      <GXMatchFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,Q_LIN_ZHONG,LIN_ZHONG,QI_YUAN,Q_SEN_LB,SEN_LIN_LB,BHYY,GXSJ,YOU_SHI_SZ,BLXJ</GXMatchFields>
+    </ForestCase>
+    <!-- 征占用 -->
+    <Expropriation>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <LBField Name="林班字段">LIN_BAN</LBField>
+      <XBField Name="小班字段">XIAO_BAN</XBField>
+      <IDField Name="小班ID字段">XBID</IDField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <ZTAreaField Name="专题面积字段">SPMJ</ZTAreaField>
+      <XMField Name="项目编号字段">XMBH</XMField>
+      <XMNameField Name="项目名称字段">XMMC</XMNameField>
+      <XMKindField Name="林地用途">LDYT</XMKindField>
+      <BHDomain>41,42,31,32,33,50</BHDomain>
+      <ExproTable Name="信息表">T_EDITTASK_ZT</ExproTable>
+      <TaskIDField>ID</TaskIDField>
+      <TaskNameField>taskname</TaskNameField>
+      <TaskTimeField>createtime</TaskTimeField>
+      <SPRate Name="审批面积与面积的差值比率">0.1</SPRate>
+      <GXFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,BHYY,GXSJ,SEN_LIN_LB,SHI_QUAN_D,GJGYL_BHDJ,BH_DJ,LIN_ZHONG,JJLCQ,XZWZL,XZWCD,XZWKD,YOU_SHI_SZ,QI_YUAN,LING_ZU,XZWMJ,Q_SEN_LB,Q_LIN_ZHONG,QYKZ,LYFQ,ZL_DJ</GXFields>
+      <GXMatchFields>XI_BAN,Q_LD_QS,LD_QS,TDJYQ,LMSYQ,LMJYQ,MIAN_JI,Q_DI_LEI,DI_LEI,BHYY,GXSJ,SEN_LIN_LB,SHI_QUAN_D,GJGYL_BHDJ,BH_DJ,LIN_ZHONG,JJLCQ,XZWZL,XZWCD,XZWKD,YOU_SHI_SZ,QI_YUAN,LING_ZU,XZWMJ,Q_SEN_LB,Q_LIN_ZHONG,QYKZ,LYFQ,ZL_DJ</GXMatchFields>
+    </Expropriation>
+    <Sub>
+      <SubField Name="唯一编号">XIAO_BAN</SubField>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <LBField Name="林班">LIN_BAN</LBField>
+      <XBField Name="小班">XIAO_BAN</XBField>
+      <XibanField Name="细班">XI_BAN</XibanField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <BHDomain>10,11,12,13,20,21,22,23,24,30,31,32,33,41,42,50,71,72,73,81,82,91,92,93,96,99</BHDomain>
+      <ZXJField Name="总蓄积字段">ZXJ</ZXJField>
+      <SLXJField Name="森林蓄积字段">SLXJ</SLXJField>
+      <YSSZXJField Name="优势树种蓄积字段">YSSZXJ</YSSZXJField>
+      <SSXJField Name="散生四旁蓄积字段">SSXJ</SSXJField>
+      <BSXJField Name="伴生树种蓄积字段">BSSZXJ</BSXJField>
+      <TolCentroidDistance Name="重心点距离容差">5</TolCentroidDistance>
+      <TolArea Name="面积容差">200</TolArea>
+      <TolBuffer Name="">2</TolBuffer>
+      <TolIntersect name="重叠率">0.95</TolIntersect>
+      <MinArea Name="最小面积，单位公顷">0.1</MinArea>
+      <OverlapTable Name="专题相交表">T_ZT_Overlap</OverlapTable>
+      <Updatetable Name="自动更新表">T_AutoUpdate_Feature</Updatetable>
+      <ZYTemplateFile>Template\资源成果附表.xls</ZYTemplateFile>
+      <LDTemplateFile>bin\国家林地变更表.xls</LDTemplateFile>
+      <LDTemplateFile2>Template\林地台账.xls</LDTemplateFile2>
+      <GXFilter Name="二类变化数据过滤条件">(BHYY[]'') and (BHYY is  not NULL) and BHYY[]'80'</GXFilter>
+      <LDGXFilter Name="林地变化数据过滤条件">(BHYY in ('10','20','30','41','42','50','71','72','73','81','82','91','92','93','96','99'))</LDGXFilter>
+      <LDClearFields Name="非林地清空字段">SEN_LIN_LB,G_CHENG_LB,SHI_QUAN_D,GJGYL_BHDJ,ZL_DJ,BH_DJ,BCLD,BHYY,BHND,TD_TH_LX,DISPE,DISASTER_C,LIN_ZHONG,YU_BI_DU,LD_KD,LD_CD,YOU_SHI_SZ,QI_YUAN,PINGJUN_XJ,MEI_GQ_ZS,HUO_LMGQXJ,LING_ZU</LDClearFields>
+    </Sub>
+    <LinBan>
+      <VillField Name="村字段">CUN</VillField>
+      <LBField Name="林班">LIN_BAN</LBField>
+    </LinBan>
+    <Other>
+      <CntyField Name="区县字段">XIAN</CntyField>
+      <TownField Name="乡镇字段">XIANG</TownField>
+      <VillField Name="村字段">CUN</VillField>
+      <AreaField Name="面积字段">MIAN_JI</AreaField>
+      <BHDomain>10,11,12,13,20,21,22,23,24,30,31,32,33,41,42,50,71,72,73,81,82,91,92,93,96,99</BHDomain>
+    </Other>
+  </EditData>
+  <Topo>
+    <RepeatPoint>0</RepeatPoint>
+    <RepeatPointCheck>1</RepeatPointCheck>
+    <SelfIntersect>0</SelfIntersect>
+    <SelfIntersectCheck>0</SelfIntersectCheck>
+    <Overlap>1</Overlap>
+    <OverlapCheck>0</OverlapCheck>
+    <LayersOverlap>0</LayersOverlap>
+    <LayersYear>2009</LayersYear>
+    <LayersOverlapCheck>0</LayersOverlapCheck>
+    <BeyondBoundary>0</BeyondBoundary>
+    <BeyondBoundaryCheck>1</BeyondBoundaryCheck>
+    <Gaps>0</Gaps>
+    <GapsCheck>0</GapsCheck>
+    <Area>0</Area>
+    <AreaCheck>1</AreaCheck>
+    <Angle>0</Angle>
+    <AngleCheck>0</AngleCheck>
+    <AreaValue>667</AreaValue>
+    <AngleValue>15</AngleValue>
+    <Set>1</Set>
+    <Check>0</Check>
+  </Topo>
+  <Project Name="投影参数">PROJCS["PCS_Albers_Beijing_1954",GEOGCS["GCS_Beijing_1954",DATUM["D_Beijing_1954",SPHEROID["Krasovsky_1940",6378245.0,298.3]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Albers"],PARAMETER["False_Easting",0.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",122.0],PARAMETER["Standard_Parallel_1",48.0],PARAMETER["Standard_Parallel_2",52.0],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]</Project>
+  <Symbol>
+    <FillColor>ffffffbe</FillColor>
+    <FontColor>ff000000</FontColor>
+    <LineColor>ff000000</LineColor>
+    <MarkerColor>ff000000</MarkerColor>
+    <OutlineColor>ff6e6e6e</OutlineColor>
+    <TextSymbol>
+      <Angle>0</Angle>
+      <Direction>0</Direction>
+      <FontBold>False</FontBold>
+      <FontItalic>False</FontItalic>
+      <FontName>宋体</FontName>
+      <FontSize>10</FontSize>
+      <FontStrikethrough>False</FontStrikethrough>
+      <FontUnderline>False</FontUnderline>
+      <HorizontalAlignment>0</HorizontalAlignment>
+      <Size>10</Size>
+      <Text>文本</Text>
+      <VerticalAlignment>2</VerticalAlignment>
+      <XOffset>0</XOffset>
+      <YOffset>0</YOffset>
+    </TextSymbol>
+  </Symbol>
+  <report>
+    <reportpath>template\</reportpath>
+    <reportstaticpath>temp\</reportstaticpath>
+  </report>
+  <CartoTable>
+    <HAR>
+      <Design>采伐作业,XIANG as 乡,CUN as 村,LIN_BAN as 林班,XIAO_BAN as 小班,XI_BAN as 细班,YOU_SHI_SZ as 树种,PINGJUN_NL as 林龄,CFMJ as 采伐面积,CFXJ as 采伐蓄积,GGCCCL+FGGCCCL as 出材量</Design>
+      <Survey>小班,XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,DI_LEI,YOU_SHI_SZ,LIN_ZHONG,MIAN_JI</Survey>
+      <Custom>采伐作业,</Custom>
+    </HAR>
+    <AFF>
+      <Design>造林作业,XIANG as 乡,CUN as 村,LIN_BAN as 林班,XIAO_BAN as 小班,MIAN_JI as 面积,YOU_SHI_SZ as 树种,ZAO_LIN_LB as 造林类别,ZLND as 造林年度</Design>
+      <Survey>小班,XIAN,XIANG,CUN,LIN_BAN,XIAO_BAN,DI_LEI,YOU_SHI_SZ,LIN_ZHONG,MIAN_JI</Survey>
+      <Custom>造林作业,</Custom>
+    </AFF>
+    <ZZY>
+      <Custom>林地征占用面,</Custom>
+    </ZZY>
+    <AJ>
+      <Custom>林地征占用面,</Custom>
+    </AJ>
+    <HZ>
+      <Custom>林地征占用面,</Custom>
+    </HZ>
+    <ZH>
+      <Custom>林地征占用面,</Custom>
+    </ZH>
+    <Font>Arial,10</Font>
+  </CartoTable>
+  <DXT>秘密</DXT>
+  <CartoTemplatePath>template</CartoTemplatePath>
+</Config>

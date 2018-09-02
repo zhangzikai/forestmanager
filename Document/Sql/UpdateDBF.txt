@@ -1,0 +1,48 @@
+﻿update 乡界 set xian="142330" where xian="141128"
+update 乡界 set xian="142303" where xian="141182"
+update 乡界 set xian="142323" where xian="141122"
+update 乡界 set xian="142333" where xian="141130"
+update 乡界 set xian="142329" where xian="141127"
+update 乡界 set xian="142326" where xian="141124"
+update 乡界 set xian="142327" where xian="141125"
+update 乡界 set xian="142328" where xian="141126"
+update 乡界 set xian="142322" where xian="141121"
+update 乡界 set xian="142301" where xian="141181"
+update 乡界 set xian="142325" where xian="141123"
+update 乡界 set xian="142332" where xian="141129"
+
+
+update 小班 set xian="142330" where xian="141128"
+update 小班 set xian="142303" where xian="141182"
+update 小班 set xian="142323" where xian="141122"
+update 小班 set xian="142333" where xian="141130"
+update 小班 set xian="142329" where xian="141127"
+update 小班 set xian="142326" where xian="141124"
+update 小班 set xian="142327" where xian="141125"
+update 小班 set xian="142328" where xian="141126"
+update 小班 set xian="142322" where xian="141121"
+update 小班 set xian="142301" where xian="141181"
+update 小班 set xian="142325" where xian="141123"
+update 小班 set xian="142332" where xian="141129"
+update 小班 set xian="142302" where xian="141102"
+
+update 村界 set xian="142330" where xian="141128"
+update 村界 set xian="142303" where xian="141182"
+update 村界 set xian="142323" where xian="141122"
+update 村界 set xian="142333" where xian="141130"
+update 村界 set xian="142329" where xian="141127"
+update 村界 set xian="142326" where xian="141124"
+update 村界 set xian="142327" where xian="141125"
+update 村界 set xian="142328" where xian="141126"
+update 村界 set xian="142322" where xian="141121"
+update 村界 set xian="142301" where xian="141181"
+update 村界 set xian="142325" where xian="141123"
+update 村界 set xian="142332" where xian="141129"
+update 村界 set xian="142302" where xian="141102"
+
+
+update 小班 set yxmj=mian_ji
+update 小班 set xzwmj=mian_ji
+update 小班 set zxj=huo_lmgqxj
+update 小班 set lyfq2=yyfq
+update 小班 set lyfq='14805'

@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GETVERSION" xml:space="preserve">
+    <value>SELECT V_VALUE FROM T_SYS_DB_INFO WHERE V_ITEM='VERSION'</value>
+  </data>
+  <data name="V0TOV1" xml:space="preserve">
+    <value>CREATE TABLE T_SYS_DB_INFO(V_ITEM VARCHAR(50) NOT NULL,V_VALUE VARCHAR(MAX) NULL,V_MEMO VARCHAR(MAX) NULL , PRIMARY KEY (V_ITEM));
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('VERSION', '1','数据库版本');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('VDATE', '2013-12-05','版本日期');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('PRODUCER', '1','生产者');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('PRDATE', '','生产日期');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('NAUPDATE', '','是否已自然更新');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('NADATE', '','自然更新日期');
+INSERT INTO T_SYS_DB_INFO (V_ITEM, V_VALUE,V_MEMO) VALUES ('NGXEDITE', '','是否完成了年度编辑');</value>
+  </data>
+  <data name="UPBSANXJ2" xml:space="preserve">
+    <value>CREATE PROC FOR_BSANXJ_PROC2(@TABNAME VARCHAR(100))
+AS
+	declare @cerror int,@tc int,@ErrorMessage NVARCHAR(4000),@ErrorSeverity INT,@ErrorState INT
+BEGIN  
+	BEGIN TRY
+			SET @cerror=0
+				
+			IF OBJECT_ID('FOR_ANBS_VIEW2')IS NOT NULL DROP VIEW FOR_ANBS_VIEW2
+			--2.建立伴生树种速生按平均测树因子表
+			EXEC('CREATE VIEW FOR_ANBS_VIEW2 AS SELECT 
+					CASE GROUPING(XIAN) WHEN 1 THEN ''合计'' ELSE XIAN END AS XIAN,
+					CASE GROUPING(XIANG) WHEN 1 THEN ''合计'' ELSE XIANG END AS XIANG,
+					CASE GROUPING(CUN) WHEN 1 THEN ''合计'' ELSE CUN END AS CUN,
+					CASE GROUPING(CUN+LIN_BAN) WHEN 1 THEN ''合计'' ELSE CUN+LIN_BAN END AS linban,					
+					CASE GROUPING(Q_BSSZNL) WHEN 1 THEN NULL ELSE Q_BSSZNL END AS Q_BSSZNL,
+					AVG(Q_BSSZPJXJ) as Q_BSSZPJXJ,AVG(Q_BSSZSG) as Q_BSSZSG,AVG(Q_BSSZGQDM ) as Q_BSSZGQDM
+						FROM '+@TABNAME+'  
+					WHERE  
+					    (Q_BSSZNL &lt;&gt; 0) AND (Q_BSSZGQDM &lt;&gt; 0) AND 
+						(BHYY IS NULL OR  BHYY &gt; ''90'' OR BHYY=''80'' OR (LEN(RTRIM(LTRIM(BHYY)))) &lt; 2) AND 
+						(BSSZ &gt;= ''290'') AND (BSSZ &lt;= ''320'') 
+					GROUP BY XIAN,XIANG,CUN,CUN+LIN_BAN,Q_BSSZNL WITH CUBE ')
+	END TRY
+	begin catch
+		set @cerror=@cerror+1
+		SELECT 
+		@ErrorMessage = ERROR_MESSAGE(),
+		@ErrorSeverity = ERROR_SEVERITY(),
+		@ErrorState = ERROR_STATE();
+	end catch
+END</value>
+  </data>
+  <data name="UPANSXJ" xml:space="preserve">
+    <value>CREATE PROC FOR_ANXJ_PROC(@TABNAME VARCHAR(100),@YEAR INT)
+AS
+	declare @cerror int,@tc int,@ErrorMessage NVARCHAR(4000),@ErrorSeverity INT,@ErrorState INT
+BEGIN  
+	BEGIN TRY
+			SET @cerror=0
+			--1.更新乔木林平均年龄
+			EXEC('UPDATE '+@TABNAME +' SET PINGJUN_NL=ISNULL(Q_PJNL,0)+'+@YEAR +' WHERE 
+			(BHYY IS NULL OR BHYY &gt;''90'' OR LEN(RTRIM(LTRIM(BHYY)))&lt;2 OR BHYY=''80'')
+				 AND RTRIM(LTRIM(DI_LEI)) IN (''111'',''112'',''120'',''130'',''200'',''301'',''302'',''401'',''403'',''404'',''961'',''962'',''963'')	 
+				 AND LEN(LTRIM(RTRIM(YOU_SHI_SZ)))=3 AND LTRIM(RTRIM(YOU_SHI_SZ))&lt;''800''')		
+			IF OBJECT_ID('FOR_ANXJ_VIEW')IS NOT NULL DROP VIEW FOR_ANXJ_VIEW
+			--2.建立前期速生按平均测树因子表
+			EXEC('CREATE VIEW FOR_ANXJ_VIEW AS SELECT 
+					CASE GROUPING(XIAN) WHEN 1 THEN ''合计'' ELSE XIAN END AS XIAN,
+					CASE GROUPING(XIANG) WHEN 1 THEN ''合计'' ELSE XIANG END AS XIANG,
+					CASE GROUPING(CUN) WHEN 1 THEN ''合计'' ELSE CUN END AS CUN,
+					CASE GROUPING(Q_PJNL) WHEN 1 THEN NULL ELSE Q_PJNL END AS Q_PJNL,
+					AVG(Q_PJXJ) as Q_PJXJ,AVG(Q_PJSG) as Q_PJSG,AVG(Q_PJDM ) as Q_PJDM
+						FROM '+@TABNAME+'  
+					WHERE  Q_PJNL&lt;&gt;0 AND Q_PJDM&lt;&gt;0  AND (BHYY IS NULL OR BHYY &gt;''90'' OR LEN(RTRIM(LTRIM(BHYY)))&lt;2 OR BHYY=''80'') AND (YOU_SHI_SZ&gt;=''290'' AND YOU_SHI_SZ&lt;=''320'') GROUP BY XIAN,XIANG,CUN,Q_PJNL WITH CUBE ')
+			--3.伴生速生桉更新测树因子
+			
+	END TRY
+	begin catch
+		set @cerror=@cerror+1
+		SELECT 
+		@ErrorMessage = ERROR_MESSAGE(),
+		@ErrorSeverity = ERROR_SEVERITY(),
+		@ErrorState = ERROR_STATE();
+	end catch
+END</value>
+  </data>
+  <data name="NAUPDATE" xml:space="preserve">
+    <value>CREATE PROC NatureUpdate(@qqnf varchar(4),@hqnf varchar(4),@NFC int)
+as
+	declare @HQTABLENAME varchar(16),@QQTABLENAME varchar(16),@xdm nvarchar(6),@cerror int,@tc int,@ErrorMessage NVARCHAR(4000),@ErrorSeverity INT,@ErrorState INT
+begin
+	begin transaction ct
+	begin try
+		SET @cerror=0
+		SET @HQTABLENAME='FOR_XIAOBAN_'+@hqnf
+		--SET @QQTABLENAME='FOR_XIAOBAN_'+@qqnf
+		--SET @NFC=cast(@HQNF as numeric(4,0))-cast(@qqnf as numeric(4,0))
+		--给小班表添加列
+		EXEC('ALTER TABLE '+@HQTABLENAME+' ADD GXH_SG NUMERIC(38,8),GXH_DM NUMERIC(38,8),GXH_XJ NUMERIC(38,8),GXH_XUJI NUMERIC(38,8)')
+		--更新优势树种和伴生树种蓄积没有填的森林蓄积
+		EXEC('UPDATE '+@HQTABLENAME+' SET Q_YSSZXJ=Q_ZXJ-ISNULL(Q_SSXJ,0) WHERE ISNULL(Q_YSSZXJ,0)+ISNULL(Q_BSSZXJ,0)=0 AND Q_ZXJ&gt;ISNULL(Q_SSXJ,0) AND (BHYY IS NULL OR BHYY=''80'')')
+		--1.阔叶树更新
+		--更新优势树种树高、断面积及胸径
+		exec('update '+@HQTABLENAME+' SET 	
+		GXH_SG=POWER((1.012+54.706*EXP(-0.181*Q_PJXJ-0.081*Q_PJNL))/100+1,'+@NFC+')*Q_PJSG,
+		GXH_DM=POWER(EXP(2.594-0.008*Q_PJNL-0.007*Q_PJXJ-0.080*Q_PJDM)/100+1,'+@NFC+')*Q_PJDM,
+		GXH_XJ=POWER((0.393+91.912*EXP(-0.267*Q_PJXJ-0.030*Q_PJNL))/100+1,'+@NFC+')*Q_PJXJ,
+		BHYY=''80'',GXSJ=convert(varchar(8),getdate(),112) 
+		WHERE (BHYY IS NULL OR BHYY=''80'') AND ((YOU_SHI_SZ&gt;=''200'' AND YOU_SHI_SZ&lt;''290'') OR YOU_SHI_SZ&gt;=''330'') AND (DI_LEI=''111'' OR DI_LEI=''112'' OR DI_LEI=''961'')')	
+		
+		--更新优势树种蓄积
+		exec('UPDATE A SET GXH_XUJI=POWER(EXP(2.679-0.014*A.Q_PJNL-0.021*A.Q_PJXJ-0.051*A.Q_PJDM)/100+1,'+@NFC+')*A.Q_YSSZXJ FROM '+@HQTABLENAME+' A 
+		WHERE (BHYY IS NULL OR BHYY=''80'') AND ((A.YOU_SHI_SZ&gt;=''200'' AND A.YOU_SHI_SZ&lt;''290'')  OR A.YOU_SHI_SZ&gt;=''330'') AND (A.DI_LEI=''111'' OR A.DI_LEI=''112'' OR A.DI_LEI=''961'') AND A.GXH_XJ&gt;=5')
+		
+		exec('update '+@HQTABLENAME+' SET PINGJUN_SG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_PJSG,0)')
+		exec('update '+@HQTABLENAME+' SET PINGJUN_DM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_PJDM,0)')
+		exec('update '+@HQTABLENAME+' SET PINGJUN_XJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_PJXJ,0)')
+		exec('UPDATE '+@HQTABLENAME+' SET YSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_YSSZXJ,0)')
+		
+		exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+		--更新伴生树种树高、断面积及胸径
+		exec('update '+@HQTABLENAME+' SET 
+		GXH_SG=POWER((1.012+54.706*EXP(-0.181*Q_BSSZPJXJ-0.081*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZSG,
+		GXH_DM=POWER(EXP(2.594-0.008*Q_BSSZNL-0.007*Q_BSSZPJXJ-0.080*Q_BSSZGQDM)/100+1,'+@NFC+')*Q_BSSZGQDM,
+		GXH_XJ=POWER((0.393+91.912*EXP(-0.267*Q_BSSZPJXJ-0.030*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZPJXJ
+		WHERE ((BHYY IS NULL) OR BHYY=''80'') AND ((BSSZ&gt;=''200'' AND BSSZ&lt;''290'') OR BSSZ&gt;=''330'') AND (DI_LEI=''111'' OR DI_LEI=''112'' OR DI_LEI=''961'')')	
+		
+		--更新伴生树种蓄积
+		exec('UPDATE A SET GXH_XUJI=POWER(EXP(2.679-0.014*A.Q_BSSZNL-0.021*A.Q_BSSZPJXJ-0.051*A.Q_BSSZGQDM)/100+1,'+@NFC+')*A.Q_BSSZXJ FROM '+@HQTABLENAME+' A 
+		WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND ((A.BSSZ&gt;=''200'' AND A.BSSZ&lt;''290'') OR A.BSSZ&gt;=''330'') AND (A.DI_LEI=''111'' OR A.DI_LEI=''112'' OR A.DI_LEI=''961'') AND A.GXH_XJ&gt;=5')
+		
+		exec('update '+@HQTABLENAME+' SET BSSZSG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_BSSZSG,0)')
+		exec('update '+@HQTABLENAME+' SET BSSZGQDM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_BSSZGQDM,0)')
+		exec('update '+@HQTABLENAME+' SET BSSZPJXJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_BSSZPJXJ,0)')
+		exec('UPDATE '+@HQTABLENAME+' SET BSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_BSSZXJ,0)')
+		
+		exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+		--2.马尾松、针叶树更新
+		declare @sql varchar(1000)
+		set @sql='select top 1 '+@xdm+'=xian from '+@HQTABLENAME+' where XIAN in(''450221'',''450222'',''450223'',''450224'',''450225'',''450226'',''450321'',''450322'',
+		''450323'',''450324'',''450325'',''450326'',''450327'',''450328'',''450329'',''450330'',''450332'',''450421'',''450422'',''450423'',''450481'',''451121'',''451122'',''450331'',
+		''451123'',''451221'',''451222'',''451223'',''451224'',''451225'',''451226'',''451227'',''451228'',''451321'',''451322'',''451323'',''451324'',''451101'',''451102'',''451281'') 
+		or SUBSTRING(xian,1,4) in(''4502'',''4503'',''4504'',''4512'',''4513'')'
+		exec(@sql)
+		if(@xdm is not null)
+			begin
+				--桂北地区
+				--更新优势树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((1.127+34.477*EXP(-0.087*Q_PJXJ-0.092*Q_PJNL))/100+1,'+@NFC+')*Q_PJSG,
+				GXH_DM=POWER(EXP(3.928-0.025*Q_PJNL-0.024*Q_PJXJ-0.165*Q_PJDM)/100+1,'+@NFC+')*Q_PJDM,
+				GXH_XJ=POWER((0.445+46.427*EXP(-0.170*Q_PJXJ-0.046*Q_PJNL))/100+1,'+@NFC+')*Q_PJXJ,
+				BHYY=''80'',GXSJ=convert(varchar(8),getdate(),112) 
+				WHERE ((BHYY IS NULL) OR BHYY=''80'') AND ((YOU_SHI_SZ&gt;=''100'' AND YOU_SHI_SZ&lt;''120'') or (YOU_SHI_SZ&gt;''129'' AND YOU_SHI_SZ&lt;''200''))')
+				
+				--更新优势树种蓄积				
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(3.468-0.029*A.Q_PJNL-0.036*A.Q_PJXJ-0.043*A.Q_PJDM)/100+1,'+@NFC+')*A.Q_YSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND ((A.YOU_SHI_SZ&gt;=''100'' AND A.YOU_SHI_SZ&lt;''120'') or (A.YOU_SHI_SZ&gt;''129'' AND A.YOU_SHI_SZ&lt;''200'')) AND A.GXH_XJ&gt;=5')
+			
+				exec('update '+@HQTABLENAME+' SET PINGJUN_SG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_PJSG,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_DM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_PJDM,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_XJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_PJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET YSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_YSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+				--更新伴生树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((1.127+34.477*EXP(-0.087*Q_BSSZPJXJ-0.092*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZSG,
+				GXH_DM=POWER(EXP(3.928-0.025*Q_BSSZNL-0.024*Q_BSSZPJXJ-0.165*Q_BSSZGQDM)/100+1,'+@NFC+')*Q_BSSZGQDM,
+				GXH_XJ=POWER((0.445+46.427*EXP(-0.170*Q_BSSZPJXJ-0.046*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZPJXJ
+				WHERE ((BHYY IS NULL) OR BHYY=''80'') AND ((BSSZ&gt;=''100'' AND BSSZ&lt;''120'') or (BSSZ&gt;''129'' AND BSSZ&lt;''200''))')
+				--更新伴生树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(3.468-0.029*A.Q_BSSZNL-0.036*A.Q_BSSZPJXJ-0.043*A.Q_BSSZGQDM)/100+1,'+@NFC+')*A.Q_BSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND ((A.BSSZ&gt;=''100'' AND A.BSSZ&lt;''120'') or (A.BSSZ&gt;''129'' AND A.BSSZ&lt;''200'')) AND A.GXH_XJ&gt;=5')
+			
+				exec('update '+@HQTABLENAME+' SET BSSZSG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_BSSZSG,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZGQDM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_BSSZGQDM,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZPJXJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_BSSZPJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET BSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_BSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+			end
+		else
+			begin
+				--桂南地区
+				--更新优势树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((1.599+53.690*EXP(-0.055*Q_PJXJ-0.165*Q_PJNL))/100+1,'+@NFC+')*Q_PJSG,
+				GXH_DM=POWER(EXP(4.138-0.095*Q_PJNL+0.012*Q_PJXJ-0.136*Q_PJDM)/100+1,'+@NFC+')*Q_PJDM,
+				GXH_XJ=POWER((1.344+68.070*EXP(-0.241*Q_PJXJ-0.038*Q_PJNL))/100+1,'+@NFC+')*Q_PJXJ,
+				BHYY=''80'',GXSJ=convert(varchar(8),getdate(),112) 
+				WHERE ((BHYY IS NULL) OR BHYY=''80'') AND ((YOU_SHI_SZ&gt;=''100'' AND YOU_SHI_SZ&lt;''120'') or (YOU_SHI_SZ&gt;''129'' AND YOU_SHI_SZ&lt;''200''))')
+				--更新优势树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(3.256-0.032*A.Q_PJNL-0.020*A.Q_PJXJ-0.048*A.Q_PJDM)/100+1,'+@NFC+')*A.Q_YSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND ((A.YOU_SHI_SZ&gt;=''100'' AND A.YOU_SHI_SZ&lt;''120'') or (A.YOU_SHI_SZ&gt;''129'' AND A.YOU_SHI_SZ&lt;''200'')) AND A.GXH_XJ&gt;=5')
+			
+				exec('update '+@HQTABLENAME+' SET PINGJUN_SG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_PJSG,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_DM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_PJDM,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_XJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_PJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET YSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_YSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+				--更新伴生树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 
+				GXH_SG=POWER((1.599+53.690*EXP(-0.055*Q_BSSZPJXJ-0.165*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZSG,
+				GXH_DM=POWER(EXP(4.138-0.095*Q_BSSZNL+0.012*Q_BSSZPJXJ-0.136*Q_BSSZGQDM)/100+1,'+@NFC+')*Q_BSSZGQDM,
+				GXH_XJ=POWER((1.344+68.070*EXP(-0.241*Q_BSSZPJXJ-0.038*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZPJXJ
+				WHERE ((BHYY IS NULL) OR BHYY=''80'') AND ((BSSZ&gt;=''100'' AND BSSZ&lt;''120'') or (BSSZ&gt;''129'' AND BSSZ&lt;''200''))')	
+				--更新伴生树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(3.256-0.032*A.Q_BSSZNL-0.020*A.Q_BSSZPJXJ-0.048*A.Q_BSSZGQDM)/100+1,'+@NFC+')*A.Q_BSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND ((A.BSSZ&gt;=''100'' AND A.BSSZ&lt;''120'') or (A.BSSZ&gt;''129'' AND A.BSSZ&lt;''200'')) AND A.GXH_XJ&gt;=5')
+			
+				exec('update '+@HQTABLENAME+' SET BSSZSG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_BSSZSG,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZGQDM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_BSSZGQDM,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZPJXJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_BSSZPJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET BSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_BSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+			end
+		--3.杉木更新
+		----更新优势树种树高和胸径
+		set @sql='select top 1 '+@xdm+'=xian from '+@HQTABLENAME+' where XIAN in(''450224'',''450225'',''450226'',''450321'',''450322'',''450323'',''450325'',''450326'',''450327'',
+		''450328'',''450329'',''450330'',''450332'',''450421'',''451031'',''451121'',''451221'',''451222'',''451324'',''450331'',''451101'',''451102'') or SUBSTRING(xian,1,4)=''4503'''
+		exec(@sql)
+		if(@xdm is not null)
+			begin
+				--桂北地区	
+				--更新优势树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((-0.070+23.734*EXP(-0.255*Q_PJXJ)+16.409*EXP(-0.107*Q_PJNL))/100+1,'+@NFC+')*Q_PJSG,
+				GXH_DM=POWER(EXP(3.784-0.055*Q_PJNL+0.001*Q_PJXJ-0.050*Q_PJDM)/100+1,'+@NFC+')*Q_PJDM,
+				GXH_XJ=POWER((-13.004+69.007*power(Q_PJXJ,-0.483)*POWER(CAST(Q_PJNL AS NUMERIC(38,8)),-0.070))/100+1,'+@NFC+')*Q_PJXJ,
+				BHYY=''80'',GXSJ=convert(varchar(8),getdate(),112) 
+				WHERE Q_PJXJ!=0 AND Q_PJNL!=0 AND ((BHYY IS NULL) OR BHYY=''80'') AND YOU_SHI_SZ&gt;=''120'' AND YOU_SHI_SZ&lt;''130''')
+				--更新优势树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(4.165-0.060*A.Q_PJNL+0.009*A.Q_PJXJ-0.038*A.Q_PJDM)/100+1,'+@NFC+')*A.Q_YSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND (A.YOU_SHI_SZ&gt;=''120'' AND A.YOU_SHI_SZ&lt;''130'') AND A.GXH_XJ&gt;=5')
+				
+				exec('update '+@HQTABLENAME+' SET PINGJUN_SG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_PJSG,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_DM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_PJDM,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_XJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_PJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET YSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_YSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+				--更新伴生树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 
+				GXH_SG=POWER((-0.070+23.734*EXP(-0.255*Q_BSSZPJXJ)+16.409*EXP(-0.107*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZSG,
+				GXH_DM=POWER(EXP(3.784-0.055*Q_BSSZNL+0.001*Q_BSSZPJXJ-0.050*Q_BSSZGQDM)/100+1,'+@NFC+')*Q_BSSZGQDM,
+				GXH_XJ=POWER((-13.004+69.007*power(Q_BSSZPJXJ,-0.483)*POWER(CAST(Q_BSSZNL AS NUMERIC(38,8)),-0.070))/100+1,'+@NFC+')*Q_BSSZPJXJ
+				WHERE Q_BSSZPJXJ!=0 AND Q_BSSZNL!=0 AND ((BHYY IS NULL) OR BHYY=''80'') AND BSSZ&gt;=''120'' AND BSSZ&lt;''130''')
+				--更新伴生树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(4.165-0.060*A.Q_BSSZNL+0.009*A.Q_BSSZPJXJ-0.038*A.Q_BSSZGQDM)/100+1,'+@NFC+')*A.Q_BSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND (A.BSSZ&gt;=''120'' AND A.BSSZ&lt;''130'') AND A.GXH_XJ&gt;=5')
+				
+				exec('update '+@HQTABLENAME+' SET BSSZSG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_BSSZSG,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZGQDM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_BSSZGQDM,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZPJXJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_BSSZPJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET BSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_BSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')				
+			end
+		else
+			begin
+				--桂南地区
+				--更新优势树种树高、断面积及胸径
+				exec('update '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((0.813+29.958*EXP(-0.278*Q_PJXJ)+25.226*EXP(-0.202*Q_PJNL))/100+1,'+@NFC+')*Q_PJSG,
+				GXH_DM=POWER(EXP(4.211-0.078*Q_PJNL-0.019*Q_PJXJ-0.061*Q_PJDM)/100+1,'+@NFC+')*Q_PJDM,
+				GXH_XJ=POWER((-16.565+73.064*power(Q_PJXJ,-0.441)*POWER(CAST(Q_PJNL AS NUMERIC(38,8)),-0.093))/100+1,'+@NFC+')*Q_PJXJ,
+				BHYY=''80'',GXSJ=convert(varchar(8),getdate(),112) 
+				WHERE Q_PJXJ!=0 AND Q_PJNL!=0 AND ((BHYY IS NULL) OR BHYY=''80'') AND YOU_SHI_SZ&gt;=''120'' AND YOU_SHI_SZ&lt;''130''')
+					--更新优势树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(4.506-0.090*A.Q_PJNL+0.026*A.Q_PJXJ-0.046*A.Q_PJDM)/100+1,'+@NFC+')*A.Q_YSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND A.YOU_SHI_SZ&gt;=''120'' AND A.YOU_SHI_SZ&lt;''130'' AND A.GXH_XJ&gt;=5')
+				
+				exec('update '+@HQTABLENAME+' SET PINGJUN_SG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_PJSG,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_DM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_PJDM,0)')
+				exec('update '+@HQTABLENAME+' SET PINGJUN_XJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_PJXJ,0)')
+				exec('UPDATE '+@HQTABLENAME+' SET YSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_YSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+				--更新伴生树种树高、断面积及胸径
+				exec('UPDATE '+@HQTABLENAME+' SET 	
+				GXH_SG=POWER((0.813+29.958*EXP(-0.278*Q_BSSZPJXJ)+25.226*EXP(-0.202*Q_BSSZNL))/100+1,'+@NFC+')*Q_BSSZSG,
+				GXH_DM=POWER(EXP(4.211-0.078*Q_BSSZNL-0.019*Q_BSSZPJXJ-0.061*Q_BSSZGQDM)/100+1,'+@NFC+')*Q_BSSZGQDM,
+				GXH_XJ=POWER((-16.565+73.064*power(Q_BSSZPJXJ,-0.441)*POWER(CAST(Q_BSSZNL AS NUMERIC(38,8)),-0.093))/100+1,'+@NFC+')*Q_BSSZPJXJ
+				WHERE Q_BSSZPJXJ!=0 AND Q_BSSZNL!=0 AND ((BHYY IS NULL) OR BHYY=''80'') AND BSSZ&gt;=''120'' AND BSSZ&lt;''130''')
+				--更新伴生树种蓄积
+				exec('UPDATE A SET GXH_XUJI=POWER(EXP(4.506-0.090*A.Q_BSSZNL+0.026*A.Q_BSSZPJXJ-0.046*A.Q_BSSZGQDM)/100+1,'+@NFC+')*A.Q_BSSZXJ FROM '+@HQTABLENAME+' A 
+				WHERE ((A.BHYY IS NULL) OR BHYY=''80'') AND A.BSSZ&gt;=''120'' AND A.BSSZ&lt;''130'' AND A.GXH_XJ&gt;=5')
+				
+				exec('update '+@HQTABLENAME+' SET BSSZSG=GXH_SG WHERE GXH_SG IS NOT NULL AND GXH_SG&gt;ISNULL(Q_BSSZSG,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZGQDM=GXH_DM WHERE GXH_DM IS NOT NULL AND GXH_DM&gt;ISNULL(Q_BSSZGQDM,0)')
+				exec('update '+@HQTABLENAME+' SET BSSZPJXJ=GXH_XJ WHERE GXH_XJ IS NOT NULL AND GXH_XJ&gt;ISNULL(Q_BSSZPJXJ,0)')	
+				exec('UPDATE '+@HQTABLENAME+' SET BSSZXJ=GXH_XUJI WHERE GXH_XUJI IS NOT NULL AND GXH_XUJI&gt;ISNULL(Q_BSSZXJ,0)')
+				
+				exec('update '+@HQTABLENAME+' SET GXH_SG=NULL,GXH_DM=NULL,GXH_XJ=NULL,GXH_XUJI=NULL')
+			end
+		
+		--删除临时字段
+		EXEC('ALTER TABLE '+@HQTABLENAME+' DROP column GXH_SG')
+		EXEC('ALTER TABLE '+@HQTABLENAME+' DROP column GXH_DM')
+		EXEC('ALTER TABLE '+@HQTABLENAME+' DROP column GXH_XJ')
+		EXEC('ALTER TABLE '+@HQTABLENAME+' DROP column GXH_XUJI')
+		
+	END TRY
+	begin catch
+		set @cerror=@cerror+1
+		SELECT 
+		@ErrorMessage = ERROR_MESSAGE(),
+		@ErrorSeverity = ERROR_SEVERITY(),
+		@ErrorState = ERROR_STATE();
+	end catch
+	if(@cerror&gt;0)
+	  BEGIN
+		  rollback tran
+		  RAISERROR(@ErrorMessage,@ErrorSeverity,@ErrorState);
+	  END
+	else
+	  commit tran
+end</value>
+  </data>
+  <data name="UPANSXJ2" xml:space="preserve">
+    <value>CREATE PROC FOR_ANXJ_PROC2(@TABNAME VARCHAR(100))
+AS
+	declare @cerror int,@tc int,@ErrorMessage NVARCHAR(4000),@ErrorSeverity INT,@ErrorState INT
+BEGIN  
+	BEGIN TRY
+			SET @cerror=0				
+			IF OBJECT_ID('FOR_ANXJ_VIEW2')IS NOT NULL DROP VIEW FOR_ANXJ_VIEW2
+			--2.建立前期速生按平均测树因子表
+			EXEC('CREATE VIEW FOR_ANXJ_VIEW2 AS SELECT 
+					CASE GROUPING(XIAN) WHEN 1 THEN ''合计'' ELSE XIAN END AS XIAN,
+					CASE GROUPING(XIANG) WHEN 1 THEN ''合计'' ELSE XIANG END AS XIANG,
+					CASE GROUPING(CUN) WHEN 1 THEN ''合计'' ELSE CUN END AS CUN,
+					CASE GROUPING(CUN+LIN_BAN) WHEN 1 THEN ''合计'' ELSE CUN+LIN_BAN END AS linban,
+					CASE GROUPING(Q_PJNL) WHEN 1 THEN NULL ELSE Q_PJNL END AS Q_PJNL,
+					AVG(Q_PJXJ) as Q_PJXJ,AVG(Q_PJSG) as Q_PJSG,AVG(Q_PJDM ) as Q_PJDM
+						FROM '+@TABNAME+'  
+					WHERE  Q_PJNL&lt;&gt;0 AND Q_PJDM&lt;&gt;0  AND (BHYY IS NULL OR BHYY &gt;''90'' OR LEN(RTRIM(LTRIM(BHYY)))&lt;2 OR BHYY=''80'') AND (YOU_SHI_SZ&gt;=''290'' AND YOU_SHI_SZ&lt;=''320'') GROUP BY XIAN,XIANG,CUN,CUN+LIN_BAN,Q_PJNL WITH CUBE ')
+			
+			
+	END TRY
+	begin catch
+		set @cerror=@cerror+1
+		SELECT 
+		@ErrorMessage = ERROR_MESSAGE(),
+		@ErrorSeverity = ERROR_SEVERITY(),
+		@ErrorState = ERROR_STATE();
+	end catch
+END</value>
+  </data>
+  <data name="UPBSANXJ" xml:space="preserve">
+    <value>CREATE PROC FOR_BSANXJ_PROC(@TABNAME VARCHAR(100),@YEAR INT)
+AS
+	declare @cerror int,@tc int,@ErrorMessage NVARCHAR(4000),@ErrorSeverity INT,@ErrorState INT
+BEGIN  
+	BEGIN TRY
+			SET @cerror=0
+			--1.更新伴生树种为桉树平均年龄
+			EXEC('UPDATE '+@TABNAME +' SET BSSZNL=ISNULL(Q_BSSZNL,0)+'+@YEAR +' WHERE 
+			(BHYY IS NULL OR BHYY &gt;''90'' OR LEN(RTRIM(LTRIM(BHYY)))&lt;2 OR BHYY=''80'')
+				 AND RTRIM(LTRIM(DI_LEI)) IN (''111'',''112'',''120'',''130'',''200'',''301'',''302'',''401'',''403'',''404'',''961'',''962'',''963'')	 
+				 AND LEN(LTRIM(RTRIM(BSSZ)))=3 AND LTRIM(RTRIM(BSSZ))&lt;''800''')		
+			IF OBJECT_ID('FOR_ANBS_VIEW')IS NOT NULL DROP VIEW FOR_ANBS_VIEW
+			--2.建立伴生树种速生按平均测树因子表
+			EXEC('CREATE VIEW FOR_ANBS_VIEW AS SELECT 
+					CASE GROUPING(XIAN) WHEN 1 THEN ''合计'' ELSE XIAN END AS XIAN,
+					CASE GROUPING(XIANG) WHEN 1 THEN ''合计'' ELSE XIANG END AS XIANG,
+					CASE GROUPING(CUN) WHEN 1 THEN ''合计'' ELSE CUN END AS CUN,
+					CASE GROUPING(Q_BSSZNL) WHEN 1 THEN NULL ELSE Q_BSSZNL END AS Q_BSSZNL,
+					AVG(Q_BSSZPJXJ) as Q_BSSZPJXJ,AVG(Q_BSSZSG) as Q_BSSZSG,AVG(Q_BSSZGQDM ) as Q_BSSZGQDM
+						FROM '+@TABNAME+'  
+					WHERE  
+					    (Q_BSSZNL &lt;&gt; 0) AND (Q_BSSZGQDM &lt;&gt; 0) AND 
+						(BHYY IS NULL OR  BHYY &gt; ''90'' OR BHYY=''80'' OR (LEN(RTRIM(LTRIM(BHYY)))) &lt; 2) AND 
+						(BSSZ &gt;= ''290'') AND (BSSZ &lt;= ''320'') 
+					GROUP BY XIAN,XIANG,CUN,Q_BSSZNL WITH CUBE ')
+	END TRY
+	begin catch
+		set @cerror=@cerror+1
+		SELECT 
+		@ErrorMessage = ERROR_MESSAGE(),
+		@ErrorSeverity = ERROR_SEVERITY(),
+		@ErrorState = ERROR_STATE();
+	end catch
+END</value>
+  </data>
+</root>

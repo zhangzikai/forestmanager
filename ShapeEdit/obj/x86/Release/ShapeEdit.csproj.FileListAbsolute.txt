@@ -1,0 +1,5 @@
+E:\for\ShapeEdit\obj\x86\Release\ShapeEdit.csprojResolveAssemblyReference.cache
+E:\for\ShapeEdit\obj\x86\Release\ShapeEdit.FormVertexList.resources
+E:\for\ShapeEdit\obj\x86\Release\ShapeEdit.Properties.Resources.resources
+E:\for\ShapeEdit\obj\x86\Release\ShapeEdit.csproj.GenerateResource.Cache
+E:\for\ShapeEdit\obj\x86\Release\ShapeEdit.dll.licenses

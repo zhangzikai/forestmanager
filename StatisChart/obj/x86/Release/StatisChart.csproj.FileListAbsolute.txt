@@ -1,0 +1,5 @@
+E:\for\StatisChart\obj\x86\Release\StatisChart.csprojResolveAssemblyReference.cache
+E:\for\StatisChart\obj\x86\Release\StatisChart.FrmCFStatis.resources
+E:\for\StatisChart\obj\x86\Release\StatisChart.UserControlChart.resources
+E:\for\StatisChart\obj\x86\Release\StatisChart.csproj.GenerateResource.Cache
+E:\for\StatisChart\obj\x86\Release\StatisChart.dll.licenses

@@ -1,0 +1,12 @@
+E:\for\GXFormMainFrame\bin\Release\GXFormMainFrame.exe.config
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.csprojResolveAssemblyReference.cache
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.FormLogin4.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.FormLogin5.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.FormLogin6.resources
+E:\for\GXFormMainFrame\obj\x86\Release\td.gis.forest.InitGISForm.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.MainFrameEdit.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.MainFrameQuery.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.MainFrameSystem.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.Properties.Resources.resources
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.csproj.GenerateResource.Cache
+E:\for\GXFormMainFrame\obj\x86\Release\GXFormMainFrame.exe.licenses

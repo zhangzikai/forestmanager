@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AnalystLandElement" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        AIiIiIiIiIgAiIiIiIgIgAiIiIiIiACACIiIiIiIAACIiIiIiIgPAAAAAAAAAA//AIDu7g+wD/AIgA7g
+        +/APAIiAgA+/sAAIiID4CwDwAIiIgI+A6gAIiIiA+A6uoIiIiICAgArgiIiIgAiIgACIiIiIiIiIiIiI
+        iIiIiIiI
+</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MeasureFeatureCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICAQAAUACQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAA
+        AAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAPAA/wAAAAAAAAAA
+        AAAAAAD/D/AAAAAAAAAAAAAAAAAA///wAAAAAAAAAAAAAAAAAP////8AAADwAAAAAAAAAAD////wAAAP
+        /wAAAAAAAAAA////AAAA/w/wAAAAAAAAAP//8AAADw///wAAAAAAAAD//wAAAP/w///wAAAAAAAA//AA
+        AA/w/wAAAAAAAAAAAP8AAAAA//D///AAAAAAAADwAAAAAA8P//8AAAAAAAAAAAAAAAAA/w/wAAAAAAAA
+        AAAAAAAAAA//AAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////P////h
+        ////4f///8P///vD///5h///+If///gP///4APf/+AHj//gDwf/4B4D/+A8Af/geAD/4PAAf+H4AP/j/
+        AH/5/4D/+//B////4/////f//////////////////////////////////////wA=
+</value>
+  </data>
+  <data name="MeasureElementCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICAQAAUACQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAA
+        AAAAD/AADwAADwAAAAAAAAAAAA/wAPDwAPDwAAAAAAAAAAD/AAAPDw8PDwAAAAAAAPAA/wAAAPDw8PDw
+        AAAAAAD/D/AAAAAPDwAPDwAAAAAA///wAAD///////8AAAAAAP////8A8AAAAAAPAAAAAAD////wAPD/
+        ////DwAAAAAA////AADw/////w8AAAAAAP//8AAA8P////8PAAAAAAD//wAAAPD/8A//DwAAAAAA//AA
+        AADw/w/wDw8AAAAAAP8AAAAA8PDwD/APAAAAAADwAAAAAPAPAAAP/wAAAAAAAAAAAAD/8AAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////P////h
+        ////4f///8O+//vDHH/5h4g/+IfBH/gP44/4AAAP+AEAD/gDAA/4BwAP+A8AD/gfAA/4PwAP+H8GD/j/
+        D4/5/x//+////////////////////////////////////////////////////wA=
+</value>
+  </data>
+  <data name="ClearMeasure" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        iIiIiIiIiIiIiIiIiIiIiHd3d3d3iIiAAAAAAAeIiID///8PB4iIgP//8P8HiIiA//8P/weIiID/8P//
+        B4iIgP8A//8HiIiA/w8P/weIiIDw//AAB4iIgPD///8HiIiAAAAAAAiIiIiIiIiIiIiIiIiIiIiIiIiI
+        iIiIiIiI
+</value>
+  </data>
+  <data name="MeasureDistance" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4d3
+        d3d3d3d3AAAAAAAAAAcP////////Bw8PDw8PDw8HAAAAAAAAAAiIiIiIiIiIiIjIiIiIiMiIjMiIiYiI
+        zIjMzMyIjMzMyIzIiImIiMyIiMiIiYiIyIiIiIiImIiIiIiIiIiJiIiIiIiJiImIiIiIiIiZmIiIiIiI
+        iIiIiIiI
+</value>
+  </data>
+  <data name="MeasureElement" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        AIiIiIiIiIgAsIiIiIgIgAiLCIgIiACACIiwgLCIAACIiIsLiwgPAAAIiLiIsA//AIiIiIiLD/AIu7u7
+        u7sPAIiwAAAACwAIiLD///8LAIiIsP///wsIiIiw/w//C4iIiLDwsA8LiIiIsAuLsAuIiIi7uIiLu4iI
+        iIiIiIiI
+</value>
+  </data>
+  <data name="AnalystLandElementCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICAQAAUACQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAA
+        AAAAD/AAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAPAA/wAAAAAAAAAA
+        AAAAAAD/D/AAAAAAAAAAAAAAAAAA///wAAD///////AAAAAAAP////8A8AAAAADwAAAAAAD////wAPD/
+        /w/w8AAAAAAA////AADwD/D/8PAAAAAAAP//8AAA8PAP//DwAAAAAAD//wAAAPD/DwDw8AAAAAAA//AA
+        AADw//D/APAAAAAAAP8AAAAA8P8P//DwAAAAAADwAAAAAPDw8A/w8AAAAAAAAAAAAADwDw/wAPAAAAAA
+        AAAAAAAA//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////P////h
+        ////4f///8P///vD///5h///+If///gP///4AAAf+AEAH/gDAB/4BwAf+A8AH/gfAB/4PwAf+H8AH/j/
+        AB/5/wgf+/8eH////////////////////////////////////////////////wA=
+</value>
+  </data>
+  <data name="ConvertElement" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        iIAIiIiIiIiADyAIiIiIgAIvIiAIiIgCIi//8iCIiIAC8iIgAIiIiIACIAiIiIiIiIAIiIiIiIiIiIiI
+        AAiLu7u7u7gAiIsAAAAAuAgIiw////C4iICLD///8LiIgIsP8P/wuIAIiw8LAPC4iIiLALi7ALiIiIu7
+        iIi7uIiI
+</value>
+  </data>
+  <data name="MeasureFeature" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        AIiIiIiIiIgAiIiIiIgIgAiIiIiIiACACIiIuIiIAACIiIsLiIgPAAAIsPC4iA//AIsPDwuID/AIsA//
+        8LgPAIsP8P//CwAIsPD/AAAAAIiLD/D//wsIiIiwD//wuIiIiIsPDwuIiIiIiLDwuIiIiIiIiwuIiIiI
+        iIiIuIiI
+</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Measure</value>
+  </data>
+  <data name="AnalystLandAreaCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICACAAwACwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPYAAABuAAAA
+        ngAAANIAAADsAAAA3gAAHIYAABQAAAAUAAAA94AAAICAAAD3gAAAFAAAABQAAAAcAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////////////////////4A///+
+        AP///gD///4A///+AP///gD///4A///iIP//4nj//+P///8Af///AH///wB////j////4////+P/////
+        //////////////////////////////////8A
+</value>
+  </data>
+  <data name="AnalystLandArea" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4iI
+        iIiIiIiIiHd3d3d3d3iAAAAAAAAAeIDu7uC/v7B4gO7u4Pv78HiAAO4Pv7+weICvAPv7+/B4gPrwvwAP
+        sHiAr68ArqAAeID6+grq6uB4gK+ggACuoHiA+giIiADgeICgiIiIiACIgAiIiIiIiIiIiIiIiIiIiIiI
+        iIiIiIiI
+</value>
+  </data>
+  <data name="MeasureAreaCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICACAAwACwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4AAAqqAAAAAAAAH/8AABABAAAX/QAAF/0AAB
+        f9AAAXPQAAFs0AABUxAAHSDwABXAAAAUAAAA94AAAICAAAD3gAAAFAAAABQAAAAcAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA///////////////////////+AA///gAP//4AD//+AA///gAP//4AD//+
+        AA///gAP//4AD//+AA///gAP//4MD//iHw//4j///+P///8Af///AH///wB////j////4////+P/////
+        //////////////////////////////////8A
+</value>
+  </data>
+  <data name="MeasureDistanceCursor" type="System.Byte[], mscorlib">
+    <value>
+        AAACAAEAICACAAwACwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
+        +AAAqqgAAAAYAAAACAAAHBgAABQIAAAUGAAA94gAAICYAAD3iAAAFBgAABQIAAAcGAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////
+        ///+AAP//gAD//4AA//+AAP////D///jw///48P//+PD//8AQ///AEP//wBD///jw///48P//+PD////
+        w/////////////////////////////////8A
+</value>
+  </data>
+  <data name="Measure" xml:space="preserve">
+    <value>&lt;xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema"&gt;&lt;s:Schema id="RowsetSchema"&gt;&lt;s:ElementType name="row" content="eltOnly" rs:updatable="true"&gt;&lt;s:AttributeType name="ButtonKey" rs:number="1" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Bitmap" rs:number="2" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="BitmapDisabled" rs:number="3" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Cursor" rs:number="4" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="CursorUsing" rs:number="5" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Category" rs:number="6" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="HelpFile" rs:number="7" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Message" rs:number="8" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Text" rs:number="9" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="ToolTipText" rs:number="10" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="ProcessType" rs:number="11" rs:write="true"&gt;&lt;s:datatype dt:type="int" dt:maxLength="4" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="TargetObject" rs:number="12" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:long="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Enabled" rs:number="13" rs:write="true"&gt;&lt;s:datatype dt:type="boolean" dt:maxLength="2" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="PartialPush" rs:number="14" rs:write="true"&gt;&lt;s:datatype dt:type="boolean" dt:maxLength="2" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Pushed" rs:number="15" rs:write="true"&gt;&lt;s:datatype dt:type="boolean" dt:maxLength="2" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Visible" rs:number="16" rs:write="true"&gt;&lt;s:datatype dt:type="boolean" dt:maxLength="2" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="TextVisible" rs:number="17" rs:write="true"&gt;&lt;s:datatype dt:type="boolean" dt:maxLength="2" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="HelpContextID" rs:number="18" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="200" rs:precision="0" rs:long="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Style" rs:number="19" rs:write="true"&gt;&lt;s:datatype dt:type="int" dt:maxLength="4" rs:precision="0" rs:fixedlength="true" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:AttributeType name="Tag" rs:number="20" rs:write="true"&gt;&lt;s:datatype dt:type="string" dt:maxLength="40" rs:precision="0" rs:maybenull="false" /&gt;&lt;/s:AttributeType&gt;&lt;s:extends type="rs:rowbase" /&gt;&lt;/s:ElementType&gt;&lt;/s:Schema&gt;&lt;rs:data&gt;&lt;rs:insert&gt;&lt;z:row ButtonKey="Measure_MeasureArea" Bitmap="MeasureArea" BitmapDisabled="" Cursor="MeasureAreaCursor" CursorUsing="MeasureAreaCursor" Category="Measure" HelpFile="" Message="绘制多边形量算面积" Text="面积量算" ToolTipText="面积量算" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="True" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_MeasureDistance" Bitmap="MeasureDistance" BitmapDisabled="" Cursor="MeasureDistanceCursor" CursorUsing="MeasureDistanceCursor" Category="Measure" HelpFile="" Message="绘制折线量算距离" Text="距离量算" ToolTipText="距离量算" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="True" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_MeasureElement" Bitmap="MeasureElement" BitmapDisabled="" Cursor="MeasureElementCursor" CursorUsing="MeasureElementCursor" Category="Measure" HelpFile="" Message="量算指定元素的距离或面积" Text="元素量算" ToolTipText="元素量算" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="True" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_MeasureFeature" Bitmap="MeasureFeature" BitmapDisabled="" Cursor="MeasureFeatureCursor" CursorUsing="MeasureFeatureCursor" Category="Measure" HelpFile="" Message="量算指定要素的距离或面积" Text="要素量算" ToolTipText="要素量算" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="False" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_ConvertElement" Bitmap="ConvertElement" BitmapDisabled="" Cursor="" CursorUsing="" Category="Measure" HelpFile="" Message="将量算结果转换为元素" Text="量算转换" ToolTipText="转换量算结果" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="False" TextVisible="True" HelpContextID="0" Style="1" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_AnalystLandArea" Bitmap="AnalystLandArea" BitmapDisabled="" Cursor="AnalystLandAreaCursor" CursorUsing="AnalystLandAreaCursor" Category="Measure" HelpFile="" Message="绘制多边形分析面积所属地类" Text="面积分析" ToolTipText="面积分析" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="True" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_AnalystLandElement" Bitmap="AnalystLandElement" BitmapDisabled="" Cursor="AnalystLandElementCursor" CursorUsing="AnalystLandElementCursor" Category="Measure" HelpFile="" Message="分析指定元素的所属地类" Text="元素分析" ToolTipText="元素分析" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="False" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_ClearMeasure" Bitmap="ClearMeasure" BitmapDisabled="" Cursor="" CursorUsing="" Category="Measure" HelpFile="" Message="清除在量算图层中的量算结果" Text="量算清除" ToolTipText="清除量算结果" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="False" TextVisible="True" HelpContextID="0" Style="1" Tag="" xmlns:z="z" /&gt;&lt;z:row ButtonKey="Measure_MeasureAreaExtend" Bitmap="MeasureArea" BitmapDisabled="" Cursor="MeasureAreaCursor" CursorUsing="MeasureAreaCursor" Category="Measure" HelpFile="" Message="面积量算" Text="面积量算" ToolTipText="面积量算" ProcessType="1" TargetObject="2" Enabled="True" PartialPush="False" Pushed="False" Visible="True" TextVisible="True" HelpContextID="0" Style="2" Tag="" xmlns:z="z" /&gt;&lt;/rs:insert&gt;&lt;/rs:data&gt;&lt;/xml&gt;</value>
+  </data>
+  <data name="MeasureArea" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAA
+        gP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD//////4d3
+        d3d3d3d3AAAAAAAAAAcP////////Bw8PDw8PDw8HAAAAAAAAAAiIiIiIiIiIiIAAAAAAAACIgP//////
+        8IiA/P/5//zwiIDMzP/8zMCIgPz/Cf/88IiA//CJAP/wiID/CIiYAPCIgPCIiImIAIiACImIiYiIiIiI
+        iJmYiIiI
+</value>
+  </data>
+</root>

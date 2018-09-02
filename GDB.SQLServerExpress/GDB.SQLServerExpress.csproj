@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81B45682-F490-4BA0-A2FF-6CF918CA04E4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>GDB.SQLServerExpress</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GDB.SQLServerExpress</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="GDB\SQLServerEpxress\vForms\NewGeoMDFFrm.resx">
+      <DependentUpon>NewGeoMDFFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\CreateDatabaseObject.resx">
+      <DependentUpon>CreateDatabaseObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\CreateForestDataBase.resx">
+      <DependentUpon>CreateForestDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\CreateNewGDB.resx">
+      <DependentUpon>CreateNewGDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\DropDatabase.resx">
+      <DependentUpon>DropDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\FileGeodatabase.resx">
+      <DependentUpon>FileGeodatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\ForestMDFCleanControl.resx">
+      <DependentUpon>ForestMDFCleanControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\SqlExprConfigControl.resx">
+      <DependentUpon>SqlExprConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vControls\SqlServerDatabases.resx">
+      <DependentUpon>SqlServerDatabases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vForms\CleanDataFrm.resx">
+      <DependentUpon>CleanDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDB\SQLServerExpress\vTasks\vForms\MdfChooserFrm.resx">
+      <DependentUpon>MdfChooserFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>D:\TDProject\test\ForestManager\bin\ESRI\ESRI.ArcGIS.Display.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\TDProject\test\ForestManager\bin\MS\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\TDProject\test\ForestManager\bin\MS\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlWmiManagement, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\TDProject\test\ForestManager\bin\MS\Microsoft.SqlServer.SqlWmiManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="FormBase">
+      <HintPath>..\FormBase\bin\Debug\FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1" />
+    <Reference Include="DevExpress.XtraGrid.v14.1" />
+    <Reference Include="ESRI.ArcGIS.System" />
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.Types" />
+    <Reference Include="ESRI.ArcGIS.Geometry" />
+    <Reference Include="ESRI.ArcGIS.Geoprocessor" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools" />
+    <Reference Include="ESRI.ArcGIS.ADF" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum" />
+    <Reference Include="System.Core" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile" />
+    <Reference Include="DevExpress.Printing.v14.1.Core" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\FileGeodatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\ForestMDFCleanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\CleanDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\SqlExprConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\GeoMDFManagControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\ForGeoDataMatchFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\DataMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\TaskResult.cs" />
+    <Compile Include="GDB\SQLServerExpress\EngineLicense.cs" />
+    <Compile Include="GDB\SQLServerExpress\TaskStatus.cs" />
+    <Compile Include="GDB\SQLServerExpress\TaskEventArgs.cs" />
+    <Compile Include="GDB\SQLServerExpress\TaskDelegate.cs" />
+    <Compile Include="GDB\SQLServerExpress\TaskEventHandler.cs" />
+    <Compile Include="GDB\SQLServerExpress\Task.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\MdfChooserFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\GeoMDFDataLoadFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\FileGeoDataSelectFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\CreateNewGDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\ForestGDBManagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\CreateDatabaseObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\Properties\Resources.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\ForestGDBTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\DeleteGeoIndxTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vPojo\TreeListItem.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vPojo\GeoMDFInfoItem.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\UpdateDatabaseObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\DropDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\DataMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\DataSetInfo.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\Record.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\NewForestGDBTemplateTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\ForestGDBManager.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\InsertData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vForms\ServerDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\ForestGeoDataLoadControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerEpxress\vForms\NewGeoMDFFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vExpress\ForestMDFManager.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\ForestProgressMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\CreateForestGDBTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\GeoDataMatchResult.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\DataLoadInfo.cs" />
+    <Compile Include="GDB\SQLServerExpress\ForestGDBWorkSpaceUtil.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vExpress\GeoMDFManager.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\Forest\ForestDBServerInfo.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\CreateForestDataBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\SqlServerDatabases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\Forest\ForestDbName.cs" />
+    <Compile Include="GDB\SQLServerExpress\Forest\ForestGDBInfo.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vControls\WaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\ForestDataLoadTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\TransForestTemplateTask.cs" />
+    <Compile Include="GDB\SQLServerExpress\vTasks\vTasks\ForestDataTransConfig.cs" />
+    <Compile Include="GDB\SQLServerExpress\Forest\ForestMdfInfo.cs" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.UpdateDatabaseObject.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.ForestProgressMessageBox.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.WaitDialog.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vForms.GeoMDFDataLoadFrm.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vForms.FileGeoDataSelectFrm.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.ForGeoDataMatchFrm.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vForms.DataMatchForm.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.GeoMDFManagControl.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vControls.InsertData.resources" />
+    <EmbeddedResource Include="GDB.SQLServerExpress.vTasks.vForms.ServerDirectory.resources" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

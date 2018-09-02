@@ -1,0 +1,5 @@
+1|°×¹ÇÈÀ|YOU_SHI_SZ = '508'
+2|Í©»¨Ê÷|YOU_SHI_SZ = '507'
+3|Çï¡¡ÇÑ|YOU_SHI_SZ = '503'
+4|ºìº£é­|YOU_SHI_SZ = '504'
+5|ÆäËüºìÊ÷|YOU_SHI_SZ ='501'  or YOU_SHI_SZ = '502' or YOU_SHI_SZ ='505'  or YOU_SHI_SZ = '506' or YOU_SHI_SZ ='509'  or YOU_SHI_SZ = '510' or YOU_SHI_SZ = '511'

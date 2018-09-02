@@ -1,0 +1,13 @@
+1|柑桔类|(convert(int,YOU_SHI_SZ ) >=611 and convert(int,YOU_SHI_SZ ) <= 615)
+2|荔枝|YOU_SHI_SZ = '618'
+3|龙眼|YOU_SHI_SZ = '619'
+4|芒果|YOU_SHI_SZ = '621'
+5|其它果|(convert(int,YOU_SHI_SZ ) >=616 and convert(int,YOU_SHI_SZ ) <= 646 and YOU_SHI_SZ <> '618' and YOU_SHI_SZ <> '619' and YOU_SHI_SZ <> '621')
+6|油茶|YOU_SHI_SZ = '661'
+7|茶叶|YOU_SHI_SZ = '662'
+8|八角|YOU_SHI_SZ = '663'
+9|其它食|(convert(int,YOU_SHI_SZ ) >=660 and convert(int,YOU_SHI_SZ ) <= 674  and YOU_SHI_SZ <> '661'  and YOU_SHI_SZ <> '662'  and YOU_SHI_SZ <> '663' )
+10|药用林|(convert(int,YOU_SHI_SZ ) >=690 and convert(int,YOU_SHI_SZ ) <=699 )
+11|化工林|(convert(int,YOU_SHI_SZ ) >=680 and convert(int,YOU_SHI_SZ ) <= 689 )
+12|其它经|(convert(int,YOU_SHI_SZ ) >= 700 and convert(int,YOU_SHI_SZ ) <= 704 )
+13|灌木林|(convert(int,YOU_SHI_SZ ) >= 800 and convert(int,YOU_SHI_SZ ) <= 906 )
